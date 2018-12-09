@@ -1,0 +1,19 @@
+<div class="header">
+    <div class="nav">
+        <div class="nav-left" (click)="gotohome()">
+            <img src="../../../assets/images/home/logo.png" alt="江山中医可视化官网">
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li *ngFor="let item of menuservice.menus" class="line" [routerLink]="item.link" routerLinkActive="active" >
+                    <span class="title" >{{ item.title }}</span>
+                    <span class="animation-bg"></span>
+                </li>
+            </ul>
+            <div class="login">
+                <button class="btn" *ngIf="!but_title" (click)="login()">登录</button>
+                <button class="btn" *ngIf="but_title" (click)="output()">退出</button>
+            </div>
+        </div>
+    </div>
+</div>

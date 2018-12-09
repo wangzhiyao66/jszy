@@ -1,0 +1,76 @@
+// 轮播图
+.swiper-container{
+  margin-top: -80px;
+}
+// 轮播图片
+.sw_img{
+  width: 100%;
+  max-height: 600px;
+}
+
+.swiper-slide{
+  //position: relative;
+}
+
+.animation1{
+  position: absolute;
+  left: 9%;
+  bottom: -122px;
+  text-align: center;
+  //border: 1px solid red;
+  animation: animationo-one 0.5 ease 0.5s alternate forwards;
+}
+
+@keyframes animationo-one {
+  0% {
+    transform: translate(0 , -110px);
+  }
+  25% {
+    transform: translate(0 , -220px);
+  }
+  50% {
+    transform: translate(0 , -330px);
+  }
+  75% {
+    transform: translate(0 , -440px);
+  }
+  100% {
+    transform: translate(0 , -550px);
+  }
+}
+
+.animation2{
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  bottom: -150px;
+  right: 0;
+  text-align: center;
+  animation: animationo-two 0.5 ease 0.5s alternate forwards;
+}
+
+@keyframes animationo-two {
+  0% {
+    transform: translate(0 , -80px);
+  }
+  25% {
+    transform: translate(0 , -280px);
+  }
+  50% {
+    transform: translate(0 , -480px);
+  }
+  75% {
+    transform: translate(0 , -680px);
+  }
+  100% {
+    transform: translate(0 , -880px);
+  }
+}
+.animation3{
+  position: absolute;
+  left: 19%;
+  bottom: 220px;
+  text-align: left;
+  //border: 1px solid red;
+  //animation: animationo-one 0.5 ease 0.5s alternate forwards;
+}

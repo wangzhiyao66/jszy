@@ -1,0 +1,172 @@
+@import "../../scss/_global";
+
+.header{
+  display: flex;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: rgba( 0, 0, 0, 0.4);
+  z-index: 100;
+
+  .nav{
+    max-width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+  }
+
+  .nav-left, .nav-right{
+    float: left;
+    cursor:pointer;
+    z-index: 80;
+  }
+
+  .nav-left {
+    width: 240px;
+    height: 80px;
+    img{
+      position: relative;
+      z-index: 90;
+    }
+  }
+
+  .nav-right {
+    width: 920px;
+    height: 80px;
+    margin-left: 40px;
+    ul{
+      float: left;
+      height: 80px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    li{
+      float: left;
+      height: 80px;
+      width: 106px;
+      margin-right: 10px;
+      list-style: none;
+    }
+    .line {
+      position: relative;
+      text-align: center;
+      font-size: 18px;
+      color: #fff;
+      z-index: 80;
+      outline: none;
+      font-family: $font-family;
+    }
+    .title{
+      position: relative;
+      z-index: 100;
+      line-height: 80px;
+    }
+    .active {
+      display: inline-block;
+      width: 106px;
+      height: 80px;
+      //background: #fff;
+      color: $menus-color;
+    }
+    .line:hover{
+      .title{
+        color: $menus-color;
+      }
+      .animation-bg {
+        animation: myfirst 0.5 ease 0.5s alternate forwards;
+      }
+    }
+
+    .animation-bg{
+      display: inline-block;
+      width: 106px;
+      height: 80px;
+      background: #fff;
+      position: absolute;
+      top: -80px;
+      left: 0;
+    }
+
+    //login
+    .login{
+      position: relative;
+      float: left;
+      width: 100px;
+      height: 80px;
+      text-align: center;
+      margin-left: 8px;
+      .btn{
+        position: relative;
+        margin-top: 25px;
+        height: 30px;
+        width: 106px;
+        border-radius: 15px;
+        border: 1px solid #fff;
+        color: #fff;
+        background: transparent;
+        outline: none;
+        z-index: 90;
+      }
+      .btn:hover{
+        color: $menus-color;
+        background: #fff;
+        border-color: $menus-color;
+      }
+    }
+
+  }
+  .login:hover{
+    .animation-bg {
+      animation: myfirst 0.5 ease 0.5s alternate forwards;
+    }
+  }
+  .animation-bg:hover{
+    .btn{
+      color: $menus-color;
+      border-color: $menus-color;
+    }
+  }
+
+  .oncolse {
+    .animation-bg {
+      animation: myclose 0.5 ease 0.5s alternate forwards;
+    }
+  }
+  // 时动画进入
+  @keyframes myfirst
+  {
+    0% {transform: translate(0px , 0px)}
+    25% {transform: translate(0px , 40px)}
+    50% {transform: translate(0px , 80px)}
+    75% {transform: translate(0px , 120px)}
+    100% {transform: translate(0px , 160px)}
+  }
+
+  @-moz-keyframes myfirst /* Firefox */
+  {
+    0% {transform: translate(0px , 0px)}
+    25% {transform: translate(0px , 40px)}
+    50% {transform: translate(0px , 80px)}
+    75% {transform: translate(0px , 120px)}
+    100% {transform: translate(0px , 160px)}
+  }
+
+  @-webkit-keyframes myfirst /* Safari 和 Chrome */
+  {
+    0% {transform: translate(0px , 0px)}
+    25% {transform: translate(0px , 40px)}
+    50% {transform: translate(0px , 80px)}
+    75% {transform: translate(0px , 120px)}
+    100% {transform: translate(0px , 160px)}
+  }
+
+  @-o-keyframes myfirst /* Opera */
+  {
+    0% {transform: translate(0px , 0px)}
+    25% {transform: translate(0px , 40px)}
+    50% {transform: translate(0px , 80px)}
+    75% {transform: translate(0px , 120px)}
+    100% {transform: translate(0px , 160px)}
+  }
+
+}
