@@ -230,8 +230,8 @@
 // 产品列表
 .content-two{
   max-width: 1200px;
-  height: 494px;
-  margin: 0 auto;
+  //height: 494px;
+  margin: 0 auto 30px;
 
   [nz-carousel-content] {
     text-align: center;
@@ -313,6 +313,35 @@
       }
     }
 
+  }
+
+}
+// 专利
+.patent{
+  width: 100%;
+  height: 100px;
+  background: url("../../../assets/images/product/own.png") no-repeat center;
+}
+
+// 行业动态
+.content-doing{
+  max-width: 1200px;
+  height: 1000px;
+  margin: 0 auto;
+  background: url("../../../assets/images/news/bg.png") no-repeat left bottom;
+  background-size: 100% 160px;
+
+  .industry-dynamics{
+    max-width: 1200px;
+    list-style: none;
+
+    li{
+      float: left;
+      width: 370px;
+      height: 235px;
+      background: #dddddd;
+      margin: 6px;
+    }
   }
 
 }

@@ -20,6 +20,7 @@ export class MenusComponent implements OnInit , OnDestroy {
     }
 
     ngOnInit() {
+        // console.log('url', this.router.url);
         // 页面监听  响应式
         this.subscription = fromEvent(window, 'scroll')
             .subscribe((event) => {
