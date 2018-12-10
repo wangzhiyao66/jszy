@@ -30,6 +30,7 @@ const navigationConfig: SwiperNavigationInterface = {
 export class HomeComponent implements OnInit {
 
     config: SwiperConfigInterface;
+    array = [ 1, 2, 3, 4 ];
 
     constructor() {
     }
