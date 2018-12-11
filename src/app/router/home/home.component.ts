@@ -54,7 +54,7 @@ export class HomeComponent implements OnInit {
             loop: true,
             slidesPerView: 'auto',
             loopedSlides: 8,
-            // autoplay: true,
+            // autoplay: false,
             speed: 1000,
             slideToClickedSlide: false,
             autoplay: {

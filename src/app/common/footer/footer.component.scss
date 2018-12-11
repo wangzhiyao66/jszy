@@ -69,14 +69,11 @@
         display: inline-block;
         margin-left: 10px;
         text-align: left;
+        cursor: pointer;
       }
 
       .nav-link-to:hover{
-        text-align: left;
-        line-height: 20px;
-        color: #fff;
-        cursor: pointer;
-        border-bottom: 1px solid #fff;
+        color: #999;
       }
     }
 

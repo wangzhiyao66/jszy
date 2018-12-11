@@ -7,7 +7,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-    nav1: Array = [
+    nav1 = [
         {title: '导航', link: ''},
         {title: '首页', link: ''},
         {title: '技术概览', link: ''},
@@ -16,7 +16,7 @@ export class FooterComponent implements OnInit {
         {title: '重要资讯', link: ''},
         {title: '关于我们', link: ''},
     ];
-    nav2: Array = [
+    nav2 = [
         {title: '相关产品', link: ''},
         {title: '产品介绍', link: ''},
         {title: '产品优势', link: ''},
@@ -25,7 +25,7 @@ export class FooterComponent implements OnInit {
         {title: '技术介绍', link: ''},
         {title: '研发团队', link: ''},
     ];
-    nav3: Array = [
+    nav3 = [
         {title: '共赢', link: ''},
         {title: '市场应用', link: ''},
         {title: '运营方案', link: ''},
@@ -34,7 +34,7 @@ export class FooterComponent implements OnInit {
         {title: 'APP下载', link: ''},
         {title: '网站地图', link: ''},
     ];
-    nav4: Array = [
+    nav4 = [
         {title: '关于我们', link: ''},
         {title: '公司介绍', link: ''},
         {title: '组织架构', link: ''},
