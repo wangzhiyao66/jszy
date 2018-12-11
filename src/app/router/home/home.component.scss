@@ -331,7 +331,7 @@
 }
 .content-doing{
   max-width: 1200px;
-  height: 1000px;
+  height: 950px;
   margin: 0 auto;
 
   .industry-dynamics{
@@ -419,5 +419,23 @@
     }
   }
 
+}
+// 下载区域
+.download-box{
+  width: 100%;
+  background: url("../../../assets/images/download/beijing.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+.download{
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid transparent;
+
+  .download-img{
+    width: 80%;
+    height: 80%;
+    margin-top: 30px;
+  }
 }
 
