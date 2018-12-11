@@ -40,8 +40,18 @@
       }
 
     }
+    li:hover{
+      span{
+        color: #fff !important;
+      }
+      p{
+        color: #fff;
+      }
+    }
 
   }
+
+
 
   .nav-link{
     padding: 0;
@@ -70,10 +80,11 @@
         margin-left: 10px;
         text-align: left;
         cursor: pointer;
+        color: #999;
       }
 
       .nav-link-to:hover{
-        color: #999;
+        color: #fff;
       }
     }
 
