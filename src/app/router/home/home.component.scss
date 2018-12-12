@@ -4,6 +4,16 @@
 .swiper-container{
   margin-top: -80px;
 }
+
+::ng-deep .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+  outline: none;
+  border: none;
+}
+::ng-deep .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+  outline: none;
+  border: none;
+}
+
 // 轮播图片
 .sw_img{
   width: 100%;
@@ -27,10 +37,17 @@
 }
 
 .animation1-img{
-  animation: animationo-one 0.5s ease 0.5s alternate forwards;
+  -webkit-animation: animationo-one 0.5s ease 0.5s alternate forwards;
+  -o-animation: animationo-one 0.5s ease 0.5s alternate forwards;
+  -moz-animation: animationo-one 0.5s ease 0.5s alternate forwards;
+  *animation: animationo-one 0.5s ease 0.5s alternate forwards;
 }
 .animation2-img{
   animation: animationo-one 0.5s ease 1s alternate forwards;
+  -webkit-animation: animationo-one 0.5s ease 1s alternate forwards;
+  -o-animation: animationo-one 0.5s ease 1s alternate forwards;
+  -moz-animation: animationo-one 0.5s ease 1s alternate forwards;
+  *animation: animationo-one 0.5s ease 1s alternate forwards;
 }
 
 @keyframes animationo-one {
@@ -51,33 +68,86 @@
   }
 }
 
-.animation2{
-  position: absolute;
-  margin: 0 auto;
-  left: 0;
-  bottom: -150px;
-  right: 0;
-  text-align: center;
-  animation: animationo-two 0.5 ease 0.5s alternate forwards;
-}
-
-@keyframes animationo-two {
+@-moz-keyframes animationo-one {
   0% {
-    transform: translate(0 , -80px);
+    transform: translate(0 , 0px);
   }
   25% {
-    transform: translate(0 , -300px);
+    transform: translate(0 , -100px);
   }
   50% {
-    transform: translate(0 , -450px);
+    transform: translate(0 , -200px);
   }
   75% {
-    transform: translate(0 , -500px);
+    transform: translate(0 , -300px);
   }
   100% {
-    transform: translate(0 , -650px);
+    transform: translate(0 , -380px);
   }
 }
+
+@-o-keyframes animationo-one {
+  0% {
+    transform: translate(0 , 0px);
+  }
+  25% {
+    transform: translate(0 , -100px);
+  }
+  50% {
+    transform: translate(0 , -200px);
+  }
+  75% {
+    transform: translate(0 , -300px);
+  }
+  100% {
+    transform: translate(0 , -380px);
+  }
+}
+@-webkit-keyframes animationo-one {
+  0% {
+    transform: translate(0 , 0px);
+  }
+  25% {
+    transform: translate(0 , -100px);
+  }
+  50% {
+    transform: translate(0 , -200px);
+  }
+  75% {
+    transform: translate(0 , -300px);
+  }
+  100% {
+    transform: translate(0 , -380px);
+  }
+}
+
+//.animation2{
+//  position: absolute;
+//  margin: 0 auto;
+//  left: 0;
+//  bottom: -150px;
+//  right: 0;
+//  text-align: center;
+//  animation: animationo-two 0.5 ease 0.5s alternate forwards;
+//}
+//
+//@keyframes animationo-two {
+//  0% {
+//    transform: translate(0 , -80px);
+//  }
+//  25% {
+//    transform: translate(0 , -300px);
+//  }
+//  50% {
+//    transform: translate(0 , -450px);
+//  }
+//  75% {
+//    transform: translate(0 , -500px);
+//  }
+//  100% {
+//    transform: translate(0 , -650px);
+//  }
+//}
 .animation3{
   position: absolute;
   left: 19%;
@@ -116,6 +186,7 @@
     font-size: 16px;
     color: $base-color;
     margin: 24px 0 0 0;
+    letter-spacing: 2px;
 
     .select-color{
       color: $primary-color;
@@ -151,15 +222,27 @@
     }
     .bg1{
       background-image: url("../../../assets/images/home/hover-1.png");
+      -webkit-background-image: url("../../../assets/images/home/hover-1.png");
+      -o-background-image: url("../../../assets/images/home/hover-1.png");
+      -moz-background-image: url("../../../assets/images/home/hover-1.png");
     }
     .bg2{
       background-image: url("../../../assets/images/home/hover-2.png");
+      -webkit-background-image: url("../../../assets/images/home/hover-2.png");
+      -o-background-image: url("../../../assets/images/home/hover-2.png");
+      -moz-background-image: url("../../../assets/images/home/hover-2.png");
     }
     .bg3{
       background-image: url("../../../assets/images/home/hover-3.png");
+      -webkit-background-image: url("../../../assets/images/home/hover-3.png");
+      -o-background-image: url("../../../assets/images/home/hover-3.png");
+      -moz-background-image: url("../../../assets/images/home/hover-3.png");
     }
     .bg4{
       background-image: url("../../../assets/images/home/hover-4.png");
+      -webkit-background-image: url("../../../assets/images/home/hover-4.png");
+      -o-background-image: url("../../../assets/images/home/hover-4.png");
+      -moz-background-image: url("../../../assets/images/home/hover-4.png");
     }
   }
 
@@ -173,41 +256,71 @@
     font-size: 14px;
     background: #ddeafa;
     position: relative;
-    transition: background-color 2s;
+    transition: background-color 0.8s;
+    -webkit-transition: background-color 0.8s;
+    -o-transition: background-color 0.8s;
+    -moz-transition: background-color 0.8s;
+
     span{
       display: inline-block;
       width: 75px;
       height: 75px;
       background: #fff;
-      border-radius: 50%;
+      -o-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
       position: absolute;
       left: 107px;
       top: -37px;
     }
     .bg1{
       background-image: url("../../../assets/images/home/m-1.png");
+      -moz-background-image: url("../../../assets/images/home/m-1.png");
+      -o-background-image: url("../../../assets/images/home/m-1.png");
+      -webkit-background-image: url("../../../assets/images/home/m-1.png");
       background-repeat: no-repeat;
       background-position: center;
-      transition: background-image 2s;
+      transition: background-image 0.5s;
+      -moz-transition: background-image 0.5s;
+      -o-transition: background-image 0.5s;
+      -webkit-transition: background-image 0.5s;
     }
     .bg2{
       background-image: url("../../../assets/images/home/m-2.png");
+      -moz-background-image: url("../../../assets/images/home/m-2.png");
+      -o-background-image: url("../../../assets/images/home/m-2.png");
+      -webkit-background-image: url("../../../assets/images/home/m-2.png");
       background-repeat: no-repeat;
       background-position: center;
-      transition: background-image 2s;
+      transition: background-image 0.5s;
+      -moz-transition: background-image 0.5s;
+      -o-transition: background-image 0.5s;
+      -webkit-transition: background-image 0.5s;
     }
     .bg3{
       background-image: url("../../../assets/images/home/m-3.png");
+      -moz-background-image: url("../../../assets/images/home/m-3.png");
+      -o-background-image: url("../../../assets/images/home/m-3.png");
+      -webkit-background-image: url("../../../assets/images/home/m-3.png");
       background-repeat: no-repeat;
       background-position: center;
-      transition: background-image 2s;
+      transition: background-image 0.5s;
+      -moz-transition: background-image 0.5s;
+      -o-transition: background-image 0.5s;
+      -webkit-transition: background-image 0.5s;
 
     }
     .bg4{
       background-image: url("../../../assets/images/home/m-4.png");
+      -moz-background-image: url("../../../assets/images/home/m-4.png");
+      -o-background-image: url("../../../assets/images/home/m-4.png");
+      -webkit-background-image: url("../../../assets/images/home/m-4.png");
       background-repeat: no-repeat;
       background-position: center;
-      transition: background-image 2s;
+      transition: background-image 0.5s;
+      -moz-transition: background-image 0.5s;
+      -o-transition: background-image 0.5s;
+      -webkit-transition: background-image 0.5s;
 
     }
   }
@@ -262,6 +375,7 @@
     //background: rgba(246, 253, 253, 0.8);
     background: #fff;
     height: 494px;
+    position: relative;
 
 
     .item-left, .item-right{
@@ -274,20 +388,20 @@
       padding: 0 5%;
 
       .all{
-        width: 500px;
-        height: 300px;
-        margin: 50px auto;
+        width: 660px;
+        height: 430px;
+        margin: 0px auto;
       }
 
       .bianxie{
-        width: 500px;
-        height: 300px;
-        margin: 85px auto;
+        width: 660px;
+        height: 400px;
+        margin: 15px auto;
       }
       .liti{
-        width: 500px;
-        height: 300px;
-        margin: 85px auto;
+        width: 660px;
+        height: 400px;
+        margin: 15px auto;
       }
 
     }
@@ -298,7 +412,7 @@
 
       .describe-one{
         padding: 0;
-        margin: 110px auto;
+        margin: 85px auto 0;
         font-size: 15px;
         color: #666;
         line-height: 45px;
@@ -307,6 +421,7 @@
           font-size: 30px;
           color: #000;
         }
+
       }
 
       .describe-two{
@@ -321,6 +436,10 @@
           color: #000;
         }
       }
+
+      .nbsp{
+        padding-left: 17px;
+      }
     }
 
   }
@@ -331,6 +450,9 @@
   width: 100%;
   height: 100px;
   background: url("../../../assets/images/product/own.png") no-repeat center;
+  -o-background: url("../../../assets/images/product/own.png") no-repeat center;
+  -moz-background: url("../../../assets/images/product/own.png") no-repeat center;
+  -webkit-background: url("../../../assets/images/product/own.png") no-repeat center;
 }
 
 // 行业动态
@@ -362,19 +484,26 @@
         width: 370px;
         height: 235px;
         transition: transform 1s ease 0s;
+        -o-transition: transform 1s ease 0s;
+        -moz-transition: transform 1s ease 0s;
+        -webkit-transition: transform 1s ease 0s;
 
       }
 
       .prople-decration{
-        height: 35px;
+        height: 45px;
         width: 100%;
         color: #fff;
-        font-size: $base-font-size;
+        font-size: 17px;
+        letter-spacing: 2px;
         margin: 0;
         text-align: center;
-        line-height: 35px;
+        line-height: 45px;
         background: rgba(0 , 0, 0, 0.4);
         transition: background 1s ease 0s;
+        -o-transition: background 1s ease 0s;
+        -moz-transition: background 1s ease 0s;
+        -webkit-transition: background 1s ease 0s;
         position: absolute;
         left: 0;
         bottom: 0;
@@ -384,6 +513,9 @@
     li:hover{
       img{
         transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
       }
       .prople-decration{
         background: rgba(0 , 0, 0, 0.8);
@@ -421,6 +553,9 @@
 .download-box{
   width: 100%;
   background: url("../../../assets/images/download/beijing.png") no-repeat center;
+  -webkit-background: url("../../../assets/images/download/beijing.png") no-repeat center;
+  -o-background: url("../../../assets/images/download/beijing.png") no-repeat center;
+  -moz-background: url("../../../assets/images/download/beijing.png") no-repeat center;
   background-size: 100% 100%;
 }
 

@@ -20,8 +20,8 @@
     li{
       float: left;
       height: 84px;
-      width: calc(25% - 40px);
-      margin: 0 20px;
+      width: calc(25% - 30px);
+      margin: 0 15px;
 
       span{
         display: inline-block;
@@ -37,6 +37,7 @@
         margin: 0;
         color: #73797c;
         font-size: 14px;
+        letter-spacing: 1px;
       }
 
     }
