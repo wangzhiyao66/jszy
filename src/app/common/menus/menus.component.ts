@@ -16,7 +16,7 @@ export class MenusComponent implements OnInit , OnDestroy {
     subscription: Subscription;
     constructor(private router: Router,
                 private route: ActivatedRoute,
-                private menuservice: MenusService) {
+                public menuservice: MenusService) {
     }
 
     ngOnInit() {

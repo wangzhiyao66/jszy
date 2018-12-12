@@ -9,6 +9,7 @@
   display: flex;
   top: 0;
   width: 100%;
+  min-width: 1280px;
   height: 80px;
   z-index: 100;
   //background: rgba( 0, 0, 0, 0.2);
@@ -16,9 +17,10 @@
 
 
   .nav{
-    max-width: 1200px;
+    width: 1200px;
     height: 80px;
     margin: 0 auto;
+    overflow-x: auto;
   }
 
   .nav-left, .nav-right{
@@ -41,7 +43,7 @@
   .nav-right {
     width: 920px;
     height: 80px;
-    margin-left: 40px;
+    margin-left: 2%;
     ul{
       float: left;
       height: 80px;

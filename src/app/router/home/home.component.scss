@@ -17,6 +17,7 @@
 // 轮播图片
 .sw_img{
   width: 100%;
+  //min-width: 1280px;
   max-height: 600px;
 }
 
@@ -159,7 +160,7 @@
 
 //内容区域
 .content{
-  max-width: 1200px;
+  width: 1200px;
   height: 914px;
   margin: 0 auto;
   //border: 1px solid red;
@@ -200,7 +201,7 @@
   padding: 0;
   margin: 60px 0 0 0;
   list-style: none !important;
-  max-width: 1200px;
+  width: 1200px;
   height: 666px;
 
   li{
@@ -352,7 +353,7 @@
 }
 // 产品列表
 .content-two{
-  max-width: 1200px;
+  width: 1200px;
   //height: 494px;
   margin: 0 auto 30px;
 
@@ -448,6 +449,7 @@
 // 专利
 .patent{
   width: 100%;
+  min-width: 1280px;
   height: 100px;
   background: url("../../../assets/images/product/own.png") no-repeat center;
   -o-background: url("../../../assets/images/product/own.png") no-repeat center;
@@ -458,16 +460,17 @@
 // 行业动态
 .doing-box{
   width: 100%;
+  min-width: 1280px;
   //background: url("../../../assets/images/news/bg.png") no-repeat left bottom;
   //background-size: 100% 100%;
 }
 .content-doing{
-  max-width: 1200px;
+  width: 1200px;
   height: 950px;
   margin: 0 auto;
 
   .industry-dynamics{
-    max-width: 1200px;
+    width: 1200px;
     list-style: none;
 
     li{
@@ -493,6 +496,7 @@
       .prople-decration{
         height: 45px;
         width: 100%;
+        min-width: 1280px;
         color: #fff;
         font-size: 17px;
         letter-spacing: 2px;
@@ -541,6 +545,7 @@
 
   .more{
     width: 100%;
+    min-width: 1280px;
     text-align: center;
     font-size: 15px;
     color:  #fff;
@@ -552,6 +557,7 @@
 // 下载区域
 .download-box{
   width: 100%;
+  min-width: 1280px;
   background: url("../../../assets/images/download/beijing.png") no-repeat center;
   -webkit-background: url("../../../assets/images/download/beijing.png") no-repeat center;
   -o-background: url("../../../assets/images/download/beijing.png") no-repeat center;
@@ -560,7 +566,7 @@
 }
 
 .download{
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   border: 1px solid transparent;
 
