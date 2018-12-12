@@ -19,12 +19,18 @@
   left: 9%;
   bottom: -122px;
   text-align: center;
-  //border: 1px solid red;
-  animation: animationo-one 0.8s ease 1s alternate forwards;
+  //animation: animationo-one 0.8s ease 1s alternate forwards;
   img{
     width: 80%;
     height: 80%;
   }
+}
+
+.animation1-img{
+  animation: animationo-one 0.5s ease 0.5s alternate forwards;
+}
+.animation2-img{
+  animation: animationo-one 0.5s ease 1s alternate forwards;
 }
 
 @keyframes animationo-one {

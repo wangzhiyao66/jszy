@@ -15,12 +15,14 @@ import {registerLocaleData} from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import {MenusModule} from './common/menus/menus.module';
 import {Code404Component} from './common/code404/code404.component';
+import {RouterComponent} from './router/router.component';
 
 registerLocaleData(zh);
 
 @NgModule({
     declarations: [
         AppComponent,
+        RouterComponent,
         Code404Component,
     ],
     imports: [
