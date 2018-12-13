@@ -71,7 +71,7 @@ export class HomeComponent implements OnInit {
             // coverflow 配置
             coverflowEffect: coverflowEffectConfig,
             // 前进后退按钮设置
-            navigation: navigationConfig
+            // navigation: navigationConfig
 
         };
     }
