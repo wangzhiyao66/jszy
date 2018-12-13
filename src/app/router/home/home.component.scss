@@ -16,7 +16,7 @@
 .sw_img{
   width: 100%;
   //min-width: 1280px;
-  max-height: 600px;
+  max-height: 750px;
 }
 
 .swiper-slide{
@@ -44,7 +44,7 @@
 //内容区域
 .content{
   width: 1200px;
-  height: 914px;
+  height: 860px;
   margin: 0 auto;
 }
 
@@ -139,10 +139,10 @@
     font-size: 14px;
     background: #ddeafa;
     position: relative;
-    transition: background-color 0.8s;
-    -webkit-transition: background-color 0.8s;
-    -o-transition: background-color 0.8s;
-    -moz-transition: background-color 0.8s;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
 
     .bgs{
       display: inline-block;
@@ -240,7 +240,7 @@
   margin: 0 auto 30px;
 
   .prode-show{
-    margin: 125px auto 0;
+    margin: 85px auto 0;
 
     .onshow{
       cursor: pointer;
