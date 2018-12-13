@@ -31,6 +31,8 @@ export class HomeComponent implements OnInit {
 
     config: SwiperConfigInterface;
     array = [ 1, 2, 3, 4 ];
+    moretext1: false;
+    moretext4: false;
 
     constructor() {
     }
@@ -42,6 +44,7 @@ export class HomeComponent implements OnInit {
          */
         this.config = {
             direction: 'horizontal',
+            // 左右箭头
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
