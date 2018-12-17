@@ -1,76 +1,102 @@
-<!--轮播图-->
-<div class="swiper-container" [swiper]='config'>
+<!-- 轮播图 -->
+<div class="swiper-container" [swiper]="config">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
-            <img class="sw_img" src="../../../assets/images/swiper/01.png" alt="">
+            <img
+                class="sw_img"
+                src="../../../assets/images/swiper/01.png"
+                alt=""
+            />
         </div>
         <div class="swiper-slide">
-            <img class="sw_img" src="../../../assets/images/swiper/02.png" alt="">
+            <img
+                class="sw_img"
+                src="../../../assets/images/swiper/02.png"
+                alt=""
+            />
         </div>
         <div class="swiper-slide">
-            <img class="sw_img" src="../../../assets/images/swiper/03.png" alt="">
+            <img
+                class="sw_img"
+                src="../../../assets/images/swiper/03.png"
+                alt=""
+            />
         </div>
         <div class="swiper-slide">
-            <img class="sw_img" src="../../../assets/images/swiper/04.png" alt="">
+            <img
+                class="sw_img"
+                src="../../../assets/images/swiper/04.png"
+                alt=""
+            />
         </div>
         <div class="swiper-slide">
-            <img class="sw_img" src="../../../assets/images/swiper/05.png" alt="">
+            <img
+                class="sw_img"
+                src="../../../assets/images/swiper/05.png"
+                alt=""
+            />
         </div>
-
     </div>
     <!-- 如果需要分页器 -->
     <div class="swiper-pagination"></div>
     <!-- 如果需要导航按钮 -->
-    <!--<div class="swiper-button-prev"></div>-->
-    <!--<div class="swiper-button-next"></div>-->
+    <!-- <div class="swiper-button-prev"></div> -->
+    <!-- <div class="swiper-button-next"></div> -->
 </div>
-<!--内容区域-->
+<!-- 内容区域 -->
 <div class="content">
     <div class="header">
         <div class="nav-title">公司<span>价</span>值观</div>
-        <div class="nav-content">中医可视化智能健康服务系统是由员
-            <span class="select-color">301</span> 医院基础医学研究所所长袁云娥教授率领的研发团队历经
-            <span class="select-color">20</span>年的研究开发而成。
+        <div class="nav-content">
+            中医可视化智能健康服务系统是由原
+            <span class="select-color">301</span>
+            医院基础医学研究所所长袁云娥教授率领的研发团队历经
+            <span class="select-color">20</span> 年的研究开发而成。
         </div>
     </div>
     <ul class="column">
         <li>
-            <img class="img-content" src="../../../assets/images/home/1.png" alt="">
+            <img
+                class="img-content"
+                src="../../../assets/images/home/1.png"
+                alt=""
+            />
             <div class="text-box">
                 <span class="bg1 bgs"></span>
                 <p class="text-header">指导思想</p>
                 <p class="text-content text-index">
-                    1. 坚持中华传统医学的文化和理论自信；<br>
-                    2. 坚持为大众健康服务的方向；<br>
+                    1. 坚持中华传统医学文化和理论自信；<br />
+                    2. 坚持为大众健康服务的方向；<br />
                     <span class="btn-text" *ngIf="!moretext1">
-                        3. 坚持以钱学森“人体系统科学理论”为 <br>
-                        指导，实现传统医学的创新与融合 、继 <br>
-                        . . .
-                        <span class="curson" (click)="moretext1 = true">更多 >></span>
+                        3. 坚持以钱学森“人体系统科学理论”为 <br />
+                        指导，实现传统医学的创新与融合 &nbsp;. . . <br />
+                        <span class="curson" (click)="moretext1 = true"
+                            >更多 >></span
+                        >
                     </span>
                     <span class="btn-text" *ngIf="moretext1">
-                        3. 坚持以钱学森“人体系统科学理论”为指导，实现传统医学的创新与融合、继承与发展；<br>
-                        4. 坚持生命与自然的和谐统一；<br>
-                        5. 坚持中华传统医学科学的认识论和方法论；<br>
-                        6. 坚持不懈的努力，推动中华传统医学走向世界，为全人类服务。<br>
+                        3.
+                        坚持以钱学森“人体系统科学理论”为指导，实现传统医学的创新与融合、继承与发展；<br />
+                        4. 坚持生命与自然的和谐统一；<br />
+                        5. 坚持中华传统医学科学的认识论和方法论；<br />
+                        6.
+                        坚持不懈的努力，推动中华传统医学走向世界，为全人类服务。<br />
                     </span>
-
-
                 </p>
             </div>
         </li>
         <li>
-            <img src="../../../assets/images/home/2.png" alt="">
+            <img src="../../../assets/images/home/2.png" alt="" />
             <div class="text-box">
                 <span class="bg2  bgs"></span>
                 <p class="text-header">发展宗旨</p>
                 <p class="text-content">
-                    为社会基层服务，为大众健康服务,为国内外所有的医疗机构、健康管理机构、家庭和个人服务，是中医可视化技术应用与发展的根本宗旨。
+                    为社会基层服务，为大众健康服务，为国内外所有的医疗机构、健康管理机构、家庭和个人服务，是中医可视化技术应用与发展的根本宗旨。
                 </p>
             </div>
         </li>
         <li>
-            <img src="../../../assets/images/home/3.png" alt="">
+            <img src="../../../assets/images/home/3.png" alt="" />
             <div class="text-box">
                 <span class="bg3  bgs"></span>
                 <p class="text-header">发展目标</p>
@@ -80,38 +106,40 @@
             </div>
         </li>
         <li>
-            <img src="../../../assets/images/home/4.png" alt="">
+            <img src="../../../assets/images/home/4.png" alt="" />
             <div class="text-box">
                 <span class="bg4  bgs"></span>
                 <p class="text-header">经营理念</p>
                 <p class="text-content">
-                    以国内外市场为目标，以大区域、大行业、大系统、大链接、大连锁为主要方向，实现高技术、低价位、广覆盖、惠民服务。使中医可视化技术走进千家万户，成为人们日常生活的基本工具和生活内容。
+                    以国内外市场为目标，以大区域大行业、大系统、大链接、大连锁为主要方向，实现高技术、低价位、广覆盖、惠民服务。使中医可视化技术走进千家万户，成为人们日常生活的基本工具和生活内容。
                 </p>
             </div>
         </li>
-
     </ul>
 </div>
-<!--内容区域二-->
+<!-- 内容区域二 -->
 <div class="content-two">
     <div class="header">
         <div class="nav-title">产品体系</div>
-        <div class="nav-content">中医可视化设备系统检测精度可达到
+        <div class="nav-content">
+            中医可视化设备系统检测精度可达到
             <span class="select-color">0.1</span> 摄氏度，截至今日已经获得
             <span class="select-color">12</span> 项软件著作权
         </div>
     </div>
     <div class="prode-show">
-        <img class="onshow" src="../../../assets/images/product/product4.png" alt="全仓体式">
-        <div class="more-link">
-            <span></span>
-        </div>
+        <img
+            class="onshow"
+            src="../../../assets/images/product/product4.png"
+            alt="全仓体式"
+        />
+        <div class="more-link"><span></span></div>
     </div>
 </div>
-<!--专利区-->
+<!-- 专利区 -->
 <div class="patent"></div>
 
-<!--内容区域三-->
+<!-- 内容区域三 -->
 <div class="doing-box">
     <div class="content-doing">
         <div class="header" style="margin-bottom: 30px;">
@@ -122,57 +150,68 @@
         </div>
         <ul class="industry-dynamics">
             <li>
-                <img src="../../../assets/images/news/xidada.png" alt="习近平总书记视察">
-                <p class="prople-decration">2015年春节习近平总书记视察我公司产品</p>
+                <img
+                    src="../../../assets/images/news/xidada.png"
+                    alt="习近平总书记视察"
+                />
+                <p class="prople-decration">
+                    2015年春节习近平总书记视察我公司产品
+                </p>
             </li>
             <li>
-                <img src="../../../assets/images/news/shanxi.png">
+                <img src="../../../assets/images/news/shanxi.png" />
                 <p class="prople-decration">山西省委书记参观科技成果</p>
             </li>
             <li>
-                <img src="../../../assets/images/news/wangguoqiang.png">
+                <img src="../../../assets/images/news/wangguoqiang.png" />
                 <p class="prople-decration">王国强部长参观科技成果</p>
             </li>
             <li>
-                <img src="../../../assets/images/news/baishuzhong.png">
+                <img src="../../../assets/images/news/baishuzhong.png" />
                 <p class="prople-decration">白书忠部长授予证书</p>
             </li>
             <li>
-                <img src="../../../assets/images/news/yumengsun.png">
+                <img src="../../../assets/images/news/yumengsun.png" />
                 <p class="prople-decration">俞梦孙院士关注可视化技术</p>
             </li>
             <li>
-                <img src="../../../assets/images/news/guojiashejidui-.png">
+                <img src="../../../assets/images/news/guojiashejidui-.png" />
                 <p class="prople-decration">为国家射击队进行体检</p>
             </li>
             <li>
-                <img src="../../../assets/images/news/manbingsiyu.png">
-                <p class="prople-decration">"慢病匹欲， 先抗疲劳"，健康项目启动仪式</p>
+                <img src="../../../assets/images/news/manbingsiyu.png" />
+                <p class="prople-decration">
+                    "慢病四预， 先抗疲劳"，健康项目启动仪式
+                </p>
             </li>
             <li>
-                <img src="../../../assets/images/news/feizhou.png">
+                <img src="../../../assets/images/news/feizhou.png" />
                 <p class="prople-decration">为非洲部分医疗人员授课</p>
             </li>
             <li class="more-news">
-                <i nz-icon type="right-circle" theme="outline" class="bg-icon"></i>
+                <i
+                    nz-icon
+                    type="right-circle"
+                    theme="outline"
+                    class="bg-icon"
+                ></i>
                 <div class="more">更多重要资讯</div>
             </li>
         </ul>
     </div>
 </div>
-<!--ondownload-->
+<!-- ondownload -->
 <div class="download-box">
     <div class="download">
         <div class="header" style="margin-bottom: 30px;">
             <div class="nav-title">立即下载</div>
             <div class="nav-content">
-                请您扫描下方二维码，下载APP并关注公共号
+                请您扫描下方二维码，下载APP并关注公众号
             </div>
             <div class="download-img">
-                <img src="../../../assets/images/download/weweima.png" alt="">
+                <img src="../../../assets/images/download/weweima.png" alt="" />
             </div>
         </div>
     </div>
 </div>
 <app-footer></app-footer>
-
