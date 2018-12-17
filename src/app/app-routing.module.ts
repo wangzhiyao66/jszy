@@ -50,7 +50,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [RouterModule.forRoot(routes,{
+        // 导航开始前更新路由
+        urlUpdateStrategy: 'eager',
+        scrollPositionRestoration: 'top'
+    })],
     exports: [RouterModule]
 })
 export class AppRoutingModule { }

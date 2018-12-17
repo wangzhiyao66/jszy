@@ -74,9 +74,5 @@ export class HomeComponent implements OnInit {
             // navigation: navigationConfig
 
         };
-        this.notify();
-    }
-    notify(): void {
-        console.log('notify');
     }
 }

@@ -4,32 +4,12 @@
   product-serve works!
 </p><p>
   product-serve works!
-</p><p>
-  product-serve works!
-</p><p>
-  product-serve works!
-</p><p>
-  product-serve works!
-</p><p>
-  product-serve works!
-</p><p>
-  product-serve works!
-</p><p>
-  product-serve works!
-</p><p>
-  product-serve works!
-</p><p>
-  product-serve works!
-</p><p>
-  product-serve works!
-</p><p>
-  product-serve works!
-</p><p>
-  product-serve works!
-</p><p>
-  product-serve works!
-</p><p>
-  product-serve works!
-</p><p>
+</p>
+<p>
   product-serve works!
 </p>
+<!--<div [@triggerName]="expression">...</div>;-->
+<button nz-button nzType="primary" (mouseenter)="isOpen = false" (mouseleave)="isOpen = true" >1232344</button>
+<div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">
+  <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
+</div>

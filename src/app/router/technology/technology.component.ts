@@ -12,11 +12,7 @@ export class TechnologyComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.notify();
     }
 
-    notify(): void {
-        console.log('notify');
-    }
 
 }
