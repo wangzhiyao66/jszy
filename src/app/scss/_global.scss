@@ -6,3 +6,29 @@ $menus-color: #3975ed !default;
 $base-font-size: 13px;
 $base-color: #333;
 $primary-color: #327ce2 !default;
+
+// 锚点样式
+::ng-deep .ant-anchor-ink {
+  display: none;
+}
+
+.links {
+  height: 88px;
+  line-height: 88px;
+  padding: 0;
+  margin: 0;
+}
+
+.links .ant-anchor-link-title {
+  font-size: 26px !important;
+  color: #000 !important;
+  text-decoration: none;
+}
+
+.links .ant-anchor-link-title:hover {
+  cursor: pointer;
+  background: $menus-color;
+  span {
+    color: #fff;
+  }
+}

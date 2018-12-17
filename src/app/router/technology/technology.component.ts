@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-technology',
+  encapsulation: ViewEncapsulation.None,
   templateUrl: './technology.component.html',
   styleUrls: ['./technology.component.scss']
 })

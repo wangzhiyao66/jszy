@@ -45,6 +45,7 @@ export class MenusComponent implements OnInit , OnDestroy {
 
     output() {
         // 退出功能
+        // this.menuservice.menus[5].hidden = false;
         this.but_title = false;
         window.history.back();
 
