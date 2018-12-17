@@ -1,16 +1,22 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 
 @Component({
-  selector: 'app-technology',
-  encapsulation: ViewEncapsulation.None,
-  templateUrl: './technology.component.html',
-  styleUrls: ['./technology.component.scss']
+    selector: 'app-technology',
+    encapsulation: ViewEncapsulation.None,
+    templateUrl: './technology.component.html',
+    styleUrls: ['./technology.component.scss']
 })
 export class TechnologyComponent implements OnInit {
 
-  constructor() { }
+    constructor() {
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+        this.notify();
+    }
+
+    notify(): void {
+        console.log('notify');
+    }
 
 }

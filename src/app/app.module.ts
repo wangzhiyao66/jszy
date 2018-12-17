@@ -16,6 +16,7 @@ import zh from '@angular/common/locales/zh';
 import {MenusModule} from './common/menus/menus.module';
 import {Code404Component} from './common/code404/code404.component';
 import {RouterComponent} from './router/router.component';
+import { ScrollTopComponent } from './common/scroll-top/scroll-top.component';
 
 registerLocaleData(zh);
 
@@ -24,6 +25,7 @@ registerLocaleData(zh);
         AppComponent,
         RouterComponent,
         Code404Component,
+        ScrollTopComponent,
     ],
     imports: [
         BrowserModule,
