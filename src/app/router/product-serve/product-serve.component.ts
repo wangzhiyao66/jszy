@@ -20,7 +20,6 @@ import {translateStatement} from '@angular/compiler-cli/src/ngtsc/translator';
                 opacity: 1,
                 backgroundColor: 'green',
                 transform: 'translateY(-25px)',
-
             })),
             transition('open => closed', [
                 animate('1s')

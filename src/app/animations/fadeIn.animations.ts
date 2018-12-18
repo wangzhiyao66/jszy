@@ -4,12 +4,10 @@ export const  fadeIn = trigger('fadeIn', [
     state('open', style({
         opacity: 1,
         transform: 'translateY(80px)',
-        // offset: 0 ,
     })),
     state('closed', style({
         opacity: 1,
         transform: 'translateY(-80px)',
-        // offset: 1 ,
 
     })),
     transition('open => closed', [

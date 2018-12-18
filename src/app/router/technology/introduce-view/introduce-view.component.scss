@@ -1,0 +1,54 @@
+.introduce-view {
+  width: 100%;
+  min-width: 1200px;
+  border: 1px solid transparent;
+  background: url('../../../../assets/images/overview/introduce/introducebg.png') no-repeat center bottom;
+  background-size: 100%;
+}
+
+.introduce-content {
+  width: 1200px;
+  height: 730px;
+  margin: 0 auto;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .title {
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+  }
+
+  .contetn-text {
+    font-size: 15px;
+    color: #666;
+    text-indent: 65px;
+    margin-top: 46px;
+    line-height: 50px;
+  }
+
+// 介绍的展示列表
+  .title-lsit{
+    margin-top: 36px;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 173px;
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    li {
+      list-style: none;
+      display: inline-block;
+    }
+  }
+
+}

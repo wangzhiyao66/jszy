@@ -44,16 +44,16 @@
     height: 550px;
   }
 }
-@media screen and (max-width: 992px) {
-  .banner-box{
-    height: 450px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .banner-box{
-    height: 350px;
-  }
-}
+//@media screen and (max-width: 992px) {
+//  .banner-box{
+//    height: 450px;
+//  }
+//}
+//@media only screen and (max-width: 768px) {
+//  .banner-box{
+//    height: 350px;
+//  }
+//}
 // 描点
 .nav-anchor{
   width: 80%;
@@ -72,9 +72,13 @@
   }
 
 }
+// 描点用于控制展示的视图
 #introduce, #team, #course, #Achievements, #active, #story{
   width: 100%;
   padding-top: 80px;
-  height: 550px;
-  border: 1px solid red;
+  //border: 1px solid transparent;
+}
+
+#team {
+  padding: 0 !important;
 }

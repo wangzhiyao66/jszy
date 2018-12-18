@@ -11,44 +11,44 @@
 <!--<div class='nav-box'>-->
 <div class="nav-anchor">
     <div nz-row>
-        <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="8" [nzMd]="8" [nzXs]="12">
+        <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
             <div class="gutter-box">
-                <nz-anchor [nzAffix]="false">
+                <nz-anchor [nzAffix]="false" [nzBounds]="80">
                     <nz-link nzHref="#introduce" class="links" nzTitle="技术介绍"></nz-link>
                 </nz-anchor>
             </div>
         </div>
-        <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="8" [nzMd]="8" [nzXs]="12">
+        <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
             <div class="gutter-box">
-                <nz-anchor [nzAffix]="false">
+                <nz-anchor [nzAffix]="false" [nzBounds]="80">
                     <nz-link nzHref="#team" class="links" nzTitle="研发团队"></nz-link>
                 </nz-anchor>
             </div>
         </div>
-        <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="8" [nzMd]="8" [nzXs]="12">
+        <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
             <div class="gutter-box">
-                <nz-anchor [nzAffix]="false">
+                <nz-anchor [nzAffix]="false" [nzBounds]="80">
                     <nz-link nzHref="#course" class="links" nzTitle="研发历程"></nz-link>
                 </nz-anchor>
             </div>
         </div>
-        <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="8" [nzMd]="8" [nzXs]="12">
+        <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
             <div class="gutter-box">
-                <nz-anchor [nzAffix]="false">
+                <nz-anchor [nzAffix]="false" [nzBounds]="80">
                     <nz-link nzHref="#Achievements" class="links" nzTitle="研发成果"></nz-link>
                 </nz-anchor>
             </div>
         </div>
-        <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="8" [nzMd]="8" [nzXs]="12">
+        <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
             <div class="gutter-box">
-                <nz-anchor [nzAffix]="false">
+                <nz-anchor [nzAffix]="false" [nzBounds]="80">
                     <nz-link nzHref="#active" class="links" nzTitle="科研活动"></nz-link>
                 </nz-anchor>
             </div>
         </div>
-        <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="8" [nzMd]="8" [nzXs]="12">
+        <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
             <div class="gutter-box">
-                <nz-anchor [nzAffix]="false">
+                <nz-anchor [nzAffix]="false" [nzBounds]="80">
                     <nz-link nzHref="#story" class="links" nzTitle="红外故事"></nz-link>
                 </nz-anchor>
             </div>
@@ -59,11 +59,13 @@
 
 <!--技术介绍-->
 <div id="introduce">
-    <p>技术介绍</p>
+    <app-introduce-view></app-introduce-view>
 </div>
 <!--研发团队-->
 <div id="team">
-    <p>研发团队</p>
+    <app-team-view></app-team-view>
+    <!--专家顾问-->
+    <app-expert-advisor></app-expert-advisor>
 </div>
 <!--研发历程-->
 <div id="course">
