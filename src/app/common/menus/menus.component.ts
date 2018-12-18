@@ -2,11 +2,15 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {MenusService} from './menus.service';
 import {fromEvent, Subscription} from 'rxjs';
+import {fadeIn} from '../../animations/fadeIn.animations';
 
 @Component({
     selector: 'app-menus',
     templateUrl: './menus.component.html',
-    styleUrls: ['./menus.component.scss']
+    styleUrls: ['./menus.component.scss'],
+    animations: [
+        fadeIn
+    ]
 })
 export class MenusComponent implements OnInit , OnDestroy {
     but_title: Boolean = false;
@@ -35,7 +39,12 @@ export class MenusComponent implements OnInit , OnDestroy {
 
             });
     }
-
+    onmenuin(i) {
+        this.menuservice.menus[i].animationfalg = true;
+    }
+    onmenuleave(i) {
+        this.menuservice.menus[i].animationfalg = false;
+    }
 
     login() {
         // 登录功能

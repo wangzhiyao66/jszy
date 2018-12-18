@@ -77,14 +77,12 @@
       width: 106px;
       height: 80px;
       background: #fff;
+      //background: rgba(0, 0, 0, 0.4);
       color: $menus-color;
     }
     .line:hover{
       .title{
         color: $menus-color;
-      }
-      .animation-bg {
-        animation: myfirst 0.5 ease 0.5s alternate forwards;
       }
     }
 
@@ -126,58 +124,10 @@
     }
 
   }
-  .login:hover{
-    .animation-bg {
-      animation: myfirst 0.5 ease 0.5s alternate forwards;
-    }
-  }
   .animation-bg:hover{
     .btn{
       color: $menus-color;
       border-color: $menus-color;
     }
   }
-
-  .oncolse {
-    .animation-bg {
-      animation: myclose 0.5 ease 0.5s alternate forwards;
-    }
-  }
-  // 时动画进入
-  @keyframes myfirst
-  {
-    0% {transform: translate(0px , 0px)}
-    25% {transform: translate(0px , 40px)}
-    50% {transform: translate(0px , 80px)}
-    75% {transform: translate(0px , 120px)}
-    100% {transform: translate(0px , 160px)}
-  }
-
-  @-moz-keyframes myfirst /* Firefox */
-  {
-    0% {transform: translate(0px , 0px)}
-    25% {transform: translate(0px , 40px)}
-    50% {transform: translate(0px , 80px)}
-    75% {transform: translate(0px , 120px)}
-    100% {transform: translate(0px , 160px)}
-  }
-
-  @-webkit-keyframes myfirst /* Safari 和 Chrome */
-  {
-    0% {transform: translate(0px , 0px)}
-    25% {transform: translate(0px , 40px)}
-    50% {transform: translate(0px , 80px)}
-    75% {transform: translate(0px , 120px)}
-    100% {transform: translate(0px , 160px)}
-  }
-
-  @-o-keyframes myfirst /* Opera */
-  {
-    0% {transform: translate(0px , 0px)}
-    25% {transform: translate(0px , 40px)}
-    50% {transform: translate(0px , 80px)}
-    75% {transform: translate(0px , 120px)}
-    100% {transform: translate(0px , 160px)}
-  }
-
 }
