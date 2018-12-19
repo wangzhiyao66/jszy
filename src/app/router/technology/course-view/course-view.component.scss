@@ -1,0 +1,130 @@
+
+.course-view {
+  background: url("../../../../assets/images/overview/course/coursebg.png") no-repeat left top;
+  border: 1px solid transparent;
+}
+
+.course-content {
+  width: 1200px;
+  height: 3900px;
+  margin: 0px auto;
+  //border: 1px solid red;
+
+  .title {
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    margin: 80px 0 0 0;
+  }
+
+  .start {
+    text-align: center;
+    margin: 20px auto 0;
+  }
+
+  .history {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .inblock{
+    display: inline-block;
+  }
+  .title-name {
+    display: inline-block;
+    font-size: 18px;
+    color: #1d4eb0;
+    margin: 45px 0 0;
+  }
+
+  .history-left {
+    border-right: 1px dashed dodgerblue;
+
+    .title-year{
+      width: 100%;
+      font-size: 24px;
+      color: #0675bf;
+      margin: 45px 0 0;
+      border-bottom: 1px dashed dodgerblue;
+      position: relative;
+
+      b{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(14,98,172,0.8);
+        position: absolute;
+        bottom: -5px;
+        right: -5px;
+      }
+    }
+    .text{
+      width: 100%;
+      padding: 20px 0;
+      font-size: 15px;
+      color: #333;
+      padding-right: 30px;
+    }
+    .title-description{
+      display: flex;
+      flex: 1;
+      flex-wrap: wrap;
+      flex-direction: row;
+      flex-shrink: 0.8;
+      justify-content: space-between;
+      padding-right: 30px;
+
+    }
+  }
+
+
+  .history-right {
+
+    padding-top: 150px;
+    .title-name {
+      display: inline-block;
+      font-size: 18px;
+      color: #1d4eb0;
+      margin: 45px 0 0;
+      padding-left: 30px;
+    }
+
+    .title-year{
+      width: 100%;
+      font-size: 24px;
+      color: #0675bf;
+      margin: 100px 0 0;
+      padding-left: 30px;
+      border-bottom: 1px dashed dodgerblue;
+      position: relative;
+
+      b{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(14,98,172,0.8);
+        position: absolute;
+        bottom: -5px;
+        left: -5px;
+      }
+    }
+    .text{
+      width: 100%;
+      padding: 20px 0;
+      font-size: 15px;
+      color: #333;
+      padding-left: 30px;
+    }
+    .title-description{
+      display: flex;
+      flex: 1;
+      flex-wrap: wrap;
+      flex-direction: row;
+      flex-shrink: 0.8;
+      justify-content: space-between;
+      padding-left: 30px;
+
+    }
+  }
+
+}

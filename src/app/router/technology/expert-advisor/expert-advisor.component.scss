@@ -46,6 +46,7 @@
     position: relative;
     cursor: pointer;
     text-align: center;
+    border-radius: 10px;
 
     .name {
       text-align: center;
@@ -59,7 +60,8 @@
     }
 
     &:hover {
-
+      transform:  translateY( -10px );
+      box-shadow: 5px 8px 12px 0 #cad3d8;
       .name {
         color: #327ce2;
       }
