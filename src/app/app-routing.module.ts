@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
 import {Code404Component} from './common/code404/code404.component';
 import {RouterComponent} from './router/router.component';
 
@@ -50,11 +50,12 @@ const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes,{
-        // 导航开始前更新路由
+    imports: [RouterModule.forRoot(routes, {
         urlUpdateStrategy: 'eager',
-        scrollPositionRestoration: 'top'
+        scrollPositionRestoration: 'top',
+        anchorScrolling: 'enabled'
     })],
     exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

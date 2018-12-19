@@ -1,3 +1,22 @@
-<p>
-  expert-advisor works!
-</p>
+<div class="advisor-view">
+    <div class="advissor-content">
+        <p class="title">专家顾问团队</p>
+        <div class="title-lsit">
+            <ul>
+                <li *ngFor="let item of proplelist">
+                    <img src="{{ item.url }}">
+                    <p class="name">{{ item.name }}</p>
+                </li>
+            </ul>
+            <ul *ngIf="showlist" [@advisor]="'active'">
+                <li *ngFor="let item of morelist">
+                    <img src="{{ item.url }}">
+                    <p class="name">{{ item.name }}</p>
+                </li>
+            </ul>
+        </div>
+        <div class="more">
+            <button nz-button nzType="primary" (click)="addshow()">{{showlist ? '收起' : '展开'}}</button>
+        </div>
+    </div>
+</div>

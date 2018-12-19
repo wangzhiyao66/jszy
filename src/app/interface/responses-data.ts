@@ -6,3 +6,9 @@ export interface ResponsesData {
     total?: number;
     success?: string;
 }
+export interface OriginData {
+    id: number;
+    name: string;
+    url: string;
+    description: string;
+}

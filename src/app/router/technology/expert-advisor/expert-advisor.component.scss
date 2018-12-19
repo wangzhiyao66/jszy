@@ -1,0 +1,81 @@
+
+.advisor-view {
+  width: 100%;
+  background: rgba(233, 236, 239, 1);
+}
+
+.advissor-content {
+  width: 1200px;
+  //height: 700px;
+  margin: 0 auto;
+  border: 1px solid transparent;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .title {
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+}
+
+// 介绍的展示列表
+.title-lsit {
+  margin-top: 36px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-shrink: 0.8;
+    justify-content: space-between;
+  }
+
+  li {
+    list-style: none;
+    margin-top: 25px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+
+    .name {
+      text-align: center;
+      font-size: 19px;
+      color: #000;
+      display: block;
+      position: absolute;
+      bottom: 18px;
+      left: 0;
+      right: 0;
+    }
+
+    &:hover {
+
+      .name {
+        color: #327ce2;
+      }
+
+    }
+  }
+}
+
+.more {
+  width: 100%;
+  text-align: center;
+
+  button {
+    margin: 50px auto;
+    width: 130px;
+    border-radius: 0;
+  }
+
+}

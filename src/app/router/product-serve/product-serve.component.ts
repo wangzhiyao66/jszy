@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import {translateStatement} from '@angular/compiler-cli/src/ngtsc/translator';
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-product-serve',
@@ -34,7 +35,7 @@ export class ProductServeComponent implements OnInit {
     isOpen = true;
 
 
-    constructor() {
+    constructor(private router: Router) {
     }
 
     ngOnInit() {
@@ -42,6 +43,11 @@ export class ProductServeComponent implements OnInit {
 
     toggle() {
         this.isOpen = !this.isOpen;
+    }
+
+    goto() {
+        this.router.navigate(['/technology'], { fragment: 'introduce' });
+        // this.router.navigate(['/technology'], { fragment: 'introduce' , skipLocationChange: true });
     }
 
 }

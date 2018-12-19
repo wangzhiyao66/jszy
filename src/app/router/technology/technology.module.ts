@@ -8,6 +8,8 @@ import { FooterModule } from 'src/app/common/footer/footer.module';
 import { IntroduceViewComponent } from './introduce-view/introduce-view.component';
 import { TeamViewComponent } from './team-view/team-view.component';
 import { ExpertAdvisorComponent } from './expert-advisor/expert-advisor.component';
+import {TechnologyServiceService} from './technology-service.service';
+import { CourseViewComponent } from './course-view/course-view.component';
 
 @NgModule({
     declarations: [
@@ -15,6 +17,7 @@ import { ExpertAdvisorComponent } from './expert-advisor/expert-advisor.componen
         IntroduceViewComponent,
         TeamViewComponent,
         ExpertAdvisorComponent,
+        CourseViewComponent,
     ],
     imports: [
         CommonModule,
@@ -25,6 +28,9 @@ import { ExpertAdvisorComponent } from './expert-advisor/expert-advisor.componen
     entryComponents: [
       FooterComponent
     ],
+    providers: [
+        TechnologyServiceService
+    ]
 })
 export class TechnologyModule {
 }
