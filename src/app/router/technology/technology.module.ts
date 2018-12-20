@@ -10,6 +10,9 @@ import { TeamViewComponent } from './team-view/team-view.component';
 import { ExpertAdvisorComponent } from './expert-advisor/expert-advisor.component';
 import {TechnologyServiceService} from './technology-service.service';
 import { CourseViewComponent } from './course-view/course-view.component';
+import { AchievementsComponent } from './achievements/achievements.component';
+import { StoryRedComponent } from './story-red/story-red.component';
+import { ActiveComponent } from './active/active.component';
 
 @NgModule({
     declarations: [
@@ -18,6 +21,9 @@ import { CourseViewComponent } from './course-view/course-view.component';
         TeamViewComponent,
         ExpertAdvisorComponent,
         CourseViewComponent,
+        AchievementsComponent,
+        StoryRedComponent,
+        ActiveComponent,
     ],
     imports: [
         CommonModule,

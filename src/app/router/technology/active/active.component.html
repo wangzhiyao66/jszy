@@ -1,0 +1,11 @@
+<div class="active-view">
+    <div class="active-content">
+        <p class="title">科研活动</p>
+        <ul>
+            <li *ngFor="let item of activelist">
+                <img src="{{ item.url }}">
+                <p class="name">{{ item.title }}</p>
+            </li>
+        </ul>
+    </div>
+</div>

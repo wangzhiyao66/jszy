@@ -1,0 +1,12 @@
+<div class="story-view">
+    <div class="story-content">
+        <p class="title">红外故事</p>
+        <ul>
+            <li *ngFor="let item of storylist">
+                <img src="{{ item.url }}">
+                <p class="name">{{ item.title }}</p>
+            </li>
+        </ul>
+    </div>
+
+</div>

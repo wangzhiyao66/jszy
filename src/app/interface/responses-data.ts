@@ -10,5 +10,6 @@ export interface OriginData {
     id: number;
     name: string;
     url: string;
-    description: string;
+    description?: string;
+    title?: string;
 }

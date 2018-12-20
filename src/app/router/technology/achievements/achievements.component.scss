@@ -1,0 +1,72 @@
+@import "~src/app/scss/_index";
+.achievments-view {
+  width: 100%;
+  background: #fff;
+}
+
+.achievments-content {
+  width: 1200px;
+  margin: 0 auto;
+  //border: 1px solid red;
+
+  .title {
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    margin: 80px 0 0 0;
+  }
+
+  .title-name {
+    font-size: 18px;
+    color: #1d4eb0;
+    margin: 20px 0;
+  }
+
+  .text {
+    letter-spacing: 4px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 30px 0 0;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-shrink: 0.8;
+    justify-content: space-between;
+  }
+
+  li {
+    list-style: none;
+    margin-top: 25px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+
+    .name {
+      font-size: 19px;
+      color: #666;
+      margin: 0;
+      padding: 0 15px;
+      @include truncate();
+      position: absolute;
+      bottom: 18px;
+      left: 0;
+      right: 0;
+    }
+
+    &:hover {
+      @include shadow();
+      .name {
+        color: #333;
+      }
+
+    }
+  }
+
+}
+.img-box{
+  margin: 40px auto 88px;
+}

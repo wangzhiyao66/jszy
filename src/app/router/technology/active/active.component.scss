@@ -1,0 +1,57 @@
+@import "~src/app/scss/_index";
+
+.active-view {
+  height: 850px;
+  background: url("../../../../assets/images/overview/active/activebg.png") no-repeat center;
+  border: 1px solid transparent;
+}
+
+.active-content {
+  width: 1200px;
+  margin: 0 auto;
+  .title {
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    margin: 80px 0 0 0;
+  }
+  ul {
+    padding: 0;
+    margin: 50px 0 0;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-shrink: 0.8;
+    justify-content: space-between;
+  }
+
+  li {
+    list-style: none;
+    margin-top: 25px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+
+    .name {
+      font-size: 14px;
+      color: #666;
+      margin: 0;
+      padding: 0 15px;
+      @include truncate();
+      position: absolute;
+      bottom: 18px;
+      left: 0;
+      right: 0;
+    }
+
+    &:hover {
+      @include shadow();
+      .name {
+        color: #333;
+      }
+
+    }
+  }
+}
