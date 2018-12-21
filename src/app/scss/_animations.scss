@@ -1,0 +1,50 @@
+/* 技术概览 进场动画*/
+.pulse {
+    -webkit-animation: pulse 1s 1.5s ease ;
+    -ms-animation: pulse 1s 1.5s ease ;
+    -moz-animation: pulse 1s 1.5s ease ;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        opacity: .2;
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        opacity: .4;
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: .2;
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        opacity: .4;
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+

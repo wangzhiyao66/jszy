@@ -1,7 +1,7 @@
 <!-- banner图 -->
 <div class='overview'>
     <div class="banner-box">
-            <div class="description">
+            <div class="description" [@advisor]="'active'">
                 <p>技术概览</p>
                 <span>红外医学中医可视化，中华传统医学上的里程碑！</span>
             </div>
@@ -9,7 +9,7 @@
 </div>
 <!-- 导航栏描点 -->
 <!--<div class='nav-box'>-->
-<div class="nav-anchor">
+<div class="nav-anchor" #anchor [class.pulse]="true" [@advisor]="'active'">
     <div nz-row>
         <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
             <div class="gutter-box">
@@ -59,21 +59,21 @@
 
 <!--技术介绍-->
 <div id="introduce">
-    <app-introduce-view></app-introduce-view>
+    <app-introduce-view [docuheight]="docuHeight" [clientHeight]="clientHeight"></app-introduce-view>
 </div>
 <!--研发团队-->
 <div id="team">
-    <app-team-view></app-team-view>
+    <app-team-view [docuheight]="docuHeight" [clientHeight]="clientHeight"></app-team-view>
     <!--专家顾问-->
-    <app-expert-advisor></app-expert-advisor>
+    <app-expert-advisor [docuheight]="docuHeight" [clientHeight]="clientHeight"></app-expert-advisor>
 </div>
 <!--研发历程-->
 <div id="course">
-    <app-course-view></app-course-view>
+    <app-course-view [docuheight]="docuHeight" [clientHeight]="clientHeight"></app-course-view>
 </div>
 <!--研发成果-->
 <div id="Achievements">
-    <app-achievements></app-achievements>
+    <app-achievements [docuheight]="docuHeight" [clientHeight]="clientHeight"></app-achievements>
 </div>
 <!--科研活动-->
 <div id="active">
