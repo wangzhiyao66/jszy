@@ -14,8 +14,8 @@ export class IntroduceViewComponent implements OnInit , OnChanges {
 
     // 获取本地变量
     @ViewChild('introduce') introduce: ElementRef;
-    @Input() docuheight: number;
-    @Input() clientHeight: number;
+    // @Input() docuheight: number;
+    // @Input() clientHeight: number;
 
     imageUrl: object[] = [
         {url: '../../../../../assets/images/overview/introduce/1.png'},
@@ -26,7 +26,7 @@ export class IntroduceViewComponent implements OnInit , OnChanges {
         {url: '../../../../../assets/images/overview/introduce/6.png'},
         {url: '../../../../../assets/images/overview/introduce/7.png'},
     ];
-    introducefalg = false;
+    // introducefalg = false;
     constructor() {
     }
 
@@ -39,10 +39,10 @@ export class IntroduceViewComponent implements OnInit , OnChanges {
         // console.log('子组件高度', this.introduce.nativeElement.offsetTop);
         // console.log('输入属性', this.docuheight);
         // console.log('可视区域', this.clientHeight);
-        const target: number = this.docuheight + this.clientHeight * 0.7;
-        if (this.introduce.nativeElement.offsetTop <= target) {
-            this.introducefalg = true;
-        }
+        // const target: number = this.docuheight + this.clientHeight * 0.7;
+        // if (this.introduce.nativeElement.offsetTop <= target) {
+        //     this.introducefalg = true;
+        // }
     }
 
 }

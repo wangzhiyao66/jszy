@@ -13,12 +13,21 @@
   margin: 0;
   font-size: 26px !important;
   color: #000 !important;
-  text-decoration: none;
+  text-decoration: none !important;
   background: #e8eef5;
+
+}
+::ng-deep .links  a:focus {
+  text-decoration: none !important;
 }
 
-.links .ant-anchor-link-title:hover {
-  cursor: pointer;
+::ng-deep .links  a:visited {
+  text-decoration: none !important;
+}
+
+
+::ng-deep .links :hover {
+  //cursor: pointer;
   background: $menus-color;
   span {
     color: #fff;

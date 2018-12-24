@@ -1,5 +1,6 @@
 import {Component, ElementRef, Input, OnChanges, OnInit, ViewChild} from '@angular/core';
 import {Pulse} from '../../../../animations/pulse.animation';
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-story-red',
@@ -26,7 +27,7 @@ export class StoryRedComponent implements OnInit , OnChanges {
     @Input() docuheight: number;
     @Input() clientHeight: number;
 
-    constructor() {
+    constructor(private router: Router) {
     }
 
     ngOnInit() {
@@ -38,6 +39,11 @@ export class StoryRedComponent implements OnInit , OnChanges {
         if (this.story.nativeElement.offsetTop <= target) {
             this.storyfalg = true;
         }
+    }
+
+    goto (item) {
+        console.log('item', item);
+        this.router.navigate(['/technology/story-detaills',  { queryParams: { data: item }} ]);
     }
 
 }

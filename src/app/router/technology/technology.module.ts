@@ -15,6 +15,7 @@ import { StoryRedComponent } from './index/story-red/story-red.component';
 import { ActiveComponent } from './index/active/active.component';
 import { StoryDetaillsComponent } from './story-detaills/story-detaills.component';
 import { IndexComponent } from './index/index.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
     declarations: [
@@ -33,7 +34,8 @@ import { IndexComponent } from './index/index.component';
         CommonModule,
         NgZorroAntdModule,
         FooterModule,
-        TechnologyRouting
+        TechnologyRouting,
+        RouterModule
     ],
     entryComponents: [
       FooterComponent
