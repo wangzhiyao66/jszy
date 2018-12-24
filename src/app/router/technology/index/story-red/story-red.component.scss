@@ -1,4 +1,4 @@
-@import "~src/app/scss/_index";
+@import "../../../../scss/index";
 .story-view {
   background: #edf0f2;
 }
@@ -36,7 +36,7 @@
 
     .name {
       font-size: 14px;
-      color: #666;
+      color: #333;
       margin: 0;
       padding: 0 15px;
       @include truncate();
@@ -49,7 +49,7 @@
     &:hover {
       @include shadow();
       .name {
-        color: #333;
+        color: #327ce2;
       }
 
     }

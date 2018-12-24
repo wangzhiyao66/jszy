@@ -1,6 +1,6 @@
-@import "../../../scss/_global";
+@import "../../../../scss/_global";
 .course-view {
-  background: url("../../../../assets/images/overview/course/coursebg.png") no-repeat left top;
+  background: url("../../../../../assets/images/overview/course/coursebg.png") no-repeat left top;
   border: 1px solid transparent;
 }
 
@@ -52,7 +52,7 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background: rgba(14, 98, 172, 0.8);
+        background: rgba(14, 98, 172, 1);
         position: absolute;
         bottom: -5px;
         right: -5px;
@@ -101,7 +101,7 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background: rgba(14, 98, 172, 0.8);
+        background: rgba(14, 98, 172, 1);
         position: absolute;
         bottom: -5px;
         left: -5px;

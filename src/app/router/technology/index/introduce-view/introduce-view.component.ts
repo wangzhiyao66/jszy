@@ -1,6 +1,6 @@
 import {Component, ElementRef, Input, OnChanges, OnInit, ViewChild} from '@angular/core';
-import {Enter} from '../../../animations/advisor.animation';
-import {Pulse} from '../../../animations/pulse.animation';
+import {Enter} from '../../../../animations/advisor.animation';
+import {Pulse} from '../../../../animations/pulse.animation';
 
 @Component({
     selector: 'app-introduce-view',
@@ -18,20 +18,20 @@ export class IntroduceViewComponent implements OnInit , OnChanges {
     @Input() clientHeight: number;
 
     imageUrl: object[] = [
-        {url: '../../../../assets/images/overview/introduce/1.png'},
-        {url: '../../../../assets/images/overview/introduce/2.png'},
-        {url: '../../../../assets/images/overview/introduce/3.png'},
-        {url: '../../../../assets/images/overview/introduce/4.png'},
-        {url: '../../../../assets/images/overview/introduce/5.png'},
-        {url: '../../../../assets/images/overview/introduce/6.png'},
-        {url: '../../../../assets/images/overview/introduce/7.png'},
+        {url: '../../../../../assets/images/overview/introduce/1.png'},
+        {url: '../../../../../assets/images/overview/introduce/2.png'},
+        {url: '../../../../../assets/images/overview/introduce/3.png'},
+        {url: '../../../../../assets/images/overview/introduce/4.png'},
+        {url: '../../../../../assets/images/overview/introduce/5.png'},
+        {url: '../../../../../assets/images/overview/introduce/6.png'},
+        {url: '../../../../../assets/images/overview/introduce/7.png'},
     ];
     introducefalg = false;
     constructor() {
     }
 
     ngOnInit() {
-        console.log('子组件', this.introduce );
+        // console.log('子组件', this.introduce );
     }
 
     // 变更检测

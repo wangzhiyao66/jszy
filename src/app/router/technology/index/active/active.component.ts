@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {OriginData} from '../../../interface/responses-data';
+import {OriginData} from '../../../../interface/responses-data';
 
 @Component({
     selector: 'app-active',

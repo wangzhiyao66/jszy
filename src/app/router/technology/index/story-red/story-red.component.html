@@ -1,5 +1,5 @@
 <div class="story-view">
-    <div class="story-content">
+    <div class="story-content" #story [@pulse]="storyfalg ? 'closed' : 'enter'">
         <p class="title">红外故事</p>
         <ul>
             <li *ngFor="let item of storylist">

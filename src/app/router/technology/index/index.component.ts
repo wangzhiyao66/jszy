@@ -1,14 +1,17 @@
-import {AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild, ViewEncapsulation} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {fromEvent, Subscription} from 'rxjs';
-import {Enter} from '../../animations/advisor.animation';
+import {Enter} from '../../../animations/advisor.animation';
 
 @Component({
-    selector: 'app-technology',
-    encapsulation: ViewEncapsulation.None,
-    templateUrl: './technology.component.html',
-    styleUrls: ['./technology.component.scss'],
+    selector: 'app-index',
+    templateUrl: './index.component.html',
+    styleUrls: ['./index.component.scss'],
+    animations: [
+        Enter
+    ]
 })
-export class TechnologyComponent implements OnInit , AfterViewInit, OnDestroy {
+export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
+
     // 订阅事件
     subscription: Subscription;
     // 获取本地变量
@@ -33,19 +36,21 @@ export class TechnologyComponent implements OnInit , AfterViewInit, OnDestroy {
                 // IE 中兼容  获取滚动高度问题
                 this.docuHeight = target.defaultView.scrollY || document.documentElement.scrollTop;
                 // IE 中兼容  获取可视区域高度问题
-                this.clientHeight = document.body.clientHeight || document.documentElement.clientHeight ;
+                this.clientHeight = document.body.clientHeight || document.documentElement.clientHeight;
                 // console.log('docuHeight', this.docuHeight);
                 // console.log('clientHeight', this.clientHeight);
 
             });
     }
+
     ngAfterViewInit(): void {
     }
+
     /**
      * 组件销毁停止订阅
      */
     ngOnDestroy(): void {
-        if (this.subscription ) {
+        if (this.subscription) {
             this.subscription.unsubscribe();
         }
     }

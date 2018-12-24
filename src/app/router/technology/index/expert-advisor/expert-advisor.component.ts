@@ -1,7 +1,7 @@
 import {Component, ElementRef, Input, OnChanges, OnInit, ViewChild} from '@angular/core';
-import { TechnologyServiceService } from '../technology-service.service';
-import {Enter} from '../../../animations/advisor.animation';
-import {Pulse} from '../../../animations/pulse.animation';
+import { TechnologyServiceService } from '../../technology-service.service';
+import {Enter} from '../../../../animations/advisor.animation';
+import {Pulse} from '../../../../animations/pulse.animation';
 
 @Component({
     selector: 'app-expert-advisor',

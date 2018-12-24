@@ -10,28 +10,32 @@ $base-color: #333;
 $select-color:#0675bf !default;
 $primary-color: #327ce2 !default;
 
-// 锚点样式
-::ng-deep .ant-anchor-ink {
-  display: none;
-}
-
-.links {
-  height: 88px;
-  line-height: 88px;
-  padding: 0;
-  margin: 0;
-}
-
-.links .ant-anchor-link-title {
-  font-size: 26px !important;
-  color: #000 !important;
+a {
   text-decoration: none;
 }
-
-.links .ant-anchor-link-title:hover {
-  cursor: pointer;
-  background: $menus-color;
-  span {
-    color: #fff;
-  }
-}
+//
+//// 锚点样式
+//::ng-deep .ant-anchor-ink {
+//  display: none;
+//}
+//
+//.links {
+//  height: 88px;
+//  line-height: 88px;
+//  padding: 0;
+//  margin: 0;
+//}
+//
+//.links .ant-anchor-link-title {
+//  font-size: 26px !important;
+//  color: #000 !important;
+//  text-decoration: none;
+//}
+//
+//.links .ant-anchor-link-title:hover {
+//  cursor: pointer;
+//  background: $menus-color;
+//  span {
+//    color: #fff;
+//  }
+//}

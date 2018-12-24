@@ -1,6 +1,6 @@
 import {Component, ElementRef, Input, OnChanges, OnInit, ViewChild} from '@angular/core';
-import {OriginData} from '../../../interface/responses-data';
-import {Pulse} from '../../../animations/pulse.animation';
+import {OriginData} from '../../../../interface/responses-data';
+import {Pulse} from '../../../../animations/pulse.animation';
 
 @Component({
     selector: 'app-achievements',

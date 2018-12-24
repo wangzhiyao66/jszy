@@ -1,5 +1,5 @@
 import {Component, ElementRef, Input, OnChanges, OnInit, ViewChild} from '@angular/core';
-import {Pulse} from '../../../animations/pulse.animation';
+import {Pulse} from '../../../../animations/pulse.animation';
 
 @Component({
     selector: 'app-course-view',

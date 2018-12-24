@@ -5,14 +5,16 @@ import {TechnologyRouting} from './technology-routing';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { FooterComponent } from 'src/app/common/footer/footer.component';
 import { FooterModule } from 'src/app/common/footer/footer.module';
-import { IntroduceViewComponent } from './introduce-view/introduce-view.component';
-import { TeamViewComponent } from './team-view/team-view.component';
-import { ExpertAdvisorComponent } from './expert-advisor/expert-advisor.component';
+import { IntroduceViewComponent } from './index/introduce-view/introduce-view.component';
+import { TeamViewComponent } from './index/team-view/team-view.component';
+import { ExpertAdvisorComponent } from './index/expert-advisor/expert-advisor.component';
 import {TechnologyServiceService} from './technology-service.service';
-import { CourseViewComponent } from './course-view/course-view.component';
-import { AchievementsComponent } from './achievements/achievements.component';
-import { StoryRedComponent } from './story-red/story-red.component';
-import { ActiveComponent } from './active/active.component';
+import { CourseViewComponent } from './index/course-view/course-view.component';
+import { AchievementsComponent } from './index/achievements/achievements.component';
+import { StoryRedComponent } from './index/story-red/story-red.component';
+import { ActiveComponent } from './index/active/active.component';
+import { StoryDetaillsComponent } from './story-detaills/story-detaills.component';
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
     declarations: [
@@ -24,6 +26,8 @@ import { ActiveComponent } from './active/active.component';
         AchievementsComponent,
         StoryRedComponent,
         ActiveComponent,
+        StoryDetaillsComponent,
+        IndexComponent,
     ],
     imports: [
         CommonModule,
