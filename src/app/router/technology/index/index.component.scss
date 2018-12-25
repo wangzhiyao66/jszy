@@ -11,7 +11,7 @@
   line-height: 88px;
   padding: 0;
   margin: 0;
-  font-size: 26px !important;
+  font-size: 22px !important;
   color: #000 !important;
   text-decoration: none !important;
   background: #e8eef5;
@@ -86,17 +86,22 @@
 //    height: 350px;
 //  }
 //}
+//.nav-box{
+//  width: 100%;
+//  height: 100px;
+//  padding: 20px 0;
+//  background: #e8eef5;
+//}
 // 描点
 .nav-anchor {
   width: 80%;
   max-width: 1200px;
   min-width: 1200px;
-  height: 100%;
+  height: 100px;
   margin: 10px auto 0;
 
   .gutter-box {
     text-align: center;
-
     height: 88px;
     line-height: 88px;
 
