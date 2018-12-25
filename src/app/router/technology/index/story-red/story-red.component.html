@@ -2,7 +2,7 @@
     <div class="story-content" #story [@pulse]="storyfalg ? 'closed' : 'enter'">
         <p class="title">红外故事</p>
         <ul>
-            <li *ngFor="let item of storylist" (click)="goto(item)">
+            <li *ngFor="let item of storylist"  [routerLink]="'/technology/story-detaills'" [queryParams]="{ id : item.id}">
                 <img src="{{ item.url }}">
                 <p class="name">{{ item.title }}</p>
             </li>

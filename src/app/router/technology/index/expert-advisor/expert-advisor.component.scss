@@ -87,3 +87,36 @@
   }
 
 }
+.advosor-data {
+  height: 400px;
+  background: #fff;
+  clear: both;
+
+  .advisor-left, .advisor-right{
+    float: left;
+  }
+
+  .advisor-left{
+    position: relative;
+    width: 282px;
+    .name {
+      text-align: center;
+      font-size: 19px;
+      color: #000;
+      display: block;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      bottom: 18px;
+      left: 0;
+      right: 0;
+    }
+  }
+  .advisor-right{
+    width: calc(100% - 282px);
+    padding-left: 20px;
+    font-size: 16px;
+    color: #333;
+  }
+
+}

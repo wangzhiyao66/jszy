@@ -11,8 +11,6 @@ import {RouterModule} from '@angular/router';
 import {SwiperModule} from 'ngx-swiper-wrapper';
 import {SWIPER_CONFIG} from 'ngx-swiper-wrapper';
 import {SwiperConfigInterface} from 'ngx-swiper-wrapper';
-import {FooterModule} from '../../common/footer/footer.module';
-import {FooterComponent} from '../../common/footer/footer.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     direction: 'horizontal',
@@ -28,11 +26,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
         RouterModule,
         SwiperModule,
         NgZorroAntdModule,
-        FooterModule,
         HomeRouting
-    ],
-    entryComponents: [
-        FooterComponent
     ],
     providers: [
         {

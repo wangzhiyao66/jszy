@@ -1,6 +1,6 @@
 import {Component, ElementRef, Input, OnChanges, OnInit, ViewChild} from '@angular/core';
 import {Pulse} from '../../../../animations/pulse.animation';
-import {Router} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
     selector: 'app-story-red',
@@ -27,7 +27,8 @@ export class StoryRedComponent implements OnInit , OnChanges {
     @Input() docuheight: number;
     @Input() clientHeight: number;
 
-    constructor(private router: Router) {
+    constructor(private router: Router,
+                private route: ActivatedRoute) {
     }
 
     ngOnInit() {

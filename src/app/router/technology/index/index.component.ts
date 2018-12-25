@@ -25,7 +25,7 @@ export class IndexComponent implements OnInit, AfterViewInit, OnDestroy {
     }
 
     ngOnInit() {
-        console.log('cnchor', this.anchor);
+        // console.log('cnchor', this.anchor);
         // 页面监听  响应式
         this.subscription = fromEvent(window, 'scroll')
             .subscribe((event) => {

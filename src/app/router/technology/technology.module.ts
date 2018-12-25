@@ -3,8 +3,6 @@ import {CommonModule} from '@angular/common';
 import {TechnologyComponent} from './technology.component';
 import {TechnologyRouting} from './technology-routing';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
-import { FooterComponent } from 'src/app/common/footer/footer.component';
-import { FooterModule } from 'src/app/common/footer/footer.module';
 import { IntroduceViewComponent } from './index/introduce-view/introduce-view.component';
 import { TeamViewComponent } from './index/team-view/team-view.component';
 import { ExpertAdvisorComponent } from './index/expert-advisor/expert-advisor.component';
@@ -16,6 +14,7 @@ import { ActiveComponent } from './index/active/active.component';
 import { StoryDetaillsComponent } from './story-detaills/story-detaills.component';
 import { IndexComponent } from './index/index.component';
 import {RouterModule} from '@angular/router';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -33,12 +32,9 @@ import {RouterModule} from '@angular/router';
     imports: [
         CommonModule,
         NgZorroAntdModule,
-        FooterModule,
         TechnologyRouting,
-        RouterModule
-    ],
-    entryComponents: [
-      FooterComponent
+        RouterModule,
+        FormsModule,
     ],
     providers: [
         TechnologyServiceService

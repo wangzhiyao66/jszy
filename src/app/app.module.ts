@@ -16,7 +16,9 @@ import zh from '@angular/common/locales/zh';
 import {MenusModule} from './common/menus/menus.module';
 import {Code404Component} from './common/code404/code404.component';
 import {RouterComponent} from './router/router.component';
-import { ScrollTopComponent } from './common/scroll-top/scroll-top.component';
+import {ScrollTopComponent} from './common/scroll-top/scroll-top.component';
+import {FooterModule} from './common/footer/footer.module';
+import {FooterComponent} from './common/footer/footer.component';
 
 registerLocaleData(zh);
 
@@ -35,7 +37,11 @@ registerLocaleData(zh);
         /** 导入 ng-zorro-antd 模块 **/
         NgZorroAntdModule,
         MenusModule,
+        FooterModule,
         AppRoutingModule,
+    ],
+    entryComponents: [
+        FooterComponent
     ],
     providers: [
         ApiService,
