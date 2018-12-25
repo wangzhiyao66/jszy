@@ -1,5 +1,36 @@
 <div class="breadcrumb-view">
     <div class="breadcrumb-content">
+        <nz-breadcrumb nzSeparator=">">
 
+            <nz-breadcrumb-item>
+                <a [routerLink]="'/home'" >首页</a>
+            </nz-breadcrumb-item>
+
+            <nz-breadcrumb-item>
+                <a [routerLink]="'/technology'">技术概览</a>
+            </nz-breadcrumb-item>
+
+            <nz-breadcrumb-item>
+                <a>红外故事</a>
+            </nz-breadcrumb-item>
+
+        </nz-breadcrumb>
+    </div>
+</div>
+<div class="story">
+    <div class="story-box">
+        <p class="story-title">
+        <b>红外故事 - 案例{{ detaillId }}</b>
+        </p>
+        <nz-divider></nz-divider>
+        <p class="story-text">
+                {{showinfo?.title}}
+        </p>
+        <nz-divider></nz-divider>
+        <div class="pany">
+            <p class="nav-link" [routerLink]="'/technology/story-detaills'" [queryParams]="{ id : 1}">上一篇： <a> 红外故事 - 案例1</a></p>
+            <p class="nav-link" [routerLink]="'/technology/story-detaills'" [queryParams]="{ id : 3}">下一篇： <a> 红外故事 - 案例3</a></p>
+            <button nz-button nzType="primary" class="btn" (click)="goback()" >返回</button>
+        </div>
     </div>
 </div>

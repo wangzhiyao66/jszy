@@ -1,2 +1,86 @@
-
 @import "~src/app/scss/_global";
+
+.breadcrumb-view {
+  width: 100%;
+  background: $breadcrumb-color;
+
+}
+
+h4:first-child {
+  margin-top: 0;
+}
+
+h4 {
+  margin: 16px 0;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: normal;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb-content {
+  width: 1200px;
+  margin: 0 auto;
+  height: 46px;
+  line-height: 46px;
+  padding-top: 10px;
+}
+
+.story {
+  width: 100%;
+  height: 100%;
+}
+
+.story-box {
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 58px 68px;
+
+  .story-title {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 58px;
+    letter-spacing: 2px;
+  }
+
+  .story-text {
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-indent: 35px;
+    line-height: 35px;
+  }
+
+  .pany {
+    height: 80px;
+    margin-top: 38px;
+    position: relative;
+
+    a {
+      color: #333;
+    }
+
+    a:hover {
+      color: $menus-color;
+    }
+  }
+
+  .nav-link {
+    margin: 15px 0;
+    outline: none;
+  }
+
+  .btn {
+    width: 66px;
+    height: 30px;
+    border-radius: 0px;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+  }
+}

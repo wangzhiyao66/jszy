@@ -8,7 +8,7 @@ export interface ResponsesData {
 }
 export interface OriginData {
     id: number;
-    name: string;
+    name?: string;
     url: string;
     description?: string;
     title?: string;
