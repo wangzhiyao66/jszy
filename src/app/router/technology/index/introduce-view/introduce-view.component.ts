@@ -17,7 +17,7 @@ export class IntroduceViewComponent implements OnInit , OnChanges {
     // @Input() docuheight: number;
     // @Input() clientHeight: number;
 
-    imageUrl: object[] = [
+    imageUrl = [
         {url: '../../../../../assets/images/overview/introduce/1.png'},
         {url: '../../../../../assets/images/overview/introduce/2.png'},
         {url: '../../../../../assets/images/overview/introduce/3.png'},

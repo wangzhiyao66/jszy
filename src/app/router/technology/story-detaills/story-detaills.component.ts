@@ -33,7 +33,11 @@ export class StoryDetaillsComponent implements OnInit {
         const index = this.list.findIndex(item => Number(item.id) === Number(this.detaillId));
         this.showinfo = this.list[index];
     }
-
+    // 查看其它文章
+    goto(falg: boolean) {
+        const params: number = falg ? (Number(this.detaillId) - 1) : (Number(this.detaillId) + 1 );
+        this.router.navigate(['/technology/story-detaills'],  { queryParams: { id: params} });
+    }
     // 返回
     goback() {
         this.router.navigate(['/technology']);

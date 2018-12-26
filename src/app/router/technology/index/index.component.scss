@@ -110,12 +110,7 @@
 }
 
 // 描点用于控制展示的视图
-#introduce, #team, #course, #Achievements, #active, #story {
-  width: 100%;
-  padding-top: 80px;
-  //border: 1px solid transparent;
-}
 
-#team, #course, #Achievements, #story {
-  padding: 0 !important;
+#active {
+  padding: 80px !important;
 }

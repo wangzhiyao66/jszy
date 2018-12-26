@@ -8,7 +8,7 @@
                     <p class="name">{{ item.name }}</p>
                 </li>
             </ul>
-            <ul *ngIf="showlist" [@advisor]="'active'" >
+            <ul *ngIf="showlist" [@advisor]="'active'">
                 <li *ngFor="let item of morelist" (click)="seedata(item)">
                     <img src="{{ item.url }}">
                     <p class="name">{{ item.name }}</p>
@@ -20,18 +20,11 @@
         </div>
     </div>
 </div>
-<nz-modal
-        [(nzVisible)]="isVisible"
-        nzTitle="专家团队介绍"
-        [nzFooter]="null"
-        [nzWidth]="660"
-        [nzContent]="tplContent"
-        (nzOnOk)="handleOk()"
-        (nzOnCancel)="handleCancel()">
+<nz-modal [(nzVisible)]="isVisible" nzTitle="专家团队介绍" [nzFooter]="null" [nzWidth]="660" [nzContent]="tplContent" (nzOnOk)="handleOk()" (nzOnCancel)="handleCancel()">
     <ng-template #tplContent>
         <div class="advosor-data">
             <div class="advisor-left">
-                <img src="{{propleshowdata?.url}}" alt="">
+                <img src="{{ propleshowdata?.url }}" alt="">
                 <p class="name">{{propleshowdata?.name}}</p>
             </div>
             <div class="advisor-right">

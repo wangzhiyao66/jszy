@@ -1,16 +1,16 @@
 .introduce-view {
   width: 100%;
   min-width: 1200px;
+  height: 600px;
   border: 1px solid transparent;
-  background: url('../../../../../assets/images/overview/introduce/introducebg.png') no-repeat center bottom;
+  background: url('../../../../../assets/images/overview/introduce/introducebg.png') no-repeat center;
   background-size: 100%;
+  margin-top: 20px;
 }
 
 .introduce-content {
   width: 1200px;
-  height: 730px;
-  margin: 0 auto;
-
+  margin: 45px auto 0;
   p {
     padding: 0;
     margin: 0;
@@ -27,7 +27,7 @@
     color: #666;
     text-indent: 65px;
     margin-top: 24px;
-    line-height: 50px;
+    line-height: 35px;
     letter-spacing: 3px;
   }
 

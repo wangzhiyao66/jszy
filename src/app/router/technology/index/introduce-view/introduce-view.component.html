@@ -6,8 +6,8 @@
         </p>
         <div class="title-lsit">
             <ul>
-                <li *ngFor="let url of imageUrl;">
-                    <img src="{{url.url}}">
+                <li *ngFor="let item of imageUrl;">
+                    <img src="{{ item.url }}">
                 </li>
             </ul>
         </div>

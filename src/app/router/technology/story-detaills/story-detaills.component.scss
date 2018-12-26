@@ -33,6 +33,7 @@ p {
 .story {
   width: 100%;
   height: 100%;
+  background: #e8edf6;
 }
 
 .story-box {
@@ -40,12 +41,13 @@ p {
   margin: 0 auto;
   background: #fff;
   box-sizing: border-box;
-  padding: 58px 68px;
+  padding: 45px 68px;
+  margin-bottom: 12px;
 
   .story-title {
     font-size: 24px;
     color: #000;
-    margin-bottom: 58px;
+    margin-bottom: 45px;
     letter-spacing: 2px;
   }
 
