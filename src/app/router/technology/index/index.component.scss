@@ -5,16 +5,18 @@
 ::ng-deep .ant-anchor-ink {
   display: none;
 }
-
+::ng-deep .ant-anchor-wrapper{
+  background: none;
+}
 .links {
-  height: 88px;
-  line-height: 88px;
+  height: 75px;
+  line-height: 75px;
   padding: 0;
   margin: 0;
   font-size: 22px !important;
   color: #000 !important;
   text-decoration: none !important;
-  background: #e8eef5;
+  background: #f5f7fa;
 
 }
 ::ng-deep .links  a:focus {
@@ -86,19 +88,19 @@
 //    height: 350px;
 //  }
 //}
-//.nav-box{
-//  width: 100%;
-//  height: 100px;
+.nav-box{
+ width: 100%;
+ height: 75px;
 //  padding: 20px 0;
-//  background: #e8eef5;
-//}
+ background: #f5f7fa;
+}
 // 描点
 .nav-anchor {
   width: 80%;
   max-width: 1200px;
   min-width: 1200px;
   height: 100px;
-  margin: 10px auto 0;
+  margin: 0px auto;
 
   .gutter-box {
     text-align: center;
@@ -109,8 +111,3 @@
 
 }
 
-// 描点用于控制展示的视图
-
-#active {
-  padding: 80px !important;
-}

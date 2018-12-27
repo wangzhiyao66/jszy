@@ -5,6 +5,7 @@ import {
     SwiperComponent,
     SwiperNavigationInterface
 } from 'ngx-swiper-wrapper';
+import { Enter } from 'src/app/animations/advisor.animation';
 
 // 3D 切换效果参数设置
 const coverflowEffectConfig: SwiperCoverflowEffectInterface = {
@@ -23,7 +24,8 @@ const navigationConfig: SwiperNavigationInterface = {
 @Component({
     selector: 'app-home',
     templateUrl: './home.component.html',
-    styleUrls: ['./home.component.scss']
+    styleUrls: ['./home.component.scss'],
+    animations: [ Enter ],
 })
 
 

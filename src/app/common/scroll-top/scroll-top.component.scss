@@ -1,4 +1,9 @@
 :host ::ng-deep .ant-back-top {
   bottom: 100px;
   cursor: pointer;
+
+  img {
+    border-radius: 5px;
+    box-shadow: 0 0 10px #999;
+  }
 }

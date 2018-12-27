@@ -1,133 +1,157 @@
 @import "../../scss/_global";
 
-.scroll{
-  background: #3975ed !important;
-  opacity: 0.9;
-  position: fixed;
-  top: 0;
+.scroll {
+    background: #3975ed !important;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
 }
-.header{
-  display: flex;
-  top: 0;
-  width: 100%;
-  min-width: 1280px;
-  height: 80px;
-  z-index: 100;
-  background: rgba( 0, 0, 0, 0.6);
-  transition: background 1s;
 
+.flexs {
+    position: relative;
+    z-index: 1000;
+}
 
-  .nav{
-    width: 1200px;
+.header {
+    width: 100%;
+    min-width: 1280px;
     height: 80px;
-    margin: 0 auto;
-    overflow-x: auto;
-  }
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.6);
+    transition: background 1s;
 
-  .nav-left, .nav-right{
-    float: left;
-    cursor:pointer;
-    z-index: 80;
-  }
 
-  .nav-left {
-    width: 240px;
-    height: 80px;
-    img{
-      position: relative;
-      z-index: 90;
-      outline: none;
-      border: none;
-    }
-  }
-
-  .nav-right {
-    width: 920px;
-    height: 80px;
-    margin-left: 2%;
-    ul{
-      float: left;
-      height: 80px;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    }
-    li{
-      float: left;
-      height: 80px;
-      width: 106px;
-      margin-right: 10px;
-      list-style: none;
-    }
-    .line {
-      position: relative;
-      text-align: center;
-      font-size: 18px;
-      color: #fff;
-      z-index: 80;
-      outline: none;
-      font-family: $font-family;
-    }
-    .title{
-      position: relative;
-      z-index: 100;
-      line-height: 80px;
-    }
-    .active {
-      display: inline-block;
-      width: 106px;
-      height: 80px;
-      background: #fff;
-      color: $menus-color;
-    }
-    .line:hover{
-      .title{
-        color: $menus-color;
-      }
-    }
-
-    .animation-bg{
-      display: inline-block;
-      width: 106px;
-      height: 80px;
-      background: #fff;
-      position: absolute;
-      top: -80px;
-      left: 0;
-    }
-
-    //login
-    .login{
-      position: relative;
-      float: left;
-      width: 100px;
-      height: 80px;
-      text-align: center;
-      margin-left: 8px;
-      .btn{
-        position: relative;
-        margin-top: 25px;
-        height: 30px;
-        width: 106px;
-        border-radius: 15px;
-        border: 1px solid #fff;
-        color: #fff;
-        background: transparent;
-        outline: none;
-        z-index: 90;
-      }
-      .btn:hover{
-        color: $menus-color;
+    .two-chor {
+        width: 100%;
+        height: 268px;
         background: #fff;
-        border-color: $menus-color;
-      }
+        // position: relative;
+        // top: -80px;
     }
 
-  }
-  .animation-bg:hover{
-    .btn{
-      color: $menus-color;
-      border-color: $menus-color;
+    .nav {
+        width: 1200px;
+        height: 80px;
+        margin: 0 auto;
+        overflow-x: auto;
     }
-  }
+
+    .nav-left,
+    .nav-right {
+        float: left;
+        cursor: pointer;
+        z-index: 80;
+    }
+
+    .nav-left {
+        width: 240px;
+        height: 80px;
+
+        img {
+            position: relative;
+            z-index: 90;
+            outline: none;
+            border: none;
+        }
+    }
+
+    .nav-right {
+        width: 920px;
+        height: 80px;
+        margin-left: 2%;
+
+        ul {
+            float: left;
+            height: 80px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        li {
+            float: left;
+            height: 80px;
+            width: 106px;
+            margin-right: 10px;
+            list-style: none;
+        }
+
+        .line {
+            position: relative;
+            text-align: center;
+            font-size: 18px;
+            color: #fff;
+            z-index: 80;
+            outline: none;
+            font-family: $font-family;
+        }
+
+        .title {
+            position: relative;
+            z-index: 100;
+            line-height: 80px;
+            letter-spacing: 2px;
+        }
+
+        .active {
+            display: inline-block;
+            width: 106px;
+            height: 80px;
+            background: #fff;
+            color: $menus-color;
+        }
+
+        .line:hover {
+            .title {
+                color: $menus-color;
+            }
+        }
+
+        .animation-bg {
+            display: inline-block;
+            width: 106px;
+            height: 80px;
+            background: #fff;
+            position: absolute;
+            top: -80px;
+            left: 0;
+        }
+
+        //login
+        .login {
+            position: relative;
+            float: left;
+            width: 100px;
+            height: 80px;
+            text-align: center;
+            margin-left: 8px;
+
+            .btn {
+                position: relative;
+                margin-top: 25px;
+                height: 30px;
+                width: 106px;
+                border-radius: 15px;
+                border: 1px solid #fff;
+                color: #fff;
+                background: transparent;
+                outline: none;
+                z-index: 90;
+            }
+
+            .btn:hover {
+                color: $menus-color;
+                background: #fff;
+                border-color: $menus-color;
+            }
+        }
+
+    }
+
+    .animation-bg:hover {
+        .btn {
+            color: $menus-color;
+            border-color: $menus-color;
+        }
+    }
 }
