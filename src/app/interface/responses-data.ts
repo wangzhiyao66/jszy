@@ -13,8 +13,3 @@ export interface OriginData {
   description?: string;
   title?: string;
 }
-export interface TextData {
-  id: number;
-  url: string;
-  title: string;
-}
