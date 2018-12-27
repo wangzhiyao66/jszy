@@ -2,6 +2,7 @@ import {Component, ElementRef, Input, OnChanges, OnInit, ViewChild} from '@angul
 import {Pulse} from '../../../../animations/pulse.animation';
 import {ActivatedRoute, Router} from '@angular/router';
 import {TechnologyServiceService} from '../../technology-service.service';
+import { url } from 'inspector';
 
 @Component({
     selector: 'app-story-red',
@@ -14,7 +15,7 @@ import {TechnologyServiceService} from '../../technology-service.service';
 export class StoryRedComponent implements OnInit , OnChanges {
 
     storyfalg = false;
-    storylist: object[] = this.service.storylist;
+    storylist: {id: number, url: string, title: string }[] = this.service.storylist;
 
     // 获取本地变量
     @ViewChild('story') story: ElementRef;

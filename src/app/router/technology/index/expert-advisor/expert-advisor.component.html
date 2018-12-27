@@ -20,7 +20,10 @@
         </div>
     </div>
 </div>
-<nz-modal [(nzVisible)]="isVisible" nzTitle="专家团队介绍" [nzFooter]="null" [nzWidth]="660" [nzContent]="tplContent" (nzOnOk)="handleOk()" (nzOnCancel)="handleCancel()">
+<nz-modal [(nzVisible)]="isVisible" [nzTitle]='tplTitle' [nzFooter]="null" [nzWidth]="660" [nzContent]="tplContent" (nzOnOk)="handleOk()" (nzOnCancel)="handleCancel()">
+    <ng-template #tplTitle>
+        <span style='font-size: 18px;font-weight: 501;'>专家团队介绍</span>
+    </ng-template>
     <ng-template #tplContent>
         <div class="advosor-data">
             <div class="advisor-left">

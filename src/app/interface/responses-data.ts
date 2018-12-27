@@ -1,15 +1,20 @@
 export interface ResponsesData {
-    code: number | string;
-    message: string;
-    data: any;
-    error?: string;
-    total?: number;
-    success?: string;
+  code: number | string;
+  message: string;
+  data: any;
+  error?: string;
+  total?: number;
+  success?: string;
 }
 export interface OriginData {
-    id: number;
-    name?: string;
-    url: string;
-    description?: string;
-    title?: string;
+  id: number;
+  name?: string;
+  url: string;
+  description?: string;
+  title?: string;
+}
+export interface TextData {
+  id: number;
+  url: string;
+  title: string;
 }
