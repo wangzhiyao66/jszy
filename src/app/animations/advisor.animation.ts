@@ -1,11 +1,5 @@
-import {
-  trigger,
-  style,
-  transition,
-  animate,
-  state,
-  keyframes
-} from '@angular/animations';
+import { trigger, style, transition, animate, state, keyframes } from '@angular/animations';
+// 专家团队动画
 export const Enter = trigger('advisor', [
   transition('void => *', [
     animate(

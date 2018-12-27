@@ -5,8 +5,8 @@
         </div>
         <div class="nav-right">
             <ul>
-                <li *ngFor="let item of menuservice.menus,let i = index;" class="line" [routerLink]="item.link" routerLinkActive="active" (mouseenter)="onmenuin(i)" (mouseleave)="onmenuleave(i)">
-                    <span class="title">{{ item.title }}</span>
+                <li *ngFor="let item of menuservice.menus,let i = index;" class="line" (click)='hidemenus()' [routerLink]="item.link" routerLinkActive="active" (mouseenter)="onmenuin(i)" (mouseleave)="onmenuleave(i)">
+                    <span class="title" [class.title-color]='item.showchildren'>{{ item.title }}</span>
                     <span [@fadeIn]="item.animationfalg ? 'open' : 'closed'" class="animation-bg"></span>
                 </li>
             </ul>
@@ -16,10 +16,12 @@
             </div>
         </div>
     </div>
-    <div class='two-chor' *ngFor="let item of menuservice.menus,let i = index;" 
-        [class.flexs]='menuservice.menus[i].animationfalg'
-        [hidden]='!menuservice.menus[i].animationfalg'
-        (mouseenter)="onmenuin(i)" (mouseleave)="onmenuleave(i)">
-        {{ i + 1 }}
+    <div class='two-chor' *ngFor="let item of menuservice.menus,let i = index;" [class.flexs]='menuservice.menus[i].showchildren' [hidden]='!menuservice.menus[i].showchildren' (mouseenter)="onmenuin(i)" (mouseleave)="onmenuleave(i)">
+        <ul class='anchor-box'>
+            <li *ngFor='let val of menuservice.menus[i].children' (click)='linkTo(val)'>
+                <img src="{{ val.url }}">
+                <p>{{ val.anchorname }}</p>
+            </li>
+        </ul>
     </div>
 </div>

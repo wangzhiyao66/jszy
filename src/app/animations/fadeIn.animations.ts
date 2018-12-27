@@ -1,11 +1,5 @@
-import {
-  trigger,
-  style,
-  transition,
-  animate,
-  state,
-  keyframes
-} from '@angular/animations';
+import {trigger, style, transition, animate, state, keyframes} from '@angular/animations';
+// 菜单栏动画
 export const fadeIn = trigger('fadeIn', [
   // ...
   state(

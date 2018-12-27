@@ -8,7 +8,7 @@
 }
 
 .flexs {
-    position: relative;
+    position: absolute;
     z-index: 1000;
 }
 
@@ -27,6 +27,39 @@
         background: #fff;
         // position: relative;
         // top: -80px;
+    }
+
+    .title-color {
+        color: $menus-color !important;
+    }
+
+    .anchor-box {
+        list-style: none;
+        padding: 0;
+        margin: 34px auto;
+        width: 1200px;
+        height: 200px; 
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        justify-content: space-between;
+
+        li {
+            text-align: center;
+            font-size: 15px;
+            color: #333;
+
+            p {
+                margin: 10px 0 0 0 ;
+                padding: 0;
+            }
+
+            &:hover{
+                cursor: pointer;
+                color: #327ce2;
+            }
+        }
+
     }
 
     .nav {
