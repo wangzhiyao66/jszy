@@ -1,3 +1,27 @@
-<p>
-  serive-hardware works!
-</p>
+<div class="hardware-view">
+    <div class="header">
+        <div class="nav-title">硬件系列</div>
+        <p class="work">— 数据采集工作站 —</p>
+        <div class="nav-content">
+            所有产品红外探测器采用
+            <span class="select-color">高精确</span>
+            的硬件设备，能够保证人体红外温度监测的灵敏性和特异性。设备取得了陕西省食品药品监督管理局颁发的二类医疗器械许可证，产品质量安全可靠。
+        </div>
+    </div>
+    <div class="contents">
+        <nz-tabset [nzTabPosition]="'top'" [nzType]="'card'" >
+            <nz-tab nzTitle="Tab 1" [nzTitle]="titleTemplate" >
+                <ng-template #titleTemplate>
+                    <i nz-icon [type]="'apple'"></i>Content 1
+                </ng-template>
+                Content of Tab Pane 1
+            </nz-tab>
+            <nz-tab nzTitle="Tab 2">
+                Content of Tab Pane 2
+            </nz-tab>
+            <nz-tab nzTitle="Tab 3">
+                Content of Tab Pane 3
+            </nz-tab>
+        </nz-tabset>
+    </div>
+</div>
