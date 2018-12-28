@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {ProductServeComponent} from './product-serve.component';
+import { SeriveViewComponent } from './serive-view/serive-view.component';
 
 const routes: Routes = [
     {
         path: '',
-        component: ProductServeComponent,
+        component: SeriveViewComponent,
     },
 
 ];

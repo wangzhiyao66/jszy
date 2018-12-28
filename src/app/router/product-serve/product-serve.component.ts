@@ -6,7 +6,7 @@ import {Pulse} from '../../animations/pulse.animation';
 
 @Component({
     selector: 'app-product-serve',
-    templateUrl: './product-serve.component.html',
+    template: `<router-outlet></router-outlet>`,
     styleUrls: ['./product-serve.component.scss'],
     animations: [
         Pulse
@@ -22,9 +22,6 @@ export class ProductServeComponent implements OnInit {
     ngOnInit() {
     }
 
-    toggle() {
-        this.isOpen = !this.isOpen;
-    }
 
     goto() {
         this.router.navigate(['/technology'], { fragment: 'introduce' });
