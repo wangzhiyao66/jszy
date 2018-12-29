@@ -1,48 +1,102 @@
 @import "../../../scss/global";
 
 .hardware-view {
-    padding: 0 25px;
-    margin: 0;
-    font-size: 14.4px;
-    color: #002553;
-    line-height: 30px;
-    margin-top: 12px;
-    text-indent: 30px;
+  padding: 0 25px;
+  margin: 0;
+  font-size: 14.4px;
+  color: #002553;
+  line-height: 30px;
+  margin-top: 12px;
+  text-indent: 30px;
 }
 
 .header {
-    margin: 0 auto;
+  margin: 0 auto;
+  text-align: center;
+
+  .nav-title {
+    font-family: $font-family;
+    font-size: 38px;
+    color: $base-color;
+    margin-top: 65px;
+    letter-spacing: 6px;
+  }
+
+  .work {
+    font-family: $font-family;
+    font-size: 15px;
+    color: #666;
+    margin: 24px auto;
+  }
+
+  // 公共样式部分
+  .nav-content {
+    font-family: $font-family;
+    font-size: 15px;
+    color: $base-color;
+    margin: 24px 0 0 0;
+    // letter-spacing: 2px;
+
+    .select-color {
+      color: $primary-color;
+      font-size: 20px;
+    }
+  }
+}
+
+.contents {
+  width: 1200px;
+  margin: 0 auto;
+
+  .btn-box {
+    margin: 40px auto;
+    padding: 0;
     text-align: center;
 
-    .nav-title {
-        font-family: $font-family;
-        font-size: 38px;
-        color: $base-color;
-        margin-top: 65px;
-        letter-spacing: 6px;
-    }
-    .work{
-        font-family: $font-family;
-        font-size: 15px;
-        color: #666;
-        margin: 24px auto;
+    button {
+      color: #fff;
+      margin: 0 20px;
+      font-size: 15px;
+      font-weight: 501;
+      width: 108px;
+      height: 42px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      border: 3px solid #fff;
     }
 
-    // 公共样式部分
-    .nav-content {
-        font-family: $font-family;
-        font-size: 15px;
-        color: $base-color;
-        margin: 24px 0 0 0;
-        // letter-spacing: 2px;
+    .quca {
+      background: #ed426a;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      outline: none;
 
-        .select-color {
-            color: $primary-color;
-            font-size: 20px;
-        }
+      &:hover{
+        border: 3px solid  #f5c6d1;
+      }
+
     }
-}
-.contents{
-    width: 1200px;
-    margin: 0 auto;
+
+    .lizh{
+      background: #f49e45;
+
+      &:hover{
+        border: 3px solid #ffd7ce;
+      }
+
+    }
+
+    .bixi {
+      background: #14c2c0;
+
+      &:hover{
+        border: 3px solid #95d9d8;
+      }
+    }
+
+  }
+
+
 }
