@@ -13,8 +13,8 @@ import { ServicesService } from './services.service';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { FormsModule } from '@angular/forms';
 import { ServiceProjectComponent } from './service-project/service-project.component';
-import { ServiceFeaturesComponent } from './service-features/service-features.component';
 import { ServiceSolutionComponent } from './service-solution/service-solution.component';
+import { SeriveCharacteristicComponent } from './serive-characteristic/serive-characteristic.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +26,8 @@ import { ServiceSolutionComponent } from './service-solution/service-solution.co
     SeriveFunctionComponent,
     SeriveAdvantageComponent,
     ServiceProjectComponent,
-    ServiceFeaturesComponent,
-    ServiceSolutionComponent
+    ServiceSolutionComponent,
+    SeriveCharacteristicComponent
   ],
   imports: [
     CommonModule,

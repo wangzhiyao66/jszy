@@ -1,0 +1,13 @@
+<div class="special-view">
+    <div class="special-content">
+        <p class="title">产品特点</p>
+        <div class="content-box">
+            <div class="list{{i+1}} special" *ngFor="let val of speciallist, let i = index;">
+                <div class="list-box">
+                    <span class="code">0{{ val.code }}</span>
+                    <span class="text">{{ val.title }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

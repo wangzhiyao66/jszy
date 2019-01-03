@@ -1,0 +1,64 @@
+@import "~src/app/scss/global";
+
+.solution-view{
+  width: 100%;
+  //background: #ddd;
+  border: 1px solid transparent;
+}
+
+.solution-content {
+  width: 1200px;
+  margin: 80px auto;
+
+  .title {
+    font-size: 38px;
+    color: #333;
+    text-align: center;
+    margin: 0px 0 64px 0;
+    letter-spacing: 6px;
+
+  }
+}
+
+.list{
+  width: 100%;
+  //height: 365px;
+  background: #fff;
+  margin: 50px 0 90px 0;
+  clear: both;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+.list-left, .list-right{
+  width: 48%;
+  margin: 0 1%;
+}
+
+.text-title{
+  font-size: 20px;
+  color: #333;
+  margin: 0 0 20px 0 ;
+  letter-spacing: 2px;
+}
+
+.text-descript{
+  font-size: 16px;
+  color: #333;
+  letter-spacing: 2px;
+  line-height: 25px;
+  text-indent: 3px;
+  margin-bottom: 10px;
+}
+
+.bottom-text{
+  font-size: 16px;
+  color: #666;
+  letter-spacing: 2px;
+}

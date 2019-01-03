@@ -1,0 +1,243 @@
+@import "~src/app/scss/global";
+
+.project-view {
+  width: 100%;
+  background: #f3f7fa;
+  border: 1px solid transparent;
+}
+
+.project-content {
+  width: 1200px;
+  margin: 80px auto;
+
+  .title {
+    font-size: 38px;
+    color: #333;
+    text-align: center;
+    margin: 0px 0 64px 0;
+    letter-spacing: 6px;
+
+  }
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.project-box{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 400px;
+
+}
+
+.left , .right{
+  width: 48%;
+  height: 100%;
+  margin: 0 1%;
+}
+
+.left{
+  background: #fff;
+
+  &:hover {
+    background: #477de9;
+    color: #fff;
+    box-shadow: 0 0 15px #477de9;
+
+    .header{
+      color: #fff;
+      b {
+        background: url("../../../../assets/images/productsservice/solution/1-1.png") no-repeat center;
+      }
+    }
+
+    .text-descript{
+      color: #fff;
+    }
+
+  }
+}
+
+.right{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+  div{
+    width: 260px;
+    height: 188px;
+    margin: 0  6px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
+  }
+}
+
+.header{
+  text-align: center;
+  margin-top: 21px;
+  font-size: 20px;
+  line-height: 32px;
+  color: #333;
+  letter-spacing: 2px;
+
+  b {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url("../../../../assets/images/productsservice/solution/1.png") no-repeat center;
+    position: relative;
+    top: 5px;
+  }
+}
+.text-descript{
+  padding: 0 18px;
+  letter-spacing: 2px;
+  font-size: 16px;
+  color: #666;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.bg1{
+
+  .header{
+    b{
+      background: url("../../../../assets/images/productsservice/solution/2.png") no-repeat center;
+    }
+  }
+  .text-descript{
+    padding: 0 15px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #666;
+    line-height: 26px;
+  }
+
+  &:hover {
+
+    background: #477de9 !important;
+    color: #fff;
+    box-shadow: 0 0 15px #477de9;
+
+    .header {
+      color: #fff;
+    }
+
+    b{
+      background: url("../../../../assets/images/productsservice/solution/2-2.png") no-repeat center;
+    }
+    .text-descript{
+      color: #fff;
+    }
+  }
+
+}
+
+.bg2 {
+
+  .header{
+    b{
+      background: url("../../../../assets/images/productsservice/solution/3.png") no-repeat center;
+    }
+  }
+  .text-descript{
+    padding: 0 15px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #666;
+    line-height: 26px;
+  }
+
+  &:hover {
+    background: #477de9 !important;
+    color: #fff;
+    box-shadow: 0 0 15px #477de9;
+
+    .header {
+      color: #fff;
+    }
+
+    b{
+      background: url("../../../../assets/images/productsservice/solution/3-3.png") no-repeat center;
+    }
+    .text-descript{
+      color: #fff;
+    }
+  }
+
+}
+.bg3 {
+
+  .header{
+    b{
+      background: url("../../../../assets/images/productsservice/solution/4.png") no-repeat center;
+      top: 7px;
+    }
+  }
+  .text-descript{
+    padding: 0 15px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #666;
+    line-height: 26px;
+  }
+
+  &:hover {
+    background: #477de9 !important;
+    color: #fff;
+    box-shadow: 0 0 15px #477de9;
+
+    .header {
+      color: #fff;
+    }
+
+    b{
+      background: url("../../../../assets/images/productsservice/solution/4-4.png") no-repeat center;
+    }
+    .text-descript{
+      color: #fff;
+    }
+  }
+
+}
+.bg4{
+
+  .header{
+    b{
+      background: url("../../../../assets/images/productsservice/solution/5.png") no-repeat center;
+    }
+  }
+  .text-descript{
+    padding: 0 15px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #666;
+    line-height: 26px;
+  }
+
+  &:hover {
+    background: #477de9 !important;
+    color: #fff;
+    box-shadow: 0 0 15px #477de9;
+
+    .header {
+      color: #fff;
+    }
+
+    b{
+      background: url("../../../../assets/images/productsservice/solution/5-5.png") no-repeat center;
+    }
+    .text-descript{
+      color: #fff;
+    }
+  }
+
+}

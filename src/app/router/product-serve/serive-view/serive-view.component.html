@@ -43,14 +43,14 @@
             <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
                 <div class="gutter-box">
                     <nz-anchor [nzAffix]="false" [nzBounds]="80">
-                        <nz-link nzHref="#active" class="links" nzTitle="服务项目"></nz-link>
+                        <nz-link nzHref="#project" class="links" nzTitle="服务项目"></nz-link>
                     </nz-anchor>
                 </div>
             </div>
             <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
                 <div class="gutter-box">
                     <nz-anchor [nzAffix]="false" [nzBounds]="80">
-                        <nz-link nzHref="#story" class="links" nzTitle="解决方案"></nz-link>
+                        <nz-link nzHref="#soletion" class="links" nzTitle="解决方案"></nz-link>
                     </nz-anchor>
                 </div>
             </div>
@@ -69,8 +69,17 @@
 <!--产品功能-->
 <div id="function">
     <app-serive-function></app-serive-function>
+    <app-serive-characteristic></app-serive-characteristic>
 </div>
 <!--产品优势-->
 <div id="advantage">
     <app-serive-advantage></app-serive-advantage>
+</div>
+<!--服务项目-->
+<div id="project">
+    <app-service-project></app-service-project>
+</div>
+<!-- 解决方案-->
+<div id="soletion">
+    <app-service-solution></app-service-solution>
 </div>

@@ -1,0 +1,119 @@
+@import "~src/app/scss/global";
+
+.special-view {
+  width: 100%;
+  background: #ddd;
+  border: 1px solid transparent;
+}
+
+.special-content {
+  width: 1200px;
+  margin: 80px auto;
+
+  .title {
+    font-size: 38px;
+    color: #333;
+    text-align: center;
+    margin: 0px 0 64px 0;
+    letter-spacing: 6px;
+
+  }
+}
+
+.content-box {
+  clear: both;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.special {
+  width: 30%;
+  height: 133px;
+  background: lightskyblue;
+  color: #000000;
+  margin: 1%;
+
+  .list-box {
+    width: 100%;
+    height: 100%;
+    clear: both;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-items: center;
+    vertical-align: center;
+    align-items: center;
+  }
+
+  .code {
+    font-size: 25px;
+    color: #ddd;
+    margin-left: 18px;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+  }
+
+  .text {
+    margin-left: 14px;
+    font-size: 16px;
+    color: #fff;
+    width: calc(100% - 90px);
+  }
+
+}
+
+.list1 {
+  background: #5eaeed;
+
+  .code {
+    color: #5eaeed;
+  }
+}
+
+.list2 {
+  background: #ff9667;
+
+  .code {
+    color: #ff9667;
+  }
+}
+
+.list3 {
+  background: #03a4db;
+
+  .code {
+    color: #03a4db;
+  }
+}
+
+.list4 {
+  background: #f56763;
+
+  .code {
+    color:  #f56763;
+  }
+}
+
+.list5 {
+  background: #4cc7c8;
+
+  .code {
+    color: #4cc7c8;
+  }
+}
+
+.list6 {
+  background: #f46889;
+
+  .code {
+    color: #f46889;
+  }
+}

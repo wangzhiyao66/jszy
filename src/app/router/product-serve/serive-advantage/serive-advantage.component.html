@@ -1,3 +1,12 @@
-<p>
-  产品优势
-</p>
+
+<div class="advantage-view">
+  <div class="advantage-content">
+    <p class="title">产品优势</p>
+    <ul class="tager-box">
+      <li *ngFor="let val of showlist; let i = index;">
+          <span> {{ val.code}}</span>
+          <p>{{ val.text }}</p>
+      </li>
+    </ul>
+  </div>
+</div>
