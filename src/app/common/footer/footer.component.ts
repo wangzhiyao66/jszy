@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-footer',
@@ -8,13 +9,13 @@ import {Component, OnInit} from '@angular/core';
 export class FooterComponent implements OnInit {
 
     nav1 = [
-        {title: '导航', link: ''},
-        {title: '首页', link: ''},
-        {title: '技术概览', link: ''},
-        {title: '产品与服务', link: ''},
-        {title: '市场运营', link: ''},
-        {title: '重要资讯', link: ''},
-        {title: '关于我们', link: ''},
+        {title: '导航', link: '/home'},
+        {title: '首页', link: '/home'},
+        {title: '技术概览', link: '/technology'},
+        {title: '产品与服务', link: '/product-serve'},
+        {title: '市场运营', link: '/market-operation'},
+        {title: '重要资讯', link: '/information'},
+        {title: '关于我们', link: '/about'},
     ];
     nav2 = [
         {title: '相关产品', link: ''},
@@ -44,7 +45,7 @@ export class FooterComponent implements OnInit {
         {title: '联系我们', link: ''},
     ];
 
-    constructor() {
+    constructor(private router: Router) {
     }
 
     ngOnInit() {

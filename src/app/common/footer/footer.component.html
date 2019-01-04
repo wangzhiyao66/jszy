@@ -22,7 +22,7 @@
     <div class="nav-link">
         <ul>
             <li *ngFor="let item of nav1">
-                <span class="nav-link-to">
+                <span class="nav-link-to" [routerLink]="item.link">
                     {{ item.title }}
                 </span>
             </li>
