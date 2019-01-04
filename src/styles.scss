@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*bootstrap 样式全局覆盖*/
+.selector-for-some-widget {
+  box-sizing: content-box;
+}

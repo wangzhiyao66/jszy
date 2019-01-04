@@ -27,6 +27,10 @@
   text-decoration: none !important;
 }
 
+::ng-deep .links  a:hover {
+  text-decoration: none !important;
+}
+
 ::ng-deep .actived {
   background: $menus-color !important;
   span {
@@ -74,7 +78,7 @@
       letter-spacing: 6px;
     }
     span {
-      font-size: 1.5em;
+      font-size: 1.3em;
       color: #fff;
       letter-spacing: 6px;
       

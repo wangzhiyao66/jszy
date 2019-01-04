@@ -2,7 +2,7 @@
 
 .special-view {
   width: 100%;
-  background: #ddd;
+  background: #f3f7fa;
   border: 1px solid transparent;
 }
 
@@ -14,7 +14,7 @@
     font-size: 38px;
     color: #333;
     text-align: center;
-    margin: 0px 0 64px 0;
+    margin: 0px 0 56px 0;
     letter-spacing: 6px;
 
   }
@@ -31,11 +31,11 @@
 }
 
 .special {
-  width: 30%;
+  width: 32%;
   height: 133px;
   background: lightskyblue;
   color: #000000;
-  margin: 1%;
+  margin:  1% 0;
 
   .list-box {
     width: 100%;
@@ -50,15 +50,15 @@
   }
 
   .code {
-    font-size: 25px;
+    font-size: 28px;
     color: #ddd;
     margin-left: 18px;
-    width: 45px;
-    height: 45px;
+    width: 56px;
+    height: 56px;
     background: #fff;
     border-radius: 50%;
     text-align: center;
-    line-height: 45px;
+    line-height: 56px;
   }
 
   .text {
@@ -76,6 +76,10 @@
   .code {
     color: #5eaeed;
   }
+
+  &:hover {
+    box-shadow:  0  0  15px 0  #5eaeed;
+  }
 }
 
 .list2 {
@@ -84,6 +88,11 @@
   .code {
     color: #ff9667;
   }
+
+  &:hover {
+    box-shadow:  0  0  15px 0  #ff9667;
+  }
+
 }
 
 .list3 {
@@ -92,6 +101,11 @@
   .code {
     color: #03a4db;
   }
+
+  &:hover {
+    box-shadow:  0  0  15px 0  #03a4db;
+  }
+
 }
 
 .list4 {
@@ -99,6 +113,10 @@
 
   .code {
     color:  #f56763;
+  }
+
+  &:hover {
+    box-shadow:  0  0  15px 0  #f56763;
   }
 }
 
@@ -108,6 +126,10 @@
   .code {
     color: #4cc7c8;
   }
+
+  &:hover {
+    box-shadow:  0  0  15px 0  #4cc7c8;
+  }
 }
 
 .list6 {
@@ -115,5 +137,9 @@
 
   .code {
     color: #f46889;
+  }
+
+  &:hover {
+    box-shadow:  0  0  15px 0  #f46889;
   }
 }

@@ -8,22 +8,25 @@
 ::ng-deep .ant-anchor-wrapper{
   background: none;
 }
-.links {
+.serive {
   height: 75px;
   line-height: 75px;
   padding: 0; 
   margin: 0;
   font-size: 24px !important;
-  color: #000 !important;
+  color: #fff !important;
   text-decoration: none !important;
-  background: #f5f7fa;
+  background: #fff;
 
 }
-::ng-deep .links  a:focus {
+::ng-deep .serive  a:focus {
+  text-decoration: none !important;
+}
+::ng-deep .serive  a:hover {
   text-decoration: none !important;
 }
 
-::ng-deep .links  a:visited {
+::ng-deep .serive  a:visited {
   text-decoration: none !important;
 }
 
@@ -35,7 +38,7 @@
 }
 
 
-::ng-deep .links :hover {
+::ng-deep .serive:hover {
   //cursor: pointer;
   background: $menus-color;
   span {
@@ -75,7 +78,7 @@
       letter-spacing: 6px;
     }
     span {
-      font-size: 1.5em;
+      font-size: 1.3em;
       color: #fff;
       letter-spacing: 6px;
       
@@ -87,7 +90,7 @@
     width: 100%;
     height: 78px;
    //  padding: 20px 0;
-    background: #f5f7fa;
+   // background: #f5f7fa;
    }
    // 描点
    .nav-anchor {

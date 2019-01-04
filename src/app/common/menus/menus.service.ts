@@ -35,12 +35,12 @@ export class MenusService {
       animationfalg: false,
       showchildren: false,
       children: [
-        { anchorname : '产品介绍' , url: '../../../assets/images/two/06.png' , link : '/technology' , params : 'introduce'},
-        { anchorname : '云平台服务' , url: '../../../assets/images/two/07.png' , link : '/technology' , params : 'team'},
-        { anchorname : '产品功能' , url: '../../../assets/images/two/08.png' , link : '/technology' , params : 'course'},
-        { anchorname : '产品优势' , url: '../../../assets/images/two/09.png' , link : '/technology' , params : 'Achievements'},
-        { anchorname : '服务项目' , url: '../../../assets/images/two/10.png' , link : '/technology' , params : 'active'},
-        { anchorname : '解决方案' , url: '../../../assets/images/two/11.png' , link : '/technology' , params : 'story'}
+        { anchorname : '产品介绍' , url: '../../../assets/images/two/06.png' , link : '/product-serve' , params : 'product_introduce'},
+        { anchorname : '云平台服务' , url: '../../../assets/images/two/07.png' , link : '/product-serve' , params : 'platform'},
+        { anchorname : '产品功能' , url: '../../../assets/images/two/08.png' , link : '/product-serve' , params : 'function'},
+        { anchorname : '产品优势' , url: '../../../assets/images/two/09.png' , link : '/product-serve' , params : 'advantage'},
+        { anchorname : '服务项目' , url: '../../../assets/images/two/10.png' , link : '/product-serve' , params : 'project'},
+        { anchorname : '解决方案' , url: '../../../assets/images/two/11.png' , link : '/product-serve' , params : 'soletion'},
         ]
     },
     {

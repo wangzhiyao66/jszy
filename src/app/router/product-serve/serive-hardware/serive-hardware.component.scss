@@ -64,14 +64,17 @@
       -moz-border-radius: 20px;
       border-radius: 20px;
       border: 3px solid #fff;
+
+      &:hover{
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+      }
     }
 
     .quca {
-      background: #ed426a;
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-      border-radius: 10px;
       outline: none;
+      background: #ed426a;
 
       &:hover{
         border: 3px solid  #f5c6d1;
