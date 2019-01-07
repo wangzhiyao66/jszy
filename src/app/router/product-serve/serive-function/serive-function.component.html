@@ -1,52 +1,13 @@
-<div class="function-view" #functions >
+<div class="function-view">
     <div class="function-content">
         <p class="title">产品功能</p>
-
-        <ul class="function-list">
-            <li>
+        <ul class="function-list"   [@filterAnimation]="heroTotal">
+            <li *ngFor="let art of func_list" class="hero">
                 <b></b>
-                <img class="img-icon" src="../../../../assets/images/productsservice/function/1.png">
-                <img class="img-bg-icon" src="../../../../assets/images/productsservice/function/1-1.png">
-
-                <span>个人-健康评估服务；</span>
+                <img class="img-icon" src="{{ art.src}}">
+                <img class="img-bg-icon" src="{{ art.bg_src}}">
+                <span>{{ art.text}}</span>
             </li>
-            <li>
-                <b></b>
-                <img class="img-icon" src="../../../../assets/images/productsservice/function/2.png">
-                <img class="img-bg-icon" src="../../../../assets/images/productsservice/function/2-2.png">
-                <span>家庭-新婚期、围产期、婴幼生长期、学龄期、工作压力期、空巢期、终老期健康服务</span>
-            </li>
-            <li>
-                <b></b>
-                <img class="img-icon" src="../../../../assets/images/productsservice/function/3.png">
-                <img class="img-bg-icon" src="../../../../assets/images/productsservice/function/3-3.png">
-                <span>中小医院和社区乡镇社保网卫生站-提供远程健康管理、检查、会诊、疗效监测评价等资源整合优化配置服务；</span>
-            </li>
-            <li>
-                <b></b>
-                <img class="img-icon" src="../../../../assets/images/productsservice/function/4.png">
-                <img class="img-bg-icon" src="../../../../assets/images/productsservice/function/4-4.png">
-                <span>基层中医诊所、私人执业医师-精细入微的个性化服务：</span>
-            </li>
-            <li>
-                <b></b>
-                <img class="img-icon" src="../../../../assets/images/productsservice/function/5.png">
-                <img class="img-bg-icon" src="../../../../assets/images/productsservice/function/5-5.png">
-                <span>大行业、大系统、大企业员工的体检，建立并提供健康档案的管理和日常服务；</span>
-            </li>
-            <li>
-                <b></b>
-                <img class="img-icon" src="../../../../assets/images/productsservice/function/6.png">
-                <img class="img-bg-icon" src="../../../../assets/images/productsservice/function/6-6.png">
-                <span>健康管理服务机构-健康保健品养生效果评估服务；</span>
-            </li>
-            <li>
-                <b></b>
-                <img class="img-icon" src="../../../../assets/images/productsservice/function/7.png">
-                <img class="img-bg-icon" src="../../../../assets/images/productsservice/function/7-7.png">
-                <span> 家庭及个人健康养生的调理、培训与知识传播。</span>
-            </li>
-
         </ul>
 
     </div>

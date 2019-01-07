@@ -1,33 +1,16 @@
-<p>
-  user works!
-</p>
-<p>
-  user works!
-</p>
-<p>
-  user works!
-</p>
-<p>
-  user works!
-</p>
-<p>
-  user works!
-</p>
-<p>
-  user works!
-</p>
-<p>
-  user works!
-</p>
-<p>
-  user works!
-</p>
-<p>
-  user works!
-</p>
-<p>
-  user works!
-</p>
-<p>
-  user works!
-</p>
+
+<div style="height: 1200px;background: pink;"></div>
+<div class="function-view" #art>
+  <div class="function-content">
+    <p class="title">产品功能</p>
+    <ul class="function-list" [@filterAnimation]="heroTotal">
+      <li *ngFor="let art of func_list" class="hero">
+        <b></b>
+        <img class="img-icon" src="{{ art.src}}">
+        <img class="img-bg-icon" src="{{ art.bg_src}}">
+        <span>{{ art.text}}</span>
+      </li>
+    </ul>
+
+  </div>
+</div>
