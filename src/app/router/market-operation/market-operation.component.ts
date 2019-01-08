@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-market-operation',
-  templateUrl: './market-operation.component.html',
-  styleUrls: ['./market-operation.component.scss']
+  template: `<router-outlet></router-outlet>`,
+  styles: [``]
 })
 export class MarketOperationComponent implements OnInit {
 

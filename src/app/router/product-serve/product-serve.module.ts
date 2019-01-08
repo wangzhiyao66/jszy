@@ -27,14 +27,13 @@ import { SeriveCharacteristicComponent } from './serive-characteristic/serive-ch
     SeriveAdvantageComponent,
     ServiceProjectComponent,
     ServiceSolutionComponent,
-    SeriveCharacteristicComponent
+    SeriveCharacteristicComponent,
   ],
   imports: [
     CommonModule,
     RouterModule,
     NgZorroAntdModule,
     RouterModule,
-    FormsModule,
     ProductServeRouting
   ],
   providers: [ServicesService]

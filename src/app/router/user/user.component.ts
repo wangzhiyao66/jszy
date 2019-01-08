@@ -9,7 +9,7 @@ import {fromEvent, Subscription} from 'rxjs';
     animations: [
         trigger('pageAnimations', [
             transition(':enter', [
-                query('.hero, form', [
+                query('.art', [
                     style({opacity: 0, transform: 'translateY(-100px)'}),
                     stagger(-30, [
                         animate('500ms cubic-bezier(0.35, 0, 0.25, 1)', style({opacity: 1, transform: 'none'}))
@@ -22,14 +22,14 @@ import {fromEvent, Subscription} from 'rxjs';
             transition(':increment', [
                 query(':enter', [
                     style({opacity: 0, width: '0px'}),
-                    stagger(50, [
+                    stagger(500, [
                         animate('300ms ease-out', style({opacity: 1, width: '*'})),
                     ]),
                 ], {optional: true})
             ]),
             transition(':decrement', [
                 query(':leave', [
-                    stagger(50, [
+                    stagger(500, [
                         animate('300ms ease-out', style({opacity: 0, width: '0px'})),
                     ]),
                 ])
@@ -58,6 +58,7 @@ export class UserComponent implements OnInit {
     docuHeight = 0;
     // 可视区域高度
     clientHeight = 0;
+    isfalg = true;
 
     ngOnInit() {
 
@@ -114,6 +115,12 @@ export class UserComponent implements OnInit {
                 console.log('clientHeight', this.clientHeight);
 
             });
+    }
+    /*
+    * 1222
+    * */
+    ischange() {
+        this.isfalg = !this.isfalg;
     }
 
 }

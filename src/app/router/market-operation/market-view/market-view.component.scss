@@ -1,0 +1,116 @@
+@import "../../../scss/_global";
+
+
+// 锚点样式
+::ng-deep .ant-anchor-ink {
+  display: none;
+}
+::ng-deep .ant-anchor-wrapper{
+  background: none;
+}
+.links {
+  height: 75px;
+  line-height: 75px;
+  padding: 0;
+  margin: 0;
+  font-size: 24px !important;
+  color: #000 !important;
+  text-decoration: none !important;
+  background: #f5f7fa;
+
+}
+::ng-deep .links  a:focus {
+  text-decoration: none !important;
+}
+
+::ng-deep .links  a:visited {
+  text-decoration: none !important;
+}
+
+::ng-deep .links  a:hover {
+  text-decoration: none !important;
+}
+
+::ng-deep .actived {
+  background: $menus-color !important;
+  span {
+    color: #fff;
+  }
+}
+
+
+::ng-deep .links :hover {
+  //cursor: pointer;
+  background: $menus-color;
+  span {
+    color: #fff;
+  }
+}
+
+.overview {
+  width: 100%;
+  margin-top: -80px;
+  background: url('../../../../assets/images/market/marbanner.png') no-repeat;
+  background-position: center;
+}
+
+// banner
+
+.banner-box {
+  width: 80%;
+  max-width: 1200px;
+  min-width: 1100px;
+  height: 550px;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  position: relative;
+
+  .description {
+    // width: 45%;
+    min-width: 470px;
+    height: 160px;
+    text-align: center;
+    margin: 19% auto;
+    p {
+      margin: 20px 0 40px;
+      font-size: 3em;
+      color: rgb(225, 168, 34);
+      letter-spacing: 6px;
+    }
+    span {
+      font-size: 1.3em;
+      color: #fff;
+      letter-spacing: 6px;
+
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-box {
+    height: 550px;
+  }
+}
+.nav-box{
+  width: 100%;
+  height: 78px;
+  //  padding: 20px 0;
+  background: #f5f7fa;
+}
+// 描点
+.nav-anchor {
+  width: 80%;
+  max-width: 1200px;
+  min-width: 1200px;
+  height: 100px;
+  margin: 0px auto;
+
+  .gutter-box {
+    text-align: center;
+    height: 88px;
+    line-height: 88px;
+
+  }
+
+}
+

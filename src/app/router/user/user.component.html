@@ -1,10 +1,11 @@
 
-<div style="height: 1200px;background: pink;"></div>
+<!--<div style="height: 800px;background: pink;"></div>-->
+<button nz-button nzType="primary" (click)="ischange()">Primary</button>
 <div class="function-view" #art>
   <div class="function-content">
     <p class="title">产品功能</p>
-    <ul class="function-list" [@filterAnimation]="heroTotal">
-      <li *ngFor="let art of func_list" class="hero">
+    <ul class="function-list" [@filterAnimation]="heroTotal" *ngIf="isfalg">
+      <li *ngFor="let art of func_list" class="art">
         <b></b>
         <img class="img-icon" src="{{ art.src}}">
         <img class="img-bg-icon" src="{{ art.bg_src}}">

@@ -7,7 +7,7 @@ import {Pulse} from '../../animations/pulse.animation';
 @Component({
     selector: 'app-product-serve',
     template: `<router-outlet></router-outlet>`,
-    styleUrls: ['./product-serve.component.scss'],
+    styles: [``],
     animations: [
         Pulse
     ],

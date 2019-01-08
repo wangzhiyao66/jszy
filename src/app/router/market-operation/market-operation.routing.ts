@@ -1,11 +1,11 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {MarketOperationComponent} from './market-operation.component';
+import {MarketViewComponent} from './market-view/market-view.component';
 
 const routes: Routes = [
     {
         path: '',
-        component: MarketOperationComponent,
+        component: MarketViewComponent,
     },
 
 ];

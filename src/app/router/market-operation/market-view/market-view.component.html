@@ -1,10 +1,9 @@
-
 <!-- banner图 -->
 <div class='overview'>
     <div class="banner-box">
         <div class="description" [@advisor]="'active'">
-            <p>产品与服务</p>
-            <span>红外医学中医可视化智能健康服务系统 + 硬件设备</span>
+            <p>市场运营</p>
+            <span>始终坚持生命自然和谐统一，以不屑的努力，推动中华传统医学成为世界医学！</span>
         </div>
     </div>
 </div>
@@ -15,71 +14,70 @@
             <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
                 <div class="gutter-box">
                     <nz-anchor [nzAffix]="false" [nzBounds]="80">
-                        <nz-link nzHref="#product_introduce" class="serive actived" nzTitle="产品介绍"></nz-link>
+                        <nz-link nzHref="#market_apply" class="links actived" nzTitle="市场应用"></nz-link>
                     </nz-anchor>
                 </div>
             </div>
             <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
                 <div class="gutter-box">
                     <nz-anchor [nzAffix]="false" [nzBounds]="80">
-                        <nz-link nzHref="#platform" class="serive" nzTitle="云平台服务"></nz-link>
+                        <nz-link nzHref="#apply_range" class="links" nzTitle="应用范围"></nz-link>
                     </nz-anchor>
                 </div>
             </div>
             <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
                 <div class="gutter-box">
                     <nz-anchor [nzAffix]="false" [nzBounds]="80">
-                        <nz-link nzHref="#function" class="serive" nzTitle="产品功能"></nz-link>
+                        <nz-link nzHref="#range_case" class="links" nzTitle="应用案例"></nz-link>
                     </nz-anchor>
                 </div>
             </div>
             <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
                 <div class="gutter-box">
                     <nz-anchor [nzAffix]="false" [nzBounds]="80">
-                        <nz-link nzHref="#advantage" class="serive" nzTitle="产品优势"></nz-link>
+                        <nz-link nzHref="#Achievements" class="links" nzTitle="运营方案"></nz-link>
                     </nz-anchor>
                 </div>
             </div>
             <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
                 <div class="gutter-box">
                     <nz-anchor [nzAffix]="false" [nzBounds]="80">
-                        <nz-link nzHref="#project" class="serive" nzTitle="服务项目"></nz-link>
+                        <nz-link nzHref="#active" class="links" nzTitle="合作模式"></nz-link>
                     </nz-anchor>
                 </div>
             </div>
             <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
                 <div class="gutter-box">
                     <nz-anchor [nzAffix]="false" [nzBounds]="80">
-                        <nz-link nzHref="#soletion" class="serive" nzTitle="解决方案"></nz-link>
+                        <nz-link nzHref="#story" class="links" nzTitle="售后支持"></nz-link>
                     </nz-anchor>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!--产品介绍-->
-<div id='product_introduce' [@advisor]="'active'">
-    <app-serive-introduction></app-serive-introduction>
-    <app-serive-hardware></app-serive-hardware>
+
+<!--市场应用-->
+<div id="market_apply">
+    <app-market-apply></app-market-apply>
 </div>
-<!-- 云服务平台 -->
-<div id='platform'>
-    <app-serive-platform></app-serive-platform>
+<!--应用范围-->
+<div id="apply_range">
+    <app-apply-range></app-apply-range>
 </div>
-<!--产品功能-->
-<div id="function">
-    <app-serive-function [docuheight]="docuHeight" [clientHeight]="clientHeight"></app-serive-function>
-    <app-serive-characteristic></app-serive-characteristic>
+<!--应用案例-->
+<div id="range_case">
+    <app-range-case></app-range-case>
 </div>
-<!--产品优势-->
-<div id="advantage">
-    <app-serive-advantage></app-serive-advantage>
+<!--运营方案-->
+<div id="operation">
+    <app-operation-plan></app-operation-plan>
 </div>
-<!--服务项目-->
-<div id="project">
-    <app-service-project></app-service-project>
+<!--合作模式-->
+<div id="cooperation">
+    <app-cooperation-mode></app-cooperation-mode>
 </div>
-<!-- 解决方案-->
-<div id="soletion">
-    <app-service-solution></app-service-solution>
+<!--售后支持-->
+<div id="atfer">
+    <app-after-serive></app-after-serive>
 </div>
