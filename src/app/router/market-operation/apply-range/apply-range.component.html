@@ -2,9 +2,11 @@
   <div class="apply-content">
     <p class="title">应用范围</p>
     <ul class="tager-box">
-      <li *ngFor="let val of showlist; let i = index;">
-        <span> {{ val.code}}</span>
-        <p>{{ val.text }}</p>
+      <li *ngFor="let val of showlist; let i = index;" (mouseenter)="esein(i)" (mouseleave)="eseout(i)" >
+        <img class="icon-img" src="{{ val.src}}" [class.roteanimation]="val.falg">
+        <p class="p-text color{{i}}">{{ val.title}}</p>
+        <span class="unline border{{i}}"></span>
+        <p class="p-desc">{{ val.text }}</p>
       </li>
     </ul>
   </div>
