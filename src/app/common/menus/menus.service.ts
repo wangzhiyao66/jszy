@@ -35,12 +35,12 @@ export class MenusService {
       animationfalg: false,
       showchildren: false,
       children: [
-        { anchorname : '产品介绍' , url: '../../../assets/images/two/06.png' , link : '/product-serve' , params : 'product_introduce'},
-        { anchorname : '云平台服务' , url: '../../../assets/images/two/07.png' , link : '/product-serve' , params : 'platform'},
-        { anchorname : '产品功能' , url: '../../../assets/images/two/08.png' , link : '/product-serve' , params : 'function'},
-        { anchorname : '产品优势' , url: '../../../assets/images/two/09.png' , link : '/product-serve' , params : 'advantage'},
-        { anchorname : '服务项目' , url: '../../../assets/images/two/10.png' , link : '/product-serve' , params : 'project'},
-        { anchorname : '解决方案' , url: '../../../assets/images/two/11.png' , link : '/product-serve' , params : 'soletion'},
+        { anchorname : '产品介绍' , url: '../../../assets/images/two/21.png' , link : '/product-serve' , params : 'product_introduce'},
+        { anchorname : '云平台服务' , url: '../../../assets/images/two/22.png' , link : '/product-serve' , params : 'platform'},
+        { anchorname : '产品功能' , url: '../../../assets/images/two/23.png' , link : '/product-serve' , params : 'function'},
+        { anchorname : '产品优势' , url: '../../../assets/images/two/24.png' , link : '/product-serve' , params : 'advantage'},
+        { anchorname : '服务项目' , url: '../../../assets/images/two/25.png' , link : '/product-serve' , params : 'project'},
+        { anchorname : '解决方案' , url: '../../../assets/images/two/26.png' , link : '/product-serve' , params : 'soletion'},
         ]
     },
     {
@@ -50,18 +50,18 @@ export class MenusService {
       animationfalg: false,
       showchildren: false,
       children: [
-        { anchorname : '技术介绍' , url: '../../../assets/images/two/01.png' , link : '/technology' , params : 'introduce'},
-        { anchorname : '研发团队' , url: '../../../assets/images/two/02.png' , link : '/technology' , params : 'team'},
-        { anchorname : '研发历程' , url: '../../../assets/images/two/03.png' , link : '/technology' , params : 'course'},
-        { anchorname : '研发成果' , url: '../../../assets/images/two/04.png' , link : '/technology' , params : 'Achievements'},
-        { anchorname : '科研活动' , url: '../../../assets/images/two/05.png' , link : '/technology' , params : 'active'},
-        { anchorname : '红外故事' , url: '../../../assets/images/two/06.png' , link : '/technology' , params : 'story'}
+        { anchorname : '市场应用' , url: '../../../assets/images/two/31.png' , link : '/technology' , params : 'market_apply'},
+        { anchorname : '应用范围' , url: '../../../assets/images/two/32.png' , link : '/technology' , params : 'apply_range'},
+        { anchorname : '应用案例' , url: '../../../assets/images/two/33.png' , link : '/technology' , params : 'range_case'},
+        { anchorname : '运营方案' , url: '../../../assets/images/two/34.png' , link : '/technology' , params : 'operation'},
+        { anchorname : '合作模式' , url: '../../../assets/images/two/35.png' , link : '/technology' , params : 'cooperation'},
+        { anchorname : '售后支持' , url: '../../../assets/images/two/36.png' , link : '/technology' , params : 'atfer'}
         ]
     },
     {
       title: '用户中心',
       link: '/user',
-      hidden: false,
+      hidden: true,
       animationfalg: false,
       showchildren: false,
       children: [

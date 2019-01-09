@@ -5,15 +5,16 @@
         </div>
         <div class="nav-right">
             <ul>
-                <li *ngFor="let item of menuservice.menus,let i = index;" class="line" (click)='hidemenus()' [routerLink]="item.link" routerLinkActive="active" (mouseenter)="onmenuin(i)" (mouseleave)="onmenuleave(i)">
+                <li *ngFor="let item of menuservice.menus,let i = index;" [hidden]="item.hidden" class="line" (click)='hidemenus()' [routerLink]="item.link" routerLinkActive="active" (mouseenter)="onmenuin(i)" (mouseleave)="onmenuleave(i)">
                     <span class="title" [class.title-color]='item.showchildren'>{{ item.title }}</span>
                     <span [@fadeIn]="item.animationfalg ? 'open' : 'closed'" class="animation-bg"></span>
                 </li>
             </ul>
-            <div class="login">
-                <button class="btn" *ngIf="!but_title" (click)="login()">登录</button>
-                <button class="btn" *ngIf="but_title" (click)="output()">退出</button>
-            </div>
+            <!-- 隐藏 其他 -->
+            <!--<div class="login">-->
+                <!--<button class="btn" *ngIf="!but_title" (click)="login()">登录</button>-->
+                <!--<button class="btn" *ngIf="but_title" (click)="output()">退出</button>-->
+            <!--</div>-->
         </div>
     </div>
     <div class='two-chor' *ngFor="let item of menuservice.menus,let i = index;" [class.flexs]='menuservice.menus[i].showchildren' [hidden]='!menuservice.menus[i].showchildren' (mouseenter)="onmenuin(i)" (mouseleave)="onmenuleave(i)">

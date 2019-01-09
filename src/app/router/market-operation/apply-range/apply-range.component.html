@@ -1,5 +1,5 @@
-<div class="apply-view">
-  <div class="apply-content">
+<div class="apply-view" >
+  <div class="apply-content" #applyrange [@pulse]="applyrangefalg ? 'closed' : 'enter'">
     <p class="title">应用范围</p>
     <ul class="tager-box">
       <li *ngFor="let val of showlist; let i = index;" (mouseenter)="esein(i)" (mouseleave)="eseout(i)" >

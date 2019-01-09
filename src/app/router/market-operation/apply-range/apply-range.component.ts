@@ -1,11 +1,16 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ElementRef, Input, OnChanges, OnInit, ViewChild} from '@angular/core';
+import {Enter} from '../../../animations/advisor.animation';
+import {Pulse} from '../../../animations/pulse.animation';
 
 @Component({
     selector: 'app-apply-range',
     templateUrl: './apply-range.component.html',
     styleUrls: ['./apply-range.component.scss'],
+    animations: [
+        Enter, Pulse
+    ]
 })
-export class ApplyRangeComponent implements OnInit {
+export class ApplyRangeComponent implements OnInit, OnChanges {
 
     showlist: { src: string, title: string, text: string, falg: boolean}[] = [
         {
@@ -26,6 +31,12 @@ export class ApplyRangeComponent implements OnInit {
         },
     ];
 
+    // 获取本地变量
+    @ViewChild('applyrange') applyrange: ElementRef;
+    @Input() docuheight: number;
+    @Input() clientHeight: number;
+    applyrangefalg: Boolean = false;
+
     constructor() {
     }
 
@@ -42,5 +53,13 @@ export class ApplyRangeComponent implements OnInit {
 
     eseout(index) {
         this.showlist[index].falg = true;
+    }
+
+    // 变更检测
+    ngOnChanges(): void {
+        const target: number = this.docuheight + this.clientHeight * 0.7;
+        if (this.applyrange.nativeElement.offsetTop <= target) {
+            this.applyrangefalg = true;
+        }
     }
 }

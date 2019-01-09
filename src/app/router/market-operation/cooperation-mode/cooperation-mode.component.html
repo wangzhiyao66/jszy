@@ -1,8 +1,8 @@
 <div class="function-view">
-  <div class="function-content">
+  <div class="function-content"  #cooperation [@pulse]="cooperationfalg ? 'closed' : 'enter'">
     <p class="title">合作模式</p>
     <ul class="function-list">
-      <li *ngFor="let art of func_list; let i = index">
+      <li *ngFor="let art of list; let i = index">
         <b></b>
         <span class="num">{{'0' + i }}</span>
         <span class="bg"></span>

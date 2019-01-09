@@ -1,9 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
+import {Enter} from '../../../animations/advisor.animation';
+import {Pulse} from '../../../animations/pulse.animation';
 
 @Component({
   selector: 'app-cooperation-mode',
   templateUrl: './cooperation-mode.component.html',
-  styleUrls: ['./cooperation-mode.component.scss']
+  styleUrls: ['./cooperation-mode.component.scss'],
+  animations: [
+    Enter, Pulse
+  ]
 })
 export class CooperationModeComponent implements OnInit {
 
@@ -45,14 +50,21 @@ export class CooperationModeComponent implements OnInit {
     },
   ];
 
+  // 获取本地变量
+  @ViewChild('cooperation') cooperation: ElementRef;
+  @Input() docuheight: number;
+  @Input() clientHeight: number;
+  cooperationfalg: Boolean = false;
+
   constructor() { }
 
   ngOnInit() {
   }
-  /**
-   * 提炼数据
-   */
-  get func_list() {
-    return this.list;
+  // 变更检测
+  ngOnChanges(): void {
+    const target: number = this.docuheight + this.clientHeight * 0.7;
+    if (this.cooperation.nativeElement.offsetTop <= target) {
+      this.cooperationfalg = true;
+    }
   }
 }

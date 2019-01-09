@@ -1,19 +1,29 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ElementRef, Input, OnChanges, OnInit, ViewChild} from '@angular/core';
 import {transverse} from '../../../animations/tabs.anmation';
+import {Enter} from '../../../animations/advisor.animation';
+import {Pulse} from '../../../animations/pulse.animation';
 
 @Component({
     selector: 'app-serive-hardware',
     templateUrl: './serive-hardware.component.html',
     styleUrls: ['./serive-hardware.component.scss'],
-    animations: [ transverse ]
+    animations: [
+        transverse,
+        Pulse
+    ]
 })
-export class SeriveHardwareComponent implements OnInit {
+export class SeriveHardwareComponent implements OnInit , OnChanges{
 
     hardwarelist = [
         {falg: true},
         {falg: false},
         {falg: false},
     ];
+    // 获取本地变量
+    @ViewChild('hardware') hardware: ElementRef;
+    @Input() docuheight: number;
+    @Input() clientHeight: number;
+    hardwarefalg: Boolean = false;
 
     constructor() {
     }
@@ -22,8 +32,16 @@ export class SeriveHardwareComponent implements OnInit {
     }
 
     showimg(num: number) {
-        this.hardwarelist.forEach(el => el.falg = false );
+        this.hardwarelist.forEach(el => el.falg = false);
         this.hardwarelist[num].falg = true;
+    }
+
+    // 变更检测
+    ngOnChanges(): void {
+        const target: number = this.docuheight + this.clientHeight * 0.7;
+        if (this.hardware.nativeElement.offsetTop <= target) {
+            this.hardwarefalg = true;
+        }
     }
 
 }

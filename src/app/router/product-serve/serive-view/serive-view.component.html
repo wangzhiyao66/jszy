@@ -60,26 +60,26 @@
 <!--产品介绍-->
 <div id='product_introduce' [@advisor]="'active'">
     <app-serive-introduction></app-serive-introduction>
-    <app-serive-hardware></app-serive-hardware>
+    <app-serive-hardware [docuheight]="docuHeight" [clientHeight]="clientHeight"></app-serive-hardware>
 </div>
 <!-- 云服务平台 -->
 <div id='platform'>
-    <app-serive-platform></app-serive-platform>
+    <app-serive-platform [docuheight]="docuHeight" [clientHeight]="clientHeight"></app-serive-platform>
 </div>
 <!--产品功能-->
 <div id="function">
     <app-serive-function [docuheight]="docuHeight" [clientHeight]="clientHeight"></app-serive-function>
-    <app-serive-characteristic></app-serive-characteristic>
+    <app-serive-characteristic [docuheight]="docuHeight" [clientHeight]="clientHeight"></app-serive-characteristic>
 </div>
 <!--产品优势-->
 <div id="advantage">
-    <app-serive-advantage></app-serive-advantage>
+    <app-serive-advantage [docuheight]="docuHeight" [clientHeight]="clientHeight"></app-serive-advantage>
 </div>
 <!--服务项目-->
 <div id="project">
-    <app-service-project></app-service-project>
+    <app-service-project [docuheight]="docuHeight" [clientHeight]="clientHeight"></app-service-project>
 </div>
 <!-- 解决方案-->
 <div id="soletion">
-    <app-service-solution></app-service-solution>
+    <app-service-solution [docuheight]="docuHeight" [clientHeight]="clientHeight"></app-service-solution>
 </div>

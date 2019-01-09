@@ -1,11 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, Input, OnChanges, OnInit, ViewChild} from '@angular/core';
+import {Pulse} from '../../../animations/pulse.animation';
 
 @Component({
   selector: 'app-serive-advantage',
   templateUrl: './serive-advantage.component.html',
-  styleUrls: ['./serive-advantage.component.scss']
+  styleUrls: ['./serive-advantage.component.scss'],
+  animations: [
+    Pulse
+  ]
 })
-export class SeriveAdvantageComponent implements OnInit {
+export class SeriveAdvantageComponent implements OnInit , OnChanges{
 
   showlist: { code: string, text: string}[] = [
     { code: '01' , text: '坚实的中医理论基础，并集光学、工程学、物理学、系统论、红外影像学为一体的创新技术'},
@@ -20,9 +24,24 @@ export class SeriveAdvantageComponent implements OnInit {
     { code: '10' , text: '检测无辐射、无介入，安全快捷'},
   ];
 
-  constructor() { }
+  // 获取本地变量
+  @ViewChild('advantage') advantage: ElementRef;
+  @Input() docuheight: number;
+  @Input() clientHeight: number;
+  advantagefalg: Boolean = false;
+
+  constructor() {
+  }
 
   ngOnInit() {
+  }
+
+  // 变更检测
+  ngOnChanges(): void {
+    const target: number = this.docuheight + this.clientHeight * 0.7;
+    if (this.advantage.nativeElement.offsetTop <= target) {
+      this.advantagefalg = true;
+    }
   }
 
 }

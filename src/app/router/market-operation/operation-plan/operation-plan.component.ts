@@ -1,11 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, Input, OnChanges, OnInit, ViewChild} from '@angular/core';
+import {Enter} from '../../../animations/advisor.animation';
+import {Pulse} from '../../../animations/pulse.animation';
 
 @Component({
   selector: 'app-operation-plan',
   templateUrl: './operation-plan.component.html',
-  styleUrls: ['./operation-plan.component.scss']
+  styleUrls: ['./operation-plan.component.scss'],
+  animations: [
+    Enter, Pulse
+  ]
 })
-export class OperationPlanComponent implements OnInit {
+export class OperationPlanComponent implements OnInit , OnChanges{
 
   showlist: { src: string, label: string, text: string}[] = [
     {
@@ -30,9 +35,22 @@ export class OperationPlanComponent implements OnInit {
     },
   ];
 
+  // 获取本地变量
+  @ViewChild('planview') planview: ElementRef;
+  @Input() docuheight: number;
+  @Input() clientHeight: number;
+  planviewfalg: Boolean = false;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  // 变更检测
+  ngOnChanges(): void {
+    const target: number = this.docuheight + this.clientHeight * 0.7;
+    if (this.planview.nativeElement.offsetTop <= target) {
+      this.planviewfalg = true;
+    }
+  }
 }

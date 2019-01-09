@@ -58,26 +58,26 @@
 </div>
 
 <!--市场应用-->
-<div id="market_apply">
+<div id="market_apply" [@advisor]="'active'">
     <app-market-apply></app-market-apply>
 </div>
 <!--应用范围-->
 <div id="apply_range">
-    <app-apply-range></app-apply-range>
+    <app-apply-range [docuheight]="docuHeight" [clientHeight]="clientHeight"></app-apply-range>
 </div>
 <!--应用案例-->
 <div id="range_case">
-    <app-range-case></app-range-case>
+    <app-range-case [docuheight]="docuHeight" [clientHeight]="clientHeight"></app-range-case>
 </div>
 <!--运营方案-->
 <div id="operation">
-    <app-operation-plan></app-operation-plan>
+    <app-operation-plan [docuheight]="docuHeight" [clientHeight]="clientHeight"></app-operation-plan>
 </div>
 <!--合作模式-->
 <div id="cooperation">
-    <app-cooperation-mode></app-cooperation-mode>
+    <app-cooperation-mode [docuheight]="docuHeight" [clientHeight]="clientHeight"></app-cooperation-mode>
 </div>
 <!--售后支持-->
 <div id="atfer">
-    <app-after-serive></app-after-serive>
+    <app-after-serive [docuheight]="docuHeight" [clientHeight]="clientHeight"></app-after-serive>
 </div>

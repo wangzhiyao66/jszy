@@ -15,7 +15,7 @@ export class SeriveViewComponent implements OnInit, OnDestroy  {
     // 订阅事件
     subscription: Subscription;
     // 获取本地变量
-    // @ViewChild('anchor') anchor: ElementRef;
+    @ViewChild('anchor') anchor: ElementRef;
     // 滚动高度
     docuHeight = 0;
     // 可视区域高度

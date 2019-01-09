@@ -1,12 +1,12 @@
 import {Component, ElementRef, HostBinding, Input, OnChanges, OnInit, ViewChild} from '@angular/core';
-import {fiterPagel, page} from '../../../animations/fiterPagel.animation';
+import {Pulse} from '../../../animations/pulse.animation';
 
 @Component({
     selector: 'app-serive-function',
     templateUrl: './serive-function.component.html',
     styleUrls: ['./serive-function.component.scss'],
     animations: [
-        fiterPagel, page
+        Pulse
     ]
 })
 export class SeriveFunctionComponent implements OnInit, OnChanges {
@@ -16,18 +16,9 @@ export class SeriveFunctionComponent implements OnInit, OnChanges {
     @Input() docuheight: number;
     @Input() clientHeight: number;
     functionfalg: Boolean = false;
-    // 配置动画
-    @HostBinding('@pageAnimations')
-    public animatePage = true;
 
     list: { src: string, bg_src: string, text: string }[] = [];
-    heroTotal = -1;
-    /**
-     * 提炼数据
-     */
-    get func_list() {
-        return this.list;
-    }
+
 
     constructor() {
     }
@@ -74,7 +65,7 @@ export class SeriveFunctionComponent implements OnInit, OnChanges {
 
     // 变更检测
     ngOnChanges(): void {
-        console.log('clientHeight', this.functionfalg);
+        // console.log('clientHeight', this.functionfalg);
         const target: number = this.docuheight + this.clientHeight * 0.7;
         if (this.functions.nativeElement.offsetTop <= target) {
             this.functionfalg = true;

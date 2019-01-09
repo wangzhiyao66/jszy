@@ -5,14 +5,12 @@ import {Enter} from '../../animations/advisor.animation';
 @Component({
     selector: 'app-technology',
     encapsulation: ViewEncapsulation.None,
-    templateUrl: './technology.component.html',
-    styleUrls: ['./technology.component.scss'],
+    template: '<router-outlet></router-outlet>',
+    styles: [``],
 })
 export class TechnologyComponent implements OnInit , AfterViewInit, OnDestroy {
     // 订阅事件
     subscription: Subscription;
-    // 获取本地变量
-    @ViewChild('anchor') anchor: ElementRef;
     // 滚动高度
     docuHeight = 0;
     // 可视区域高度
@@ -22,7 +20,6 @@ export class TechnologyComponent implements OnInit , AfterViewInit, OnDestroy {
     }
 
     ngOnInit() {
-        console.log('cnchor', this.anchor);
         // 页面监听  响应式
         this.subscription = fromEvent(window, 'scroll')
             .subscribe((event) => {

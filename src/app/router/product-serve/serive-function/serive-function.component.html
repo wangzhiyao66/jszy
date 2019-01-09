@@ -1,8 +1,8 @@
 <div class="function-view">
-    <div class="function-content">
+    <div class="function-content" #functions [@pulse]="functionfalg ? 'closed' : 'enter'">
         <p class="title">产品功能</p>
-        <ul class="function-list"   [@filterAnimation]="heroTotal">
-            <li *ngFor="let art of func_list" class="hero">
+        <ul class="function-list">
+            <li *ngFor="let art of list">
                 <b></b>
                 <img class="img-icon" src="{{ art.src}}">
                 <img class="img-bg-icon" src="{{ art.bg_src}}">

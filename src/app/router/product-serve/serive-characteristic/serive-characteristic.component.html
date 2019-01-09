@@ -1,5 +1,5 @@
 <div class="special-view">
-    <div class="special-content">
+    <div class="special-content" #special [@pulse]="specialfalg ? 'closed' : 'enter'">
         <p class="title">产品特点</p>
         <div class="content-box">
             <div class="list{{i+1}} special" *ngFor="let val of speciallist, let i = index;">
