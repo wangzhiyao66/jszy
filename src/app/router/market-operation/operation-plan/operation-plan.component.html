@@ -1,3 +1,15 @@
-<p>
-  operation-plan works!
-</p>
+
+<div class="plan-view">
+  <div class="plan-content">
+    <p class="title">运营方案</p>
+    <ul class="tager-box">
+      <li *ngFor="let val of showlist; let i = index;">
+        <p class="p-header">
+          <img  class="roteanimation" src="{{ val.src}}" >
+          <span class="color{{i}}">{{ val.label}}</span>
+        </p>
+        <p class="p-text">{{ val.text }}</p>
+      </li>
+    </ul>
+  </div>
+</div>

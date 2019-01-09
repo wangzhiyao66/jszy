@@ -1,0 +1,94 @@
+@import "~src/app/scss/global";
+@import "~src/app/scss/index";
+@import "~src/app/scss/animations";
+
+.apply-view {
+  width: 100%;
+  border: 1px solid transparent;
+  background: #f8fafb url("../../../../assets/images/market/range/rangebg.png") no-repeat bottom;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.apply-content {
+  width: 1200px;
+  margin: 80px auto;
+
+  .title {
+    font-size: 38px;
+    color: #333;
+    text-align: center;
+    margin: 0px 0 45px 0;
+    letter-spacing: 6px;
+
+  }
+}
+
+.roteanimation {
+  animation: rote 0.3s 0s;
+}
+
+.tager-box {
+  list-style: none;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  //justify-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
+  li {
+    width: 390px;
+    height: 294px;
+    background: #fff;
+    margin: 13px 0;
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+
+    &:hover {
+      @include shadow();
+      transform: translateY(-10px);
+    }
+
+    .icon-img {
+      margin: 3em 0 1em;
+      transition: transform 0.5s;
+    }
+
+    .p-text {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .p-desc {
+      font-size: 15px;
+      color: #666;
+      margin: 0 25px;
+      letter-spacing: 2px;
+    }
+
+    .color0 {
+      color: #43c3c2;
+    }
+
+    .color1 {
+      color: #ff9667;
+    }
+
+    .color2 {
+      color: #43c3c2;
+    }
+
+
+  }
+
+
+}

@@ -35,6 +35,16 @@
     text-align: center;
     //border-radius: 10px;
     border: 1px solid #cacaca;
+    transition: transform 0.5s;
+
+    &:hover {
+      @include shadow();
+      transform: translateY(-10px);
+      .name {
+        color: #327ce2;
+      }
+
+    }
 
     .case {
       height: 200px;
@@ -52,12 +62,6 @@
       letter-spacing: 2px;
     }
 
-    &:hover {
-      @include shadow();
-      .name {
-        color: #327ce2;
-      }
 
-    }
   }
 }
