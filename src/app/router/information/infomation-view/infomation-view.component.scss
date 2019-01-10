@@ -1,52 +1,47 @@
-@import "~src/app/scss/_animations";
-@import "~src/app/scss/_global";
+@import "../../../scss/_global";
+
 
 // 锚点样式
 ::ng-deep .ant-anchor-ink {
   display: none;
 }
-
-::ng-deep .ant-anchor-wrapper {
+::ng-deep .ant-anchor-wrapper{
   background: none;
 }
-
-.serive {
+.links {
   height: 75px;
   line-height: 75px;
   padding: 0;
   margin: 0;
   font-size: 24px !important;
-  color: #fff !important;
+  color: #000 !important;
   text-decoration: none !important;
-  background: #fff;
+  background: #f5f7fa;
 
 }
-
-::ng-deep .serive a:focus {
-  text-decoration: none !important;
-}
-
-::ng-deep .serive a:hover {
+::ng-deep .links  a:focus {
   text-decoration: none !important;
 }
 
-::ng-deep .serive a:visited {
+::ng-deep .links  a:visited {
+  text-decoration: none !important;
+}
+
+::ng-deep .links  a:hover {
   text-decoration: none !important;
 }
 
 ::ng-deep .actived {
   background: $menus-color !important;
-
   span {
     color: #fff;
   }
 }
 
 
-::ng-deep .serive:hover {
+::ng-deep .links :hover {
   //cursor: pointer;
   background: $menus-color;
-
   span {
     color: #fff;
   }
@@ -55,7 +50,7 @@
 .overview {
   width: 100%;
   margin-top: -80px;
-  background: url('../../../../assets/images/productsservice/banana/banner.png') no-repeat;
+  background: url('../../../../assets/images/information/informationbg.png') no-repeat;
   background-position: center;
 }
 
@@ -76,15 +71,12 @@
     height: 160px;
     text-align: center;
     margin: 19% auto;
-    letter-spacing: 2px;
-
     p {
       margin: 20px 0 40px;
       font-size: 3em;
       color: rgb(225, 168, 34);
       letter-spacing: 6px;
     }
-
     span {
       font-size: 1.3em;
       color: #fff;
@@ -94,13 +86,17 @@
   }
 }
 
-.nav-box {
+@media screen and (min-width: 1200px) {
+  .banner-box {
+    height: 550px;
+  }
+}
+.nav-box{
   width: 100%;
   height: 78px;
   //  padding: 20px 0;
-  // background: #f5f7fa;
+  background: #f5f7fa;
 }
-
 // 描点
 .nav-anchor {
   width: 80%;
@@ -117,3 +113,4 @@
   }
 
 }
+

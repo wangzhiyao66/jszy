@@ -50,12 +50,12 @@ export class MenusService {
       animationfalg: false,
       showchildren: false,
       children: [
-        { anchorname : '市场应用' , url: '../../../assets/images/two/31.png' , link : '/technology' , params : 'market_apply'},
-        { anchorname : '应用范围' , url: '../../../assets/images/two/32.png' , link : '/technology' , params : 'apply_range'},
-        { anchorname : '应用案例' , url: '../../../assets/images/two/33.png' , link : '/technology' , params : 'range_case'},
-        { anchorname : '运营方案' , url: '../../../assets/images/two/34.png' , link : '/technology' , params : 'operation'},
-        { anchorname : '合作模式' , url: '../../../assets/images/two/35.png' , link : '/technology' , params : 'cooperation'},
-        { anchorname : '售后支持' , url: '../../../assets/images/two/36.png' , link : '/technology' , params : 'atfer'}
+        { anchorname : '市场应用' , url: '../../../assets/images/two/31.png' , link : '/market-operation' , params : 'market_apply'},
+        { anchorname : '应用范围' , url: '../../../assets/images/two/32.png' , link : '/market-operation' , params : 'apply_range'},
+        { anchorname : '应用案例' , url: '../../../assets/images/two/33.png' , link : '/market-operation' , params : 'range_case'},
+        { anchorname : '运营方案' , url: '../../../assets/images/two/34.png' , link : '/market-operation' , params : 'operation'},
+        { anchorname : '合作模式' , url: '../../../assets/images/two/35.png' , link : '/market-operation' , params : 'cooperation'},
+        { anchorname : '售后支持' , url: '../../../assets/images/two/36.png' , link : '/market-operation' , params : 'atfer'}
         ]
     },
     {
@@ -74,7 +74,7 @@ export class MenusService {
         ]
     },
     {
-      title: '重要资讯',
+      title: '新闻资讯',
       link: '/information',
       hidden: false,
       animationfalg: false,
