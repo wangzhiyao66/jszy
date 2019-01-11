@@ -1,0 +1,31 @@
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.industry-view {
+  width: 100%;
+  background: #fff;
+  border: 1px solid transparent;
+}
+
+.industry-content {
+  max-width: 1200px;
+  margin: 80px auto;
+
+  .title {
+    font-size: 38px;
+    color: #333;
+    text-align: center;
+    margin: 0px 0 45px 0;
+    letter-spacing: 6px;
+
+  }
+}
+.text-desc{
+  font-size: 16px;
+  color: #333;
+  b {
+    font-size: 20px;
+  }
+}
