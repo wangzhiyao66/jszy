@@ -58,14 +58,14 @@
 </div>-->
 
 <!--公司新闻-->
-<div id="company_news">
+<div id="company_news" [@advisor]="'active'">
   <app-company-news></app-company-news>
 </div>
 <!--市场活动-->
 <div id="markactive">
-  <app-mark-active></app-mark-active>
+  <app-mark-active [docuheight]="docuHeight" [clientHeight]="clientHeight"></app-mark-active>
 </div>
 <!--行业动态-->
 <div id="industry">
-  <app-industry-news></app-industry-news>
+  <app-industry-news [docuheight]="docuHeight" [clientHeight]="clientHeight"></app-industry-news>
 </div>

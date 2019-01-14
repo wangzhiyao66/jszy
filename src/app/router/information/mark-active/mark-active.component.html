@@ -1,5 +1,5 @@
 <div class="mark-view">
-  <div class="mark-content">
+  <div class="mark-content" #mark [@pulse]="markfalg ? 'closed' : 'enter'">
     <p class="title">市场活动</p>
 
     <div class="container">
@@ -14,11 +14,8 @@
             <p class="times" >
               {{ item.time }}
             </p>
-            <p class="prople-decration">
-              {{ item.title }}
-            </p>
-            <p class="prople-decration">
-              {{ item.title }}
+            <p class="prople-desc">
+              {{ item.desc }}
             </p>
 
           </div>

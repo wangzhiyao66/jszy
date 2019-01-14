@@ -2,7 +2,7 @@
     <div class="company-content">
         <p class="title">公司新闻</p>
 
-        <div class="container">
+        <div class="container maxwidth">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" *ngFor="let item of showlist;">
                     <div class="listbox">
@@ -14,6 +14,9 @@
                 </div>
 
             </div>
+        </div>
+        <div class="more">
+            <button nz-button nzType="primary" (click)="addshow()">{{ showfalg ? '收起' : '更多'}}</button>
         </div>
 
     </div>

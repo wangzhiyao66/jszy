@@ -80,12 +80,12 @@ export class MenusService {
       animationfalg: false,
       showchildren: false,
       children: [
-        { anchorname : '技术介绍' , url: '../../../assets/images/two/01.png' , link : '/technology' , params : 'introduce'},
-        { anchorname : '研发团队' , url: '../../../assets/images/two/02.png' , link : '/technology' , params : 'team'},
-        { anchorname : '研发历程' , url: '../../../assets/images/two/03.png' , link : '/technology' , params : 'course'},
-        { anchorname : '研发成果' , url: '../../../assets/images/two/04.png' , link : '/technology' , params : 'Achievements'},
-        { anchorname : '科研活动' , url: '../../../assets/images/two/05.png' , link : '/technology' , params : 'active'},
-        { anchorname : '红外故事' , url: '../../../assets/images/two/06.png' , link : '/technology' , params : 'story'}
+        // { anchorname : '技术介绍' , url: '../../../assets/images/two/01.png' , link : '/technology' , params : 'introduce'},
+        // { anchorname : '研发团队' , url: '../../../assets/images/two/02.png' , link : '/technology' , params : 'team'},
+        // { anchorname : '研发历程' , url: '../../../assets/images/two/03.png' , link : '/technology' , params : 'course'},
+        // { anchorname : '研发成果' , url: '../../../assets/images/two/04.png' , link : '/technology' , params : 'Achievements'},
+        // { anchorname : '科研活动' , url: '../../../assets/images/two/05.png' , link : '/technology' , params : 'active'},
+        // { anchorname : '红外故事' , url: '../../../assets/images/two/06.png' , link : '/technology' , params : 'story'}
         ]
     },
     {

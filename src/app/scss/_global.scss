@@ -1,6 +1,6 @@
 @import "./_animations";
 
-// 全局变量
+// 全局变量   可配置
 // header部分
 $font-family: Arial, "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Sans Serif", sans-serif;
 $menus-color: #3975ed !default;
@@ -11,3 +11,7 @@ $select-color:#0675bf !default;
 $primary-color: #327ce2 !default;
 $breadcrumb-color: #e0e7f2 !default;
 
+/* 全局 最大宽度*/
+.maxwidth{
+  max-width: 1200px;
+}

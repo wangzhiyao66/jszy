@@ -23,6 +23,19 @@ export class MenusComponent implements OnInit, OnDestroy {
     public menuservice: MenusService
   ) {}
 
+  /**
+   * 鼠标移入开始做动画 显示子级
+   * @param i 下标
+   */
+  onmenuin(i) {
+    this.menuservice.menus[i].animationfalg = true;
+    // console.log('123' , i);
+    if (i !== 0 && i !== 5) {
+      this.menuservice.menus[i].showchildren = true;
+    } else {
+      this.menuservice.menus[i].showchildren = false;
+    }
+  }
   ngOnInit() {
     // console.log('url', this.router.url);
     // 页面监听  响应式
@@ -37,16 +50,6 @@ export class MenusComponent implements OnInit, OnDestroy {
       // console.log('docuHeight', docuHeight);
       docuHeight > 0 ? (this.iSscroll = true) : (this.iSscroll = false);
     });
-  }
-  /**
-   * 鼠标移入开始做动画 显示子级
-   * @param i 下标
-   */
-  onmenuin(i) {
-    this.menuservice.menus[i].animationfalg = true;
-    i !== 0
-      ? (this.menuservice.menus[i].showchildren = true)
-      : (this.menuservice.menus[i].showchildren = false);
   }
   /**
    * 鼠标移入开始做动画 显示子级
