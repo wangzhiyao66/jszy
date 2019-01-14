@@ -13,7 +13,7 @@ import { Pulse } from 'src/app/animations/pulse.animation';
 })
 export class MenusComponent implements OnInit, OnDestroy {
   but_title: Boolean = false;
-  isEnd = false;
+  isfalg = true;
   iSscroll = false;
   // 订阅事件
   subscription: Subscription;
@@ -30,10 +30,12 @@ export class MenusComponent implements OnInit, OnDestroy {
   onmenuin(i) {
     this.menuservice.menus[i].animationfalg = true;
     // console.log('123' , i);
-    if (i !== 0 && i !== 5) {
-      this.menuservice.menus[i].showchildren = true;
-    } else {
-      this.menuservice.menus[i].showchildren = false;
+    if (this.isfalg) {
+        if (i !== 0 && i !== 5) {
+            this.menuservice.menus[i].showchildren = true;
+        } else {
+            this.menuservice.menus[i].showchildren = false;
+        }
     }
   }
   ngOnInit() {
@@ -60,7 +62,10 @@ export class MenusComponent implements OnInit, OnDestroy {
     this.menuservice.menus[i].showchildren = false;
   }
   hidemenus() {
+    this.isfalg = false;
     this.menuservice.menus.forEach( value => value.showchildren = false);
+    setTimeout( () => { this.isfalg = true }, 500);
+
   }
   linkTo(val) {
     this.menuservice.menus.forEach( value => value.showchildren = false);
