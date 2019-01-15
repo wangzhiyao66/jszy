@@ -1,5 +1,6 @@
 @import "~src/app/scss/global";
 @import "~src/app/scss/index";
+
 p {
   padding: 0;
   margin: 0;
@@ -34,9 +35,13 @@ p {
   background: #fff;
   border: 1px solid #e8e8e8;
 
-  &:hover{
+  &:hover {
     @include shadow();
     transform: translateY(-10px);
+    cursor: pointer;
+    .prople-decration {
+      color: #327ce2;
+    }
   }
 
   .prople-decration {
@@ -48,6 +53,7 @@ p {
     text-align: left;
     @include truncate();
   }
+
   .times {
     font-size: 0.9em;
     color: #d9d9d9;
@@ -55,8 +61,9 @@ p {
     text-align: left;
     @include truncate();
   }
-  .prople-desc{
-    margin-bottom: 25px;
+
+  .prople-desc {
+    margin-bottom: 35px;
     font-size: 0.8em;
     color: #666;
     padding: 2% 6%;

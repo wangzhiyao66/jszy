@@ -9,6 +9,8 @@ import {IndustryNewsComponent} from './industry-news/industry-news.component';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
 import {RouterModule} from '@angular/router';
 import {FormsModule} from '@angular/forms';
+import { NewsDetaillComponent } from './news-detaill/news-detaill.component';
+import {InformationService} from './information-service.service';
 
 @NgModule({
     declarations: [
@@ -16,7 +18,8 @@ import {FormsModule} from '@angular/forms';
         InfomationViewComponent,
         CompanyNewsComponent,
         MarkActiveComponent,
-        IndustryNewsComponent
+        IndustryNewsComponent,
+        NewsDetaillComponent
     ],
     imports: [
         CommonModule,
@@ -24,6 +27,9 @@ import {FormsModule} from '@angular/forms';
         RouterModule,
         FormsModule,
         InformationRouting
+    ],
+    providers: [
+        InformationService
     ]
 })
 export class InformationModule {
