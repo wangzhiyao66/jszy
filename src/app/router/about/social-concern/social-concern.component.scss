@@ -52,13 +52,13 @@
       right: 0;
     }
 
-    &:hover {
-      @include shadow();
-      transform: translateY(-10px);
-      .name {
-        color: #327ce2;
-      }
-
-    }
+    //&:hover {
+    //  @include shadow();
+    //  transform: translateY(-10px);
+    //  .name {
+    //    color: #327ce2;
+    //  }
+    //
+    //}
   }
 }

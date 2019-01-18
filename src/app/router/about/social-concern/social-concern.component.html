@@ -1,5 +1,5 @@
 <div class="social-view">
-  <div class="social-content">
+  <div class="social-content" #social [@pulse]="socialfalg ? 'closed' : 'enter'">
     <p class="title">公司荣誉</p>
     <ul>
       <li *ngFor="let item of storylist">
