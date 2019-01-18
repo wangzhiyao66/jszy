@@ -27,23 +27,37 @@ p {
   }
 }
 
-@media screen and ( min-width: 1200px) {
-  .pad {
-    img {
-      width: 480px !important;
-      height: 464px !important;
-    }
-  }
-}
+//@media screen and ( min-width: 1200px) {
+//  .pad {
+//    img {
+//      width: 480px !important;
+//      height: 464px !important;
+//    }
+//  }
+//}
 
 .text-box {
   background: #fff;
   text-align: left;
-  padding: 20px;
-  min-width: 500px;
+  padding: 15px 20px;
+  line-height: 28px;
+  //min-width: 600px;
+
 
   p {
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-indent: 2em;
+  }
+}
+@media screen and ( min-width: 1200px) {
+  .text-box{
+    position: relative;
+    left: -100px;
+  }
+}
+
+@media screen and ( max-width: 990px) {
+  .size{
+    height: 450px;
   }
 }
