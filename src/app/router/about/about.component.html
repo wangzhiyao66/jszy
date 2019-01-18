@@ -1,3 +1,83 @@
-<div>
-  <img  class="img-fluid" src="../../../assets/images/market/marbanner.png" >
+<!-- banner图 -->
+<div class='overview'>
+  <div class="banner-box">
+    <div class="description" [@advisor]="'active'">
+      <p>关于我们</p>
+      <span>高品质  低价位 广覆盖  惠民服务</span>
+    </div>
+  </div>
+</div>
+<!-- 导航栏描点 -->
+<div class='nav-box'>
+  <div class="nav-anchor" #anchor [@advisor]="'active'">
+    <div nz-row>
+      <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
+        <div class="gutter-box">
+          <nz-anchor [nzAffix]="false" [nzBounds]="80">
+            <nz-link nzHref="#company_profile" class="links actived" nzTitle="公司简介"></nz-link>
+          </nz-anchor>
+        </div>
+      </div>
+      <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
+        <div class="gutter-box">
+          <nz-anchor [nzAffix]="false" [nzBounds]="80">
+            <nz-link nzHref="#organization" class="links" nzTitle="组织架构"></nz-link>
+          </nz-anchor>
+        </div>
+      </div>
+      <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
+        <div class="gutter-box">
+          <nz-anchor [nzAffix]="false" [nzBounds]="80">
+            <nz-link nzHref="#range_case" class="links" nzTitle="公司荣誉"></nz-link>
+          </nz-anchor>
+        </div>
+      </div>
+      <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
+        <div class="gutter-box">
+          <nz-anchor [nzAffix]="false" [nzBounds]="80">
+            <nz-link nzHref="#operation" class="links" nzTitle="社会评价"></nz-link>
+          </nz-anchor>
+        </div>
+      </div>
+      <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
+        <div class="gutter-box">
+          <nz-anchor [nzAffix]="false" [nzBounds]="80">
+            <nz-link nzHref="#legal_team" class="links" nzTitle="法律团队"></nz-link>
+          </nz-anchor>
+        </div>
+      </div>
+      <div nz-col class="gutter-row" [nzXXl]="4" [nzXl]="4" [nzLg]="4" [nzMd]="4" [nzXs]="12">
+        <div class="gutter-box">
+          <nz-anchor [nzAffix]="false" [nzBounds]="80">
+            <nz-link nzHref="#contact_us" class="links" nzTitle="联系我们"></nz-link>
+          </nz-anchor>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--公司介绍-->
+<div id="company_profile" [@advisor]="'active'">
+  <app-company-profile></app-company-profile>
+</div>
+<!--组织架构-->
+<div id="organization">
+  <app-organization></app-organization>
+</div>
+<!--社会关注-->
+<div id="honor">
+  <app-computed-honor></app-computed-honor>
+</div>
+<!--公司荣誉-->
+<div id="concern">
+  <app-social-concern></app-social-concern>
+</div>
+<!--法律团队-->
+<div id="legal_team">
+  <app-legal-team></app-legal-team>
+</div>
+<!--联系我们-->
+<div id="contact_us">
+  <app-contact-us></app-contact-us>
 </div>
