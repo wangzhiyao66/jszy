@@ -95,12 +95,12 @@ export class MenusService {
       animationfalg: false,
       showchildren: false,
       children: [
-        { anchorname : '技术介绍' , url: '../../../assets/images/two/01.png' , link : '/technology' , params : 'introduce'},
-        { anchorname : '研发团队' , url: '../../../assets/images/two/02.png' , link : '/technology' , params : 'team'},
-        { anchorname : '研发历程' , url: '../../../assets/images/two/03.png' , link : '/technology' , params : 'course'},
-        { anchorname : '研发成果' , url: '../../../assets/images/two/04.png' , link : '/technology' , params : 'Achievements'},
-        { anchorname : '科研活动' , url: '../../../assets/images/two/05.png' , link : '/technology' , params : 'active'},
-        { anchorname : '红外故事' , url: '../../../assets/images/two/06.png' , link : '/technology' , params : 'story'}
+        { anchorname : '公司简介' , url: '../../../assets/images/two/61.png' , link : '/about' , params : 'company_profile'},
+        { anchorname : '组织架构' , url: '../../../assets/images/two/62.png' , link : '/about' , params : 'organization'},
+        { anchorname : '公司荣誉' , url: '../../../assets/images/two/63.png' , link : '/about' , params : 'concern'},
+        { anchorname : '社会评价' , url: '../../../assets/images/two/64.png' , link : '/about' , params : 'honor'},
+        { anchorname : '法律团队' , url: '../../../assets/images/two/65.png' , link : '/about' , params : 'legal_team'},
+        { anchorname : '联系我们' , url: '../../../assets/images/two/66.png' , link : '/about' , params : 'contact_us'}
         ]
     }
   ];

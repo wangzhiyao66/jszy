@@ -31,7 +31,7 @@ export class MenusComponent implements OnInit, OnDestroy {
     this.menuservice.menus[i].animationfalg = true;
     // console.log('123' , i);
     if (this.isfalg) {
-        if (i !== 0 && i !== 5 && i !== 6) {
+        if (i !== 0 && i !== 5 ) {
             this.menuservice.menus[i].showchildren = true;
         } else {
             this.menuservice.menus[i].showchildren = false;
