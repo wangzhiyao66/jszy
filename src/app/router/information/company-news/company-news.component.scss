@@ -51,7 +51,7 @@ p {
     height: 17%;
     font-size: 1em;
     color: #333;
-    padding-top: 3%;
+    padding: 3% 15px 0;
     text-align: center;
     @include truncate();
     position: absolute;

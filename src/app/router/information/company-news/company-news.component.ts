@@ -8,18 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class CompanyNewsComponent implements OnInit {
 
   datalist: { id: number, src: string, title: string,}[] = [
-    { id: 1, src: '../../../../assets/images/information/company/1.png', title: '2015年春节习近平总书记视察我公司产品'},
+    { id: 1, src: '../../../../assets/images/information/company/1.png', title: '习近平总书记到西安视察,鼓励发展红外医学影像技术'},
     { id: 2, src: '../../../../assets/images/information/company/2.png', title: '我公司便捷式红外影像设备'},
-    { id: 3, src: '../../../../assets/images/information/company/10.png', title: '我公司入选中关村科技园组织的高新科技项目'},
-    { id: 4, src: '../../../../assets/images/information/company/4.png', title: '王国强部长参观科技成果'},
-    { id: 5, src: '../../../../assets/images/information/company/5.png', title: '2013年人民日报内参进行专题报道'},
-    { id: 6, src: '../../../../assets/images/information/company/6.png', title: '中国健康促进基金会'},
-    { id: 7, src: '../../../../assets/images/information/company/7.png', title: '斯里兰卡国家经济委员会代表团访问'},
-    { id: 8, src: '../../../../assets/images/information/company/8.png', title: '2018年全国首届自然医学与老年保健高峰论坛'},
-    { id: 9, src: '../../../../assets/images/information/company/9.png', title: '中国老年保健医学研究会高会长，301医院原苏副院长，卫健委食品司张副司长参观我公司展台'},
+    { id: 3, src: '../../../../assets/images/information/company/10.png', title: '江山智能中医服务云亮相第20届高交会'},
+    { id: 4, src: '../../../../assets/images/information/company/4.png', title: '国家卫生部王国强副部长在首届中医诊疗设备论坛展示会现场视察并听取汇报'},
+    { id: 5, src: '../../../../assets/images/information/company/5.png', title: '人民日报内参评论'},
+    { id: 6, src: '../../../../assets/images/information/company/6.png', title: '中国健康促进基金会成立红外医学专项基金'},
+    { id: 7, src: '../../../../assets/images/information/company/7.png', title: '斯里兰卡国家经济委员会代表团考察访问北京江山中医可视化科技股份有限公司'},
+    { id: 8, src: '../../../../assets/images/information/company/8.png', title: '“中医可视化智能健康服务系统”荣获全国首届自然医学与老年保健高峰论坛评选活动优胜奖'},
     { id: 10, src: '../../../../assets/images/information/company/11.png', title: '《医学数字红外热成像技术概论》再版印刷'},
-    { id: 11, src: '../../../../assets/images/information/company/12.png', title: '江山中医可视化科技股份有限公司荣誉'},
-    { id: 12, src: '../../../../assets/images/information/company/13.png', title: '江山智能中医服务云亮相第20届高交会'},
+    { id: 11, src: '../../../../assets/images/information/company/12.png', title: '公司荣誉'},
   ];
   showfalg = false;
   showlist = [];

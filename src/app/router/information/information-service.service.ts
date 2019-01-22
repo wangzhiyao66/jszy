@@ -51,7 +51,7 @@ export class InformationService {
     public companyNews: any[] = [
         {
             id: 1 ,
-            title: '2015年春节习近平总书记视察我公司产品',
+            title: '习近平总书记到西安视察,鼓励发展红外医学影像技术',
             time: '2015年',
             source: '来源： 江山中医可视化',
             text: [
@@ -75,7 +75,7 @@ export class InformationService {
         },
         {
             id: 3 ,
-            title: '江山智能中医服务云亮相第20届高交会用"AI+中医"赋能人类健康',
+            title: '江山智能中医服务云亮相第20届高交会',
             time: '2018-11-14',
             source: '来源： 江山中医可视化',
             text: [
@@ -101,7 +101,7 @@ export class InformationService {
         },
         {
             id:  4,
-            title: '王国强部长参观科技成果',
+            title: '国家卫生部王国强副部长在首届中医诊疗设备论坛展示会现场视察并听取汇报',
             time: '2008-10',
             source: '来源： 江山中医可视化',
             text: [
@@ -113,7 +113,7 @@ export class InformationService {
         },
         {
             id:  5,
-            title: '2013年人民日报内参进行专题报道',
+            title: '人民日报内参评论',
             time: '2013-8-30',
             source: '来源： 江山中医可视化',
             text: [
@@ -126,7 +126,7 @@ export class InformationService {
         },
         {
             id:  6,
-            title: '中国健康促进基金会',
+            title: '中国健康促进基金会成立红外医学专项基金',
             time: '2015-5',
             source: '来源： 江山中医可视化',
             text: [
@@ -139,7 +139,7 @@ export class InformationService {
         },
         {
             id:  7,
-            title: '斯里兰卡国家经济委员会代表团访问',
+            title: '斯里兰卡国家经济委员会代表团考察访问北京江山中医可视化科技股份有限公司',
             time: '2013年',
             source: '来源： 江山中医可视化',
             text: [
@@ -155,7 +155,7 @@ export class InformationService {
         },
         {
             id:  8,
-            title: '2018年全国首届自然医学与老年保健高峰论坛',
+            title: '“中医可视化智能健康服务系统”荣获全国首届自然医学与老年保健高峰论坛评选活动优胜奖',
             time: '2015-5',
             source: '来源： 江山中医可视化',
             text: [
@@ -172,23 +172,6 @@ export class InformationService {
         },
         {
             id:  9,
-            title: '2018年全国首届自然医学与老年保健高峰论坛',
-            time: '2015-5',
-            source: '来源： 江山中医可视化',
-            text: [
-                // tslint:disable-next-line:max-line-length
-                '北京江山中医可视化科技股份有限公司于2018年11月10日至11日参加了第三届中国老年保健高峰论坛，“中医可视化智能健康服务系统” 在《全国首届自然医学与老年保健高峰论坛》会展评选活动中荣获优胜奖。',
-                // tslint:disable-next-line:max-line-length
-                '第十一届全国政协副主席、中老年保健医学研究会总顾问李金华，中国工程院院士、中老年保健医学研究会名誉顾问王陇德，中国工程院院士董家鸿，国家卫健委及省市有关部门领导出席会议并现场观摩了“中医可视化智能健康服务系统”，对此系统给予了高度肯定。',
-            ],
-            src: [
-                '../../../../assets/images/information/companynews/7/1.png',
-                '../../../../assets/images/information/companynews/7/2.png',
-                '../../../../assets/images/information/companynews/7/3.png',
-            ],
-        },
-        {
-            id:  10,
             title: '《医学数字红外热成像技术概论》再版印刷',
             time: '2008-10',
             source: '来源： 江山中医可视化',
@@ -201,9 +184,9 @@ export class InformationService {
             ],
         },
         {
-            id:  11,
-            title: '《医学数字红外热成像技术概论》再版印刷',
-            time: '2008-10',
+            id:  10,
+            title: '公司荣誉',
+            time: '2008-08',
             source: '来源： 江山中医可视化',
             text: [
                 // tslint:disable-next-line:max-line-length
@@ -213,32 +196,6 @@ export class InformationService {
                 '../../../../assets/images/information/companynews/9/3.png',
                 '../../../../assets/images/information/companynews/9/4.png',
                 '../../../../assets/images/information/companynews/9/5.png',
-            ],
-        },
-        {
-            id:  12,
-            title: '江山智能中医服务云亮相第20届高交会',
-            time: '2018-11-14',
-            source: '来源： 江山中医可视化',
-            text: [
-                // tslint:disable-next-line:max-line-length
-                '第二十届中国国际高新技术成果交易会以“坚持新发展理念，推动高质量发展”为主题，展会总面积达14万平方米，共有3356家展商参展，展示的高新技术达到11322项，涵盖了汽车、物联网、智能制造、人工智能等领域。其中，有1746项新产品和585项新技术是首次亮相，比去年增加近百项；80家企业举办了专门的新产品新技术发布会活动。',
-                '高交会作为中国科技第一展，代表了国内高科技的最高水平，作为中关村推荐企业参展，江山智能中医服务云受到了广泛关注，用"AI+中医"赋能人类健康！',
-                // tslint:disable-next-line:max-line-length
-                '大健康产业背景下，北京江山中医可视化科技股份有限公司以传统中医特色为服务，集合人工智能、大数据分析以及云计算等国内顶尖科研成果，在国内首次开拓性的提出“智能中医云服务”行业新名词，并与国内诸多品牌企业，合作开发信息交互生态测试基站，为人类大健康持续赋能！',
-                // tslint:disable-next-line:max-line-length
-                '11月14日下午，北京市中关村科技园管委会翟主任亲临展馆现场指导视察，对“中医可视化+智能中医服务云”提出高度赞许，深入交流这二十年研发背后的点点滴滴，并现场作出指令：要加快跟社区康养中心的合作，在基层社区卫生服务中心广覆盖建立智慧中医服务云平台基站，作为全国基层诊疗的样板工程，为基层的全科医生培训，以及扶贫慈善下农村，响应医疗脱贫为导向，为老百姓谋健康，谋福利，谋发展，切实加快全国基站的铺放与落地。与此同时，坚持“一带一路协同发展”，将中医中药走出国门，让世界各地的华人用了中医可视化和智能中医服务云，更直观更深入的学习了解中华文明博大精深的智慧，让全世界人同享中华医药的福祉。',
-                // tslint:disable-next-line:max-line-length
-                '此番展会，我们为了让每一位嘉宾更直观的了解智能中医服务云，特别新展示了最新研发的中医可视化面部全息筛查，结合千百年来老祖宗的经验智慧，以中医经典为理论依据，利用面部全息影像技术和大数据云算法分析，短短二三秒钟就完成面部初筛，一分钟出具系统的中医可视化面部全息报告，内容会提示您现阶段最该注意哪些系统问题，比如三焦系统功能预警，中医脏腑辨证提示，以及从“穴位—饮食—运动（导引）”的个性化定制健康生活方式干预方案和指导建议，从“看得见”到“怎么办”全方位全生命周期的为人类大健康不断赋能。',
-                // tslint:disable-next-line:max-line-length
-                '江山智能中医服务云本次参加第二十届高交会，引起了相关领导、政府单位、投资机构、合作伙伴及专业人士的普遍关注，获得了多方肯定的评价，达到了预期效果。本届展会期间，公司展台平均每天接待参观体验人数300多人，也有大批意向客户，选择合作建立生态测试基站，并参加了项目对接洽谈会，和五家投资机构进行了洽谈。举办了智能中医服务云新技术新产品发布会，获得了包括广州中医药大学校长王省良校长等业内专家的高度认可与好评。'
-            ],
-            src: [
-                '../../../../assets/images/information/companynews/2/1.png',
-                '../../../../assets/images/information/companynews/2/2.png',
-                '../../../../assets/images/information/companynews/2/3.png',
-                '../../../../assets/images/information/companynews/2/4.png',
-                '../../../../assets/images/information/companynews/2/5.png',
             ],
         },
     ]
