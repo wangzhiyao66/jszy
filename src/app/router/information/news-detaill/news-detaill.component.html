@@ -31,28 +31,22 @@
             </span>
         </p>
         <nz-divider></nz-divider>
-        <div class="imgbos">
+        <div class="imgbos" *ngIf=" showinfo?.src[0] ">
             <img class="img-fluid" src="{{ showinfo?.src[0]}}">
         </div>
-        <p class="news-text">
-            {{ showinfo?.text1}}
-        </p>
-        <div class="imgbos">
-            <img class="img-fluid" src="{{ showinfo?.src[1]}}">
-        </div>
-        <p class="news-text">
-            {{ showinfo?.text2}}
+        <p class="news-text" *ngFor="let tel of showinfo.text">
+            {{ tel }}
         </p>
         <div class="imgbos" *ngFor="let val of showinfo.src, let i = index;">
-            <img class="img-fluid" src="{{ val}}" [hidden]="i == 0 || i == 1">
+            <img class="img-fluid" src="{{ val}}" [hidden]="i == 0 ">
         </div>
         <nz-divider></nz-divider>
         <div class="pany">
             <p class="nav-link" *ngIf='projectId !== 1'>
-                上一篇： <a (click)='goto(true)'>   {{ infoserve.showNewslist[projectId - 2]?.title }}</a>
+                上一篇： <a (click)='goto(true)'>   {{ infoserve.companyNews[projectId - 2]?.title }}</a>
             </p>
-            <p class="nav-link" *ngIf='projectId !== 3'>
-                下一篇： <a (click)='goto(false)'>  {{ infoserve.showNewslist[projectId]?.title }}</a>
+            <p class="nav-link" *ngIf='projectId !== 12'>
+                下一篇： <a (click)='goto(false)'>  {{ infoserve.companyNews[projectId]?.title }}</a>
             </p>
             <button nz-button nzType="primary" class="btn" (click)="goback()">返回</button>
         </div>

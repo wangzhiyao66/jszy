@@ -3,11 +3,11 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {InformationService} from '../information-service.service';
 
 @Component({
-  selector: 'app-news-detaill',
-  templateUrl: './news-detaill.component.html',
-  styleUrls: ['./news-detaill.component.scss']
+  selector: 'app-mark-detaill',
+  templateUrl: './mark-detaill.component.html',
+  styleUrls: ['./mark-detaill.component.scss']
 })
-export class NewsDetaillComponent implements OnInit {
+export class MarkDetaillComponent implements OnInit {
 
   projectId: Number = 0;
   showinfo: any;
@@ -30,10 +30,10 @@ export class NewsDetaillComponent implements OnInit {
   }
   // 查找数据
   showData() {
-    const index = this.infoserve.companyNews.findIndex(
+    const index = this.infoserve.showNewslist.findIndex(
         item => Number(item.id) === Number(this.projectId)
     );
-    this.showinfo = this.infoserve.companyNews[index];
+    this.showinfo = this.infoserve.showNewslist[index];
   }
   // 查看其它文章
   goto(falg: boolean) {

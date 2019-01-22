@@ -1,11 +1,39 @@
 <div class="footer" #footer>
-    <div class="container" [hidden]="footer.offsetWidth < 990">
+    <div class="border-bottom" [hidden]="footer.offsetWidth < 990">
+        <div class="container">
+            <div class="row maxwidth">
+                <div class="col-lg-3 col-md-6 col-sm-6  nav-link">
+                    <div class="title" [hidden]="footer.offsetWidth < 1200">
+                        <span>0.1</span>
+                        <p>系统检测精度可 <br/> 达到0.1摄氏度</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6  nav-link">
+                    <div class="title" [hidden]="footer.offsetWidth < 1200">
+                        <span>0.24</span>
+                        <p>红外医学影像技术能检<br/> 测出0.24 ℃ 温度变化</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6  nav-link">
+                    <div class="title" [hidden]="footer.offsetWidth < 1200">
+                        <span>19</span>
+                        <p>截止今日，江山中医可 <br/> 视化已经获得19项专利</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6  nav-link">
+                    <div class="title" [hidden]="footer.offsetWidth < 1200">
+                        <span>12</span>
+                        <p>江山中医可视化已经 <br/> 获得12个软件著作权</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" [hidden]="footer.offsetWidth < 990" >
         <div class="row maxwidth">
             <div class="col-lg-3 col-md-6 col-sm-6  nav-link">
-                <div class="title" [hidden]="footer.offsetWidth < 1200">
-                    <span>0.1</span>
-                    <p>系统检测精度可 <br/> 达到0.1摄氏度</p>
-                </div>
                 <ul>
                     <li *ngFor="let item of nav1" [class.pad]="footer.offsetWidth > 990 && footer.offsetWidth < 1200">
                         <span class="nav-link-to" [routerLink]="item.link">
@@ -15,10 +43,6 @@
                 </ul>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6  nav-link">
-                <div class="title" [hidden]="footer.offsetWidth < 1200">
-                    <span>0.24</span>
-                    <p>红外医学影像技术能检<br/> 测出0.24 ℃ 温度变化</p>
-                </div>
                 <ul>
                     <li *ngFor="let item of nav2" [class.pad]="footer.offsetWidth > 990 && footer.offsetWidth < 1200">
                         <span class="nav-link-to">
@@ -28,10 +52,6 @@
                 </ul>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6  nav-link">
-                <div class="title" [hidden]="footer.offsetWidth < 1200">
-                    <span>19</span>
-                    <p>截止今日，江山中医可 <br/> 视化已经获得19项专利</p>
-                </div>
                 <ul>
                     <li *ngFor="let item of nav3" [class.pad]="footer.offsetWidth > 990 && footer.offsetWidth < 1200">
                         <span class="nav-link-to">
@@ -41,10 +61,6 @@
                 </ul>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6  nav-link">
-                <div class="title" [hidden]="footer.offsetWidth < 1200">
-                    <span>12</span>
-                    <p>江山中医可视化已经 <br/> 获得12个软件著作权</p>
-                </div>
                 <ul>
                     <li *ngFor="let item of nav4" [class.pad]="footer.offsetWidth > 990 && footer.offsetWidth < 1200">
                         <span class="nav-link-to">
