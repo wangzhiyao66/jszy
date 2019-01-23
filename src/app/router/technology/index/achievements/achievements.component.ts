@@ -19,11 +19,11 @@ export class AchievementsComponent implements OnInit, OnChanges {
         },
         {
             id: 2, url: '../../../../assets/images/overview/parget/exclusive2.png',
-            title: '外观设计专利证书1'
+            title: '外观设计专利证书2'
         },
         {
             id: 3, url: '../../../../assets/images/overview/parget/exclusive3.png',
-            title: '外观设计专利证书1'
+            title: '外观设计专利证书3'
         },
         {
             id: 4, url: '../../../../assets/images/overview/parget/exclusive4.png',

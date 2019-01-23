@@ -192,7 +192,7 @@ export class InformationService {
     public companyNews: any[] = [
         {
             id: 1 ,
-            title: '习近平总书记到西安视察,鼓励发展红外医学影像技术',
+            title: '习近平总书记到西安视察鼓励发展红外医学',
             time: '2015年',
             source: '来源： 江山中医可视化',
             text: [
@@ -203,7 +203,7 @@ export class InformationService {
             ],
         },
         {
-            id: 3 ,
+            id: 2 ,
             title: '江山智能中医服务云亮相第20届高交会',
             time: '2018-11-14',
             source: '来源： 江山中医可视化',
@@ -229,7 +229,7 @@ export class InformationService {
             ],
         },
         {
-            id:  4,
+            id:  3,
             title: '国家卫生部王国强副部长在首届中医诊疗设备论坛展示会现场视察并听取汇报',
             time: '2008-10',
             source: '来源： 江山中医可视化',
@@ -241,7 +241,7 @@ export class InformationService {
             ],
         },
         {
-            id:  5,
+            id:  4,
             title: '人民日报内参评论',
             time: '2013-8-30',
             source: '来源： 江山中医可视化',
@@ -254,7 +254,7 @@ export class InformationService {
             ],
         },
         {
-            id:  6,
+            id:  5,
             title: '中国健康促进基金会成立红外医学专项基金',
             time: '2015-5',
             source: '来源： 江山中医可视化',
@@ -267,7 +267,7 @@ export class InformationService {
             ],
         },
         {
-            id:  7,
+            id:  6,
             title: '斯里兰卡国家经济委员会代表团考察访问北京江山中医可视化科技股份有限公司',
             time: '2013年',
             source: '来源： 江山中医可视化',
@@ -283,7 +283,7 @@ export class InformationService {
             ],
         },
         {
-            id:  8,
+            id:  7,
             title: '“中医可视化智能健康服务系统”荣获全国首届自然医学与老年保健高峰论坛评选活动优胜奖',
             time: '2015-5',
             source: '来源： 江山中医可视化',
@@ -300,7 +300,7 @@ export class InformationService {
             ],
         },
         {
-            id:  9,
+            id:  8,
             title: '《医学数字红外热成像技术概论》再版印刷',
             time: '2008-10',
             source: '来源： 江山中医可视化',
@@ -313,7 +313,7 @@ export class InformationService {
             ],
         },
         {
-            id:  10,
+            id:  9,
             title: '公司荣誉',
             time: '2008-08',
             source: '来源： 江山中医可视化',

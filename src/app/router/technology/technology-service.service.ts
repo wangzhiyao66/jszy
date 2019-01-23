@@ -40,7 +40,9 @@ export class TechnologyServiceService {
           description : '北京大学医学部教授，大数据库研究专家' },
       { id: 17 , name: '赵卫' , url : '../../../../../assets/images/overview/advissor/17.png' ,
           description : '中科院西安分院院长、中科院西安光学精密机械研究所所长、研究员。' },
-
+      { id: 18 , name: '高芳堃' , url : '../../../../../assets/images/overview/advissor/18.png' ,
+          // tslint:disable-next-line:max-line-length
+          description : '北京医院老年医学研究所研究员，原任所长，老年医学专家，生于1945年，毕业于大连医学院医疗系。卫生部北京医院教授、主任医师。卫生部北京医院老年医学研究所原所长、中国疾病预防控制中心老年保健中心主任，中华医学会老年医学学会常委、中华医学会北京老年医学分会副主任委员、中国老年心理卫生专业委员会委员、中国老教授协会医药专业委员会常务理事。中国老年保健医学杂志副主编、中国老年学杂志编委、世界医学杂志老年医学执行编委。' },
   ];
    // @ts-ignore
     public storylist = [

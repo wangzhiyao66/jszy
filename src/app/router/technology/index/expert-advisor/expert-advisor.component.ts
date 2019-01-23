@@ -34,7 +34,7 @@ export class ExpertAdvisorComponent implements OnInit, OnChanges {
 
     ngOnInit() {
         this.proplelist = this.advisor.advisordata.slice(0, 12);
-        this.morelist = this.advisor.advisordata.slice(-5);
+        this.morelist = this.advisor.advisordata.slice(-6);
 
     }
 

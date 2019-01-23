@@ -45,7 +45,7 @@
             <p class="nav-link" *ngIf='projectId !== 1'>
                 上一篇： <a (click)='goto(true)'>   {{ infoserve.companyNews[projectId - 2]?.title }}</a>
             </p>
-            <p class="nav-link" *ngIf='projectId !== 12'>
+            <p class="nav-link" *ngIf='projectId !== infoserve.companyNews.length'>
                 下一篇： <a (click)='goto(false)'>  {{ infoserve.companyNews[projectId]?.title }}</a>
             </p>
             <button nz-button nzType="primary" class="btn" (click)="goback()">返回</button>

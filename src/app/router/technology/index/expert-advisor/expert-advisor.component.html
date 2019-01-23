@@ -10,8 +10,8 @@
             </ul>
             <ul *ngIf="showlist" [@advisor]="'active'">
                 <li *ngFor="let item of morelist" (click)="seedata(item)">
-                    <img src="{{ item.url }}">
-                    <p class="name">{{ item.name }}</p>
+                    <img src="{{ item?.url }}">
+                    <p class="name">{{ item?.name }}</p>
                 </li>
             </ul>
         </div>

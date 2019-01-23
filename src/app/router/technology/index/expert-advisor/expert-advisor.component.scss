@@ -42,12 +42,12 @@
     flex-wrap: wrap;
     flex-direction: row;
     flex-shrink: 0.8;
-    justify-content: space-between;
+    justify-content: left;
   }
 
   li {
     list-style: none;
-    margin-top: 25px;
+    margin: 25px 8px 0;
     position: relative;
     cursor: pointer;
     text-align: center;
