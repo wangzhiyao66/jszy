@@ -12,6 +12,7 @@ import {FormsModule} from '@angular/forms';
 import { NewsDetaillComponent } from './news-detaill/news-detaill.component';
 import {InformationService} from './information-service.service';
 import { MarkDetaillComponent } from './mark-detaill/mark-detaill.component';
+import { IndustryDetaillComponent } from './industry-detaill/industry-detaill.component';
 
 @NgModule({
     declarations: [
@@ -21,7 +22,8 @@ import { MarkDetaillComponent } from './mark-detaill/mark-detaill.component';
         MarkActiveComponent,
         IndustryNewsComponent,
         NewsDetaillComponent,
-        MarkDetaillComponent
+        MarkDetaillComponent,
+        IndustryDetaillComponent
     ],
     imports: [
         CommonModule,

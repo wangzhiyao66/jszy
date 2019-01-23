@@ -32,6 +32,7 @@ p {
   max-height: 185px;
   overflow: hidden;
 
+
   .list-title {
     font-size: 1.3em;
     color: $base-color;
@@ -39,6 +40,7 @@ p {
 
     &:hover {
       color: $select-color;
+      cursor: pointer;
     }
   }
 }

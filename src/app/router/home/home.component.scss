@@ -1,5 +1,5 @@
-@import "../../scss/_global";
-
+@import "~src/app/scss/index";
+@import "~src/app/scss/global";
 // 轮播图
 .swiper-container {
     margin-top: -80px;
@@ -282,93 +282,6 @@
         }
     }
 
-    //[nz-carousel-content] {
-    //  text-align: center;
-    //  height: 160px;
-    //  line-height: 160px;
-    //  background: #364d79;
-    //  color: #fff;
-    //  overflow: hidden;
-    //}
-    //::ng-deep .ant-carousel .slick-dots li.slick-active button{
-    //  background: rgba(0,0,0,0.8);
-    //}
-    //::ng-deep .ant-carousel .slick-dots li button{
-    //  background: rgba(0,0,0,0.4);
-    //
-    //}
-    //.items-list{
-    //  //background: rgba(246, 253, 253, 0.8);
-    //  background: #fff;
-    //  height: 494px;
-    //  position: relative;
-    //
-    //
-    //  .item-left, .item-right{
-    //    float: left;
-    //  }
-    //
-    //  .item-left{
-    //    width: 60%;
-    //    height: 100%;
-    //    padding: 0 5%;
-    //
-    //    .all{
-    //      width: 660px;
-    //      height: 430px;
-    //      margin: 0px auto;
-    //    }
-    //
-    //    .bianxie{
-    //      width: 660px;
-    //      height: 400px;
-    //      margin: 15px auto;
-    //    }
-    //    .liti{
-    //      width: 660px;
-    //      height: 400px;
-    //      margin: 15px auto;
-    //    }
-    //
-    //  }
-    //
-    //  .item-right{
-    //    width: 30%;
-    //    height: 100%;
-    //
-    //    .describe-one{
-    //      padding: 0;
-    //      margin: 85px auto 0;
-    //      font-size: 15px;
-    //      color: #666;
-    //      line-height: 45px;
-    //      text-align: left;
-    //      span{
-    //        font-size: 30px;
-    //        color: #000;
-    //      }
-    //
-    //    }
-    //
-    //    .describe-two{
-    //      padding: 0;
-    //      margin: 110px auto;
-    //      font-size: 15px;
-    //      color: #666;
-    //      line-height: 45px;
-    //      text-align: left;
-    //      span{
-    //        font-size: 30px;
-    //        color: #000;
-    //      }
-    //    }
-    //
-    //    .nbsp{
-    //      padding-left: 17px;
-    //    }
-    //  }
-    //
-    //}
 
 }
 
@@ -434,6 +347,7 @@
                 -o-transition: background 1s ease 0s;
                 -moz-transition: background 1s ease 0s;
                 -webkit-transition: background 1s ease 0s;
+                @include truncate();
                 position: absolute;
                 left: 0;
                 bottom: 0;

@@ -1,0 +1,56 @@
+<div class="breadcrumb-view">
+  <div class="breadcrumb-content">
+    <nz-breadcrumb nzSeparator=">">
+
+      <nz-breadcrumb-item>
+        <a [routerLink]="'/home'">首页</a>
+      </nz-breadcrumb-item>
+
+      <nz-breadcrumb-item>
+        <a [routerLink]="'/information'">新闻资讯</a>
+      </nz-breadcrumb-item>
+
+      <nz-breadcrumb-item>
+        <a>市场活动</a>
+      </nz-breadcrumb-item>
+
+    </nz-breadcrumb>
+  </div>
+</div>
+<div class="news">
+  <div class="news-box">
+    <p class="news-title">
+      <b>{{ showinfo?.title }}</b>
+    </p>
+    <p class="info-source">
+          <span class="time">
+                  {{ showinfo?.time}}
+          </span>
+      <span class="source">
+              {{ showinfo?.source}}
+            </span>
+    </p>
+    <nz-divider></nz-divider>
+    <div class="imgbos" *ngIf=" showinfo?.src[0] ">
+      <img class="img-fluid" src="{{ showinfo?.src[0]}}">
+    </div>
+    <p class="news-text" *ngFor="let tel of showinfo.text">
+      {{ tel }}
+    </p>
+    <div *ngIf="showinfo.src">
+      <div class="imgbos" *ngFor="let val of showinfo.src, let i = index;">
+        <img class="img-fluid" src="{{ val}}" [hidden]="i == 0 ">
+      </div>
+    </div>
+    <nz-divider></nz-divider>
+    <div class="pany">
+      <p class="nav-link" *ngIf='projectId !== 1'>
+        上一篇： <a (click)='goto(true)'>   {{ infoserve.industrylist[projectId - 2]?.title }}</a>
+      </p>
+      <p class="nav-link" *ngIf='projectId !== 3'>
+        下一篇： <a (click)='goto(false)'>  {{ infoserve.industrylist[projectId]?.title }}</a>
+      </p>
+      <button nz-button nzType="primary" class="btn" (click)="goback()">返回</button>
+    </div>
+  </div>
+</div>

@@ -15,7 +15,7 @@
 
             </div>
         </div>
-        <div class="more">
+        <div class="more" *ngIf="showlist.length > 9">
             <button nz-button nzType="primary" (click)="addshow()">{{ showfalg ? '收起' : '更多'}}</button>
         </div>
 

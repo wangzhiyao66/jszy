@@ -10,19 +10,19 @@ export class ActiveComponent implements OnInit {
 
     activelist: ({ id: number; url: string; title: string })[] = [
         {
-            id: 1, url: '../../../../assets/images/overview/active/laonan.png',
+            id: 1, url: '../../../../assets/images/overview/active/1.png',
             title: '老年重大慢病防控技术组合方案研讨会'
         },
         {
-            id: 2, url: '../../../../assets/images/overview/active/qinghua.png',
+            id: 2, url: '../../../../assets/images/overview/active/2.png',
             title: '清华大学专家级学术交流研讨会'
         },
         {
-            id: 3, url: '../../../../assets/images/overview/active/dier.png',
+            id: 3, url: '../../../../assets/images/overview/active/3.png',
             title: '2018中国传承与创新学术研讨会现场'
         },
         {
-            id: 4, url: '../../../../assets/images/overview/active/xinnao.png',
+            id: 4, url: '../../../../assets/images/overview/active/4.png',
             title: '心脑血管疾病防控工作研讨会'
         },
         {
