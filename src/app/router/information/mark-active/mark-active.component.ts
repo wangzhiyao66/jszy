@@ -1,4 +1,4 @@
-import {Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
+import {Component, ElementRef, Input, OnChanges, OnInit, ViewChild} from '@angular/core';
 import {Pulse} from '../../../animations/pulse.animation';
 
 @Component({
@@ -9,7 +9,7 @@ import {Pulse} from '../../../animations/pulse.animation';
     Pulse
   ]
 })
-export class MarkActiveComponent implements OnInit {
+export class MarkActiveComponent implements OnInit , OnChanges{
 
   showlist: { src: string, title: string, time: string, desc: string}[] = [
     { src: '../../../../assets/images/information/mark/1.png',

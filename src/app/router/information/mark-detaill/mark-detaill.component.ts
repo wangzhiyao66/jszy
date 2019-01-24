@@ -40,7 +40,7 @@ export class MarkDetaillComponent implements OnInit {
     const params: number = falg
         ? Number(this.projectId) - 1
         : Number(this.projectId) + 1;
-    this.router.navigate(['/information/news-detail'], {
+    this.router.navigate(['/information/mark-detail'], {
       queryParams: { id: params }
     });
   }
