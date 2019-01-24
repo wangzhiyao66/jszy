@@ -16,7 +16,7 @@ export class CooperationModeComponent implements OnInit {
     {
       src: '../../../../assets/images/productsservice/function/1.png',
       bg_src: '../../../../assets/images/productsservice/function/1-1.png',
-      text: '硬件设备销售+云平台服务费；'
+      text: '硬件设备销售+云平台服务费'
     },
     {
       src: '../../../../assets/images/productsservice/function/2.png',
