@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {TechnologyComponent} from './technology.component';
 import {StoryDetaillsComponent} from './story-detaills/story-detaills.component';
 import {IndexComponent} from './index/index.component';
+import {ActiveDetaillsComponent} from './active-detaills/active-detaills.component';
 
 const routes: Routes = [
     {
@@ -12,6 +12,10 @@ const routes: Routes = [
     {
         path: 'story-detaills',
         component: StoryDetaillsComponent,
+    },
+    {
+        path: 'active-detaills',
+        component: ActiveDetaillsComponent,
     }
 
 ];

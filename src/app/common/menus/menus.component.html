@@ -1,28 +1,49 @@
-<div class="header" [class.scroll]="iSscroll">
-    <div class="nav">
-        <div class="nav-left">
-            <img [routerLink]="'/home'" src="../../../assets/images/home/logo.png" alt="江山中医可视化官网">
-        </div>
-        <div class="nav-right">
-            <ul>
-                <li *ngFor="let item of menuservice.menus,let i = index;" [hidden]="item.hidden" class="line" (click)='hidemenus()' [routerLink]="item.link" routerLinkActive="active" (mouseenter)="onmenuin(i)" (mouseleave)="onmenuleave(i)">
-                    <span class="title" [class.title-color]='item.showchildren'>{{ item.title }}</span>
-                    <span [@fadeIn]="item.animationfalg ? 'open' : 'closed'" class="animation-bg"></span>
-                </li>
-            </ul>
-            <!-- 隐藏 其他 -->
-            <!--<div class="login">-->
+<div #navbox>
+    <div class="header" [class.scroll]="iSscroll">
+        <div class="nav">
+            <div class="nav-left">
+                <img [routerLink]="'/home'" src="../../../assets/images/home/logo.png" alt="江山中医可视化官网">
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li *ngFor="let item of menuservice.menus,let i = index;" [hidden]="item.hidden" class="line"
+                        (click)='hidemenus()' [routerLink]="item.link" routerLinkActive="active"
+                        (mouseenter)="onmenuin(i)" (mouseleave)="onmenuleave(i)">
+                        <span class="title" [class.title-color]='item.showchildren'>{{ item.title }}</span>
+                        <span [@fadeIn]="item.animationfalg ? 'open' : 'closed'" class="animation-bg"></span>
+                    </li>
+                </ul>
+                <!-- 隐藏 其他 -->
+                <!--<div class="login">-->
                 <!--<button class="btn" *ngIf="!but_title" (click)="login()">登录</button>-->
                 <!--<button class="btn" *ngIf="but_title" (click)="output()">退出</button>-->
-            <!--</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <div class='two-chor' *ngFor="let item of menuservice.menus,let i = index;"
+             [class.flexs]='menuservice.menus[i].showchildren' [hidden]='!menuservice.menus[i].showchildren'
+             (mouseenter)="onmenuin(i)" (mouseleave)="onmenuleave(i)">
+            <ul class='anchor-box'>
+                <li *ngFor='let val of menuservice.menus[i].children' (click)='linkTo(val)'>
+                    <img src="{{ val.url }}">
+                    <p>{{ val.anchorname }}</p>
+                </li>
+            </ul>
         </div>
     </div>
-    <div class='two-chor' *ngFor="let item of menuservice.menus,let i = index;" [class.flexs]='menuservice.menus[i].showchildren' [hidden]='!menuservice.menus[i].showchildren' (mouseenter)="onmenuin(i)" (mouseleave)="onmenuleave(i)">
-        <ul class='anchor-box'>
-            <li *ngFor='let val of menuservice.menus[i].children' (click)='linkTo(val)'>
-                <img src="{{ val.url }}">
-                <p>{{ val.anchorname }}</p>
-            </li>
-        </ul>
-    </div>
+    <!--<nav class="navbar navbar-dark bg-primary">-->
+        <!--<a class="navbar-brand" [routerLink]="'/home'" >江山中医可视化官网</a>-->
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"-->
+                <!--aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+            <!--<span class="navbar-toggler-icon"></span>-->
+        <!--</button>-->
+        <!--<div class="collapse navbar-collapse" id="navbarNav">-->
+            <!--<ul class="navbar-nav">-->
+                <!--<li class="nav-item active" *ngFor="let val of menuservice.menus" [hidden]="val.hidden">-->
+                    <!--<a data-stopPropagation=”true” class="nav-link" [routerLink]="val.link" >{{ val.title }}</a>-->
+                <!--</li>-->
+
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</nav>-->
 </div>

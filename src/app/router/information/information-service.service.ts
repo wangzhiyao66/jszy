@@ -203,7 +203,32 @@ export class InformationService {
             ],
         },
         {
-            id: 2 ,
+            id:  2,
+            title: '国家卫生部王国强副部长在首届中医诊疗设备论坛展示会现场视察并听取汇报',
+            time: '2008-10',
+            source: '来源： 江山中医可视化',
+            text: [
+                '2008年10月国家卫生部王国强副部长在首届中医诊疗设备论坛展示会现场视察并听取汇报'
+            ],
+            src: [
+                '../../../../assets/images/information/companynews/1/wangguoqiang.png',
+            ],
+        },
+        {
+            id:  3,
+            title: '人民日报内参评论',
+            time: '2013-8-30',
+            source: '来源： 江山中医可视化',
+            text: [
+                // tslint:disable-next-line:max-line-length
+                '2013年8月30日，人民日报内参第1352期发表评论，由解放军总医院基础医学研究所原所长袁云娥教授带领的科研团队，经过十余年探索研发的医学数字红外热成像自动分析系统，在中医发展史上具有里程碑意义，为中医走向世界奠定了基础。称数字红外成像技术打开中医理论“黑箱”。'
+            ],
+            src: [
+                '../../../../assets/images/information/companynews/3/renminribao.png',
+            ],
+        },
+        {
+            id: 4 ,
             title: '江山智能中医服务云亮相第20届高交会',
             time: '2018-11-14',
             source: '来源： 江山中医可视化',
@@ -229,45 +254,7 @@ export class InformationService {
             ],
         },
         {
-            id:  3,
-            title: '国家卫生部王国强副部长在首届中医诊疗设备论坛展示会现场视察并听取汇报',
-            time: '2008-10',
-            source: '来源： 江山中医可视化',
-            text: [
-                '2008年10月国家卫生部王国强副部长在首届中医诊疗设备论坛展示会现场视察并听取汇报'
-            ],
-            src: [
-                '../../../../assets/images/information/companynews/1/wangguoqiang.png',
-            ],
-        },
-        {
-            id:  4,
-            title: '人民日报内参评论',
-            time: '2013-8-30',
-            source: '来源： 江山中医可视化',
-            text: [
-                // tslint:disable-next-line:max-line-length
-                '2013年8月30日，人民日报内参第1352期发表评论，由解放军总医院基础医学研究所原所长袁云娥教授带领的科研团队，经过十余年探索研发的医学数字红外热成像自动分析系统，在中医发展史上具有里程碑意义，为中医走向世界奠定了基础。称数字红外成像技术打开中医理论“黑箱”。'
-            ],
-            src: [
-                '../../../../assets/images/information/companynews/3/renminribao.png',
-            ],
-        },
-        {
             id:  5,
-            title: '中国健康促进基金会成立红外医学专项基金',
-            time: '2015-5',
-            source: '来源： 江山中医可视化',
-            text: [
-                // tslint:disable-next-line:max-line-length
-                '2015年5月，中国健康促进基金会成立红外医学专项基金。总后卫生部原部长、中国健康促进基金会理事长白书忠为名誉主任，北京江山中医可视化科技股份有限公司董事长袁云娥任红外医学发展专项基金管理委员会主任委员。'
-            ],
-            src: [
-                '../../../../assets/images/information/companynews/6/jijinhui.png',
-            ],
-        },
-        {
-            id:  6,
             title: '斯里兰卡国家经济委员会代表团考察访问北京江山中医可视化科技股份有限公司',
             time: '2013年',
             source: '来源： 江山中医可视化',
@@ -280,6 +267,19 @@ export class InformationService {
             src: [
                 '../../../../assets/images/information/companynews/5/2.png',
                 '../../../../assets/images/information/companynews/5/1.png',
+            ],
+        },
+        {
+            id:  6,
+            title: '中国健康促进基金会成立红外医学专项基金',
+            time: '2015-5',
+            source: '来源： 江山中医可视化',
+            text: [
+                // tslint:disable-next-line:max-line-length
+                '2015年5月，中国健康促进基金会成立红外医学专项基金。总后卫生部原部长、中国健康促进基金会理事长白书忠为名誉主任，北京江山中医可视化科技股份有限公司董事长袁云娥任红外医学发展专项基金管理委员会主任委员。'
+            ],
+            src: [
+                '../../../../assets/images/information/companynews/6/jijinhui.png',
             ],
         },
         {

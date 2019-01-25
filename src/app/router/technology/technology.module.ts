@@ -15,6 +15,7 @@ import { StoryDetaillsComponent } from './story-detaills/story-detaills.componen
 import { IndexComponent } from './index/index.component';
 import {RouterModule} from '@angular/router';
 import {FormsModule} from '@angular/forms';
+import { ActiveDetaillsComponent } from './active-detaills/active-detaills.component';
 
 @NgModule({
     declarations: [
@@ -28,6 +29,7 @@ import {FormsModule} from '@angular/forms';
         ActiveComponent,
         StoryDetaillsComponent,
         IndexComponent,
+        ActiveDetaillsComponent,
     ],
     imports: [
         CommonModule,

@@ -120,7 +120,7 @@
             <span class="select-color">12</span> 项软件著作权
         </div>
     </div>
-    <div class="prode-show">
+    <div class="prode-show"  [routerLink]="'/product-serve'">
         <img
             class="onshow"
             src="../../../assets/images/product/product4.png"
@@ -150,49 +150,27 @@
                 </p>
             </li>
 
-            <li [routerLink]="'/information/news-detail'"  [queryParams]="{ id: 3}">
+            <li [routerLink]="'/information/news-detail'"  [queryParams]="{ id: 2}">
                 <img src="../../../assets/images/news/wangguoqiang.png" />
                 <p class="prople-decration">国家卫生部王国强副部长在首届中医诊疗...</p>
             </li>
 
-            <li [routerLink]="'/information/news-detail'" [queryParams]="{ id: 4}">
+            <li [routerLink]="'/information/news-detail'" [queryParams]="{ id: 3}">
                 <img src="../../../assets/images/news/wo.png" />
                 <p class="prople-decration">
                     人民日报内参评论
                 </p>
             </li>
 
-            <li [routerLink]="'/information/news-detail'" [queryParams]="{ id: 2}">
+            <li [routerLink]="'/information/news-detail'" [queryParams]="{ id: 4}">
                 <img src="../../../assets/images/news/shanxi.png" />
                 <p class="prople-decration">江山智能中医服务云亮相第20届高交会</p>
             </li>
 
-            <li [routerLink]="'/information/news-detail'"  [queryParams]="{ id: 6}">
+            <li [routerLink]="'/information/news-detail'"  [queryParams]="{ id: 5}">
                 <img src="../../../assets/images/news/home.png" />
                 <p class="prople-decration">斯里兰卡国家经济委员会代表团考察访问</p>
             </li>
-
-
-
-
-            <!--<li>-->
-                <!--<img src="../../../assets/images/news/yumengsun.png" />-->
-                <!--<p class="prople-decration">俞梦孙院士关注可视化技术</p>-->
-            <!--</li>-->
-            <!--<li>-->
-                <!--<img src="../../../assets/images/news/guojiashejidui-.png" />-->
-                <!--<p class="prople-decration">为国家射击队进行体检</p>-->
-            <!--</li>-->
-            <!--<li>-->
-                <!--<img src="../../../assets/images/news/manbingsiyu.png" />-->
-                <!--<p class="prople-decration">-->
-                    <!--"慢病四预， 先抗疲劳"，健康项目启动仪式-->
-                <!--</p>-->
-            <!--</li>-->
-            <!--<li>-->
-                <!--<img src="../../../assets/images/news/feizhou.png" />-->
-                <!--<p class="prople-decration">为非洲部分医疗人员授课</p>-->
-            <!--</li>-->
             <li class="more-news" [routerLink]="'/information'" >
                 <i
                     nz-icon

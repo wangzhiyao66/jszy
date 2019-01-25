@@ -2,7 +2,7 @@
     <div class="active-content">
         <p class="title">科研活动</p>
         <ul>
-            <li *ngFor="let item of activelist">
+            <li *ngFor="let item of list" [routerLink]="'/technology/active-detaills'" [queryParams]="{ id : item.id}">
                 <img src="{{ item.url }}">
                 <p class="name">{{ item.title }}</p>
             </li>
