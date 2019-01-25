@@ -37,6 +37,7 @@ p {
     font-size: 1.3em;
     color: $base-color;
     margin: 0 0 10px;
+    outline: none;
 
     &:hover {
       color: $select-color;

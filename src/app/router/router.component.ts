@@ -12,7 +12,10 @@ export class RouterComponent implements OnInit {
                 private route: ActivatedRoute) { }
 
     ngOnInit() {
-        //
+        const viewWidth = document.body.clientWidth;
+        if( viewWidth < 1100 ) {
+            alert('暂时不支持移动设备，请使用PC端访问');
+        }
     }
 
 }

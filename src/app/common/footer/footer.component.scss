@@ -2,8 +2,8 @@
 @import "~src/app/scss/index";
 .footer{
   width: 100%;
-  background: url("../../../assets/images/scroll/bottom.png") no-repeat 100%;
-  //background: #232429 ;
+  //background: url("../../../assets/images/scroll/bottom.png") no-repeat 100%;
+  background: #232429 ;
   border: 1px solid transparent;
 
 
@@ -99,5 +99,9 @@
   .border-bottom {
     border-bottom: 1px solid #4c4d51;
     margin-bottom: 2em;
+  }
+
+  .mard {
+    margin-bottom: 50px;
   }
 }
