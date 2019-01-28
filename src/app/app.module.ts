@@ -19,6 +19,7 @@ import {RouterComponent} from './router/router.component';
 import {ScrollTopComponent} from './common/scroll-top/scroll-top.component';
 import {FooterModule} from './common/footer/footer.module';
 import {FooterComponent} from './common/footer/footer.component';
+import { LoginComponent } from './router/login/login.component';
 
 registerLocaleData(zh);
 
@@ -28,6 +29,7 @@ registerLocaleData(zh);
         RouterComponent,
         Code404Component,
         ScrollTopComponent,
+        LoginComponent,
     ],
     imports: [
         BrowserModule,

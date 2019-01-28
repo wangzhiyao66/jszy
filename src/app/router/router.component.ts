@@ -13,8 +13,8 @@ export class RouterComponent implements OnInit {
 
     ngOnInit() {
         const viewWidth = document.body.clientWidth;
-        if( viewWidth < 1100 ) {
-            alert('暂时不支持移动设备，请使用PC端访问');
+        if( viewWidth < 1200 ) {
+            this.router.navigate(['/login'], { skipLocationChange: true } );
         }
     }
 

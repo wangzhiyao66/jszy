@@ -1,0 +1,12 @@
+@import "~src/app/scss/index";
+@import "~src/app/scss/global";
+.mobill-box{
+  color: $base-color;
+  text-align: center;
+  margin-top: 100px;
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+  }
+}

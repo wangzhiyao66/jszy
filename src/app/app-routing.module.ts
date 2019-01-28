@@ -2,6 +2,7 @@ import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {Code404Component} from './common/code404/code404.component';
 import {RouterComponent} from './router/router.component';
+import {LoginComponent} from './router/login/login.component';
 
 
 const routes: Routes = [
@@ -42,6 +43,10 @@ const routes: Routes = [
                 loadChildren: './router/about/about.module#AboutModule'
             },
         ]
+    },
+    {
+        path: 'login',
+        component: LoginComponent
     },
     {
         path: '**',
