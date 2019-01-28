@@ -65,12 +65,21 @@ export class MenusComponent implements OnInit, OnDestroy {
     this.menuservice.menus[i].animationfalg = false;
     this.menuservice.menus[i].showchildren = false;
   }
+
+  /**
+   * 隐藏菜单 并通过异步保存标志位
+   */
   hidemenus() {
     this.isfalg = false;
     this.menuservice.menus.forEach( value => value.showchildren = false);
-    setTimeout( () => { this.isfalg = true }, 500);
+    setTimeout( () => {this.isfalg = true}, 500);
 
   }
+
+  /**
+   * 页面跳转 与 描点
+   * @param val 参数
+   */
   linkTo(val) {
     this.menuservice.menus.forEach( value => value.showchildren = false);
     this.router.navigate([val.link], { fragment: val.params });
@@ -90,8 +99,8 @@ export class MenusComponent implements OnInit, OnDestroy {
   }
 
   /**
-   * boostrap nav
-   * @ param val
+   * boostrap nav-menu
+   * @param val 参数
    */
   mgoto (val) {
     this.router.navigate([val.link]);
