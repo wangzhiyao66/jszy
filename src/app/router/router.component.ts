@@ -14,7 +14,7 @@ export class RouterComponent implements OnInit {
     ngOnInit() {
         const viewWidth = document.body.clientWidth;
         if( viewWidth < 1200 ) {
-            this.router.navigate(['/login'], { skipLocationChange: true } );
+            // this.router.navigate(['/login'], { skipLocationChange: true } );
         }
     }
 

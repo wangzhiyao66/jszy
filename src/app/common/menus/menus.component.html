@@ -1,5 +1,5 @@
 <div #navbox>
-    <div class="header" [class.scroll]="iSscroll">
+    <div class="header" [class.scroll]="iSscroll" [hidden]="navbox.offsetWidth < 1000 ">
         <div class="nav">
             <div class="nav-left">
                 <img [routerLink]="'/home'" src="../../../assets/images/home/logo.png" alt="江山中医可视化官网">
@@ -31,19 +31,20 @@
             </ul>
         </div>
     </div>
-    <!--<nav class="navbar navbar-dark bg-primary">-->
-        <!--<a class="navbar-brand" [routerLink]="'/home'" >江山中医可视化官网</a>-->
-        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"-->
-                <!--aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
-            <!--<span class="navbar-toggler-icon"></span>-->
-        <!--</button>-->
-        <!--<div class="collapse navbar-collapse" id="navbarNav">-->
-            <!--<ul class="navbar-nav">-->
-                <!--<li class="nav-item active" *ngFor="let val of menuservice.menus" [hidden]="val.hidden">-->
-                    <!--<a data-stopPropagation=”true” class="nav-link" [routerLink]="val.link" >{{ val.title }}</a>-->
-                <!--</li>-->
+    <!--小屏幕导航栏-->
+    <nav class="navbar navbar-dark bg-primary abs" [hidden]="navbox.offsetWidth > 1000 ">
+        <a class="navbar-brand" [routerLink]="'/home'" >江山中医可视化</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" #navbarNavs>
+            <ul class="navbar-nav">
+                <li class="nav-item active" *ngFor="let val of menuservice.menus" [hidden]="val.hidden">
+                    <a data-stopPropagation=”true” class="nav-link" (click)="mgoto(val)" >{{ val.title }}</a>
+                </li>
 
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</nav>-->
+            </ul>
+        </div>
+    </nav>
 </div>

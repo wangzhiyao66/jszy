@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import {Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MenusService } from './menus.service';
 import { fromEvent, Subscription } from 'rxjs';
@@ -17,9 +17,13 @@ export class MenusComponent implements OnInit, OnDestroy {
   iSscroll = false;
   // 订阅事件
   subscription: Subscription;
+  // 获取本地变量
+  @ViewChild('navbarNavs') navbarNavs: ElementRef;
+
   constructor(
     private router: Router,
     private route: ActivatedRoute,
+    private el: ElementRef,
     public menuservice: MenusService
   ) {}
 
@@ -83,6 +87,15 @@ export class MenusComponent implements OnInit, OnDestroy {
     // this.menuservice.menus[5].hidden = false;
     this.but_title = false;
     window.history.back();
+  }
+
+  /**
+   * boostrap nav
+   * @ param val
+   */
+  mgoto (val) {
+    this.router.navigate([val.link]);
+    this.navbarNavs.nativeElement.className = 'collapse navbar-collapse';
   }
 
   /**
