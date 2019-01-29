@@ -1,12 +1,15 @@
 <div class="social-view">
   <div class="social-content" #social [@pulse]="socialfalg ? 'closed' : 'enter'">
     <p class="title">公司荣誉</p>
-    <ul>
-      <li *ngFor="let item of storylist">
-        <img class="img-fluid" src="{{ item.src }}">
-        <!--<p class="name">{{ item.title}}</p>-->
-      </li>
-    </ul>
+    <div class="container maxwidth marg align-items-center">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 justify-content-center" *ngFor="let item of storylist;let i = index">
+          <div class="listbox" >
+            <img class="img-fluid" src="{{ item.src }}"/>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 </div>

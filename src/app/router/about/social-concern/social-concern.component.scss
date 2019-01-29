@@ -1,7 +1,6 @@
 @import "../../../scss/index";
 .social-view {
-  background:rgb(242, 242, 244) url("../../../../assets/images/about/rongyu.png") no-repeat top;
-  text-align: center;
+  background: #fff;
   border: 1px solid transparent;
 }
 
@@ -18,47 +17,27 @@
     letter-spacing: 6px;
 
   }
-  ul {
-    padding: 0;
-    margin: 25px 0 100px;
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex-shrink: 0.8;
-    justify-content: center;
-  }
-
-  li {
-    list-style: none;
-    margin: 2em;
+  .listbox {
     position: relative;
-    cursor: pointer;
+    padding: 0;
+    margin: 1em 0;
+    width: 100%;
     text-align: center;
-    //border-radius: 10px;
-    border: 1px solid #e6e0e0;
-    transition: transform 0.5s;
-
-    .name {
-      font-size: 14px;
-      color: #333;
-      margin: 0;
-      padding: 0 15px;
-      @include truncate();
-      letter-spacing: 2px;
-      position: absolute;
-      bottom: 18px;
-      left: 0;
-      right: 0;
+    display: inline-block;
+    img {
+      transition: transform 0.5s;
     }
 
-    //&:hover {
-    //  @include shadow();
-    //  transform: translateY(-10px);
-    //  .name {
-    //    color: #327ce2;
-    //  }
-    //
-    //}
+    &:hover img {
+      @include shadow();
+      cursor: pointer;
+      transform: translateY(-10px);
+
+    }
   }
+}
+
+.marg {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }

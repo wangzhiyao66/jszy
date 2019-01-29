@@ -11,8 +11,8 @@ import {Pulse} from '../../../animations/pulse.animation';
 })
 export class ComputedHonorComponent implements OnInit , OnChanges{
   datalist: { src: string, title: string}[] = [
-    { src: '../../../assets/images/about/3.png', title: '俞梦孙院士关注可视化技术'},
-    { src: '../../../assets/images/about/4.png', title: '江西中医药大学授予 "创新实践基地"'},
+    { src: '../../../assets/images/about/21.png', title: '俞梦孙院士关注可视化技术'},
+    { src: '../../../assets/images/about/22.png', title: '江西中医药大学授予 "创新实践基地"'},
   ];
 
   // 获取本地变量

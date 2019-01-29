@@ -14,6 +14,7 @@ export class SocialConcernComponent implements OnInit , OnChanges{
   storylist: { src: string, title: string }[] = [
     { src: '../../../assets/images/about/1.png', title: '2015年春节习近平总书记视察我公司产品'},
     { src: '../../../assets/images/about/2.png', title: '我公司便捷式红外影像设备'},
+    { src: '../../../assets/images/about/3.png', title: '我公司便捷式红外影像设备'},
   ];
 
   // 获取本地变量

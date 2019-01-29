@@ -325,7 +325,7 @@ export class InformationService {
             source: '来源： 江山中医可视化',
             text: [
                 // tslint:disable-next-line:max-line-length
-                '2018年，北京江山中医可视化科技股份有限公司收获了 "高新技术企业证书"、 "中关村高新技术企业证书"、"中国健康促进基金会授予“有社会责任感企业”" ，三大项特殊荣誉'
+                '2018年，北京江山中医可视化科技股份有限公司收获了 "高新技术企业证书"、 "中关村高新技术企业证书"、中国健康促进基金会授予、“有社会责任感企业” ，三大项特殊荣誉'
             ],
             src: [
                 '../../../../assets/images/information/companynews/9/3.png',
