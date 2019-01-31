@@ -86,7 +86,7 @@
     height: 60px;
     line-height: 60px;
     text-align: center;
-    color: #cdcdcd;
+    color: #999;
     background-color: #232429;
     padding: 0 1em;
     @include truncate();
@@ -102,6 +102,6 @@
   }
 
   .mard {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
