@@ -62,7 +62,7 @@ export class MenusService {
     {
       title: '用户中心',
       link: '/user',
-      hidden: true,
+      hidden: false,
       animationfalg: false,
       showchildren: false,
       children: [
