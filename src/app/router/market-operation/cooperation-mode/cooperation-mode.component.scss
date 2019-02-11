@@ -6,7 +6,7 @@
 }
 
 .function-content {
-  width: 1200px;
+  max-width: 1200px;
   margin: 80px auto;
 
   .title {
@@ -88,6 +88,17 @@
       z-index: 10;
       //transition: color 1.2s;
     }
+    @media screen and (max-width:500px){
+      .p-text {
+        padding-left: 25px;
+      }
+    }
 
+  }
+  @media screen and (max-width:1200px){
+    .function-list {
+      width: calc(100% - 40px);
+      margin: 0 20px;
+    }
   }
 }

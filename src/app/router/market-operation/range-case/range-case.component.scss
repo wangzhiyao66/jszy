@@ -1,11 +1,18 @@
 @import "../../../scss/index";
+@import "../../../scss/global";
 .range-view {
   background: #fff;
 }
 
+/* 如果屏幕小于900px */
+@media screen and (max-width: 900px) {
+  .range-content{
+    padding-bottom: 100px;
+  }
+}
 .range-content {
-  width: 1200px;
-  height: 606px;
+  max-width: 1200px;
+  min-height: 606px;
   margin: 0 auto;
   border: 1px solid transparent;
 
@@ -13,30 +20,23 @@
     font-size: 38px;
     color: #333;
     text-align: center;
-    margin: 80px 0 0 0;
+    margin: 80px 0 45px 0;
     letter-spacing: 6px;
 
   }
-  ul {
-    padding: 0;
-    margin: 25px 0 0;
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex-shrink: 0.8;
-    justify-content: space-between;
-  }
 
-  li {
+  .li {
+    display: inline-block;
     list-style: none;
-    margin-top: 25px;
     position: relative;
     cursor: pointer;
     text-align: center;
-    //border-radius: 10px;
-    border: 1px solid #ddd;
+    margin: 13px auto;
     transition: transform 0.5s;
+
+    .case {
+      border: 1px solid #ddd;
+    }
 
     .name {
       font-size: 14px;
@@ -46,7 +46,7 @@
       @include truncate();
       letter-spacing: 2px;
       position: absolute;
-      bottom: 18px;
+      bottom: 15px;
       left: 0;
       right: 0;
     }

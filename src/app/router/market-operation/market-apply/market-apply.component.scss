@@ -1,14 +1,14 @@
 @import "../../../scss/_global";
 
 .service-introduction-view {
-  // height: 1260px;
   border: 1px solid transparent;
   //background: #f3f7fa;
   background: #fff;
+  padding: 0 20px;
 }
 
 .service-introduction-content {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 
   .title {
@@ -29,11 +29,19 @@
     font-size: 20px;
   }
 
+
   .contetn-text {
     font-size: 16px;
     color: #666;
     margin-top: 24px;
     line-height: 35px;
     letter-spacing: 2px;
+  }
+
+  /* 如果屏幕小于900px */
+  @media screen and (max-width: 900px) {
+    .contetn-text {
+      text-indent: 30px !important;
+    }
   }
 }

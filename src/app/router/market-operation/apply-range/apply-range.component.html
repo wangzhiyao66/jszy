@@ -1,13 +1,26 @@
 <div class="apply-view" >
   <div class="apply-content" #applyrange [@pulse]="applyrangefalg ? 'closed' : 'enter'">
     <p class="title">应用范围</p>
-    <ul class="tager-box">
-      <li *ngFor="let val of showlist; let i = index;" (mouseenter)="esein(i)" (mouseleave)="eseout(i)" >
-        <img class="icon-img" src="{{ val.src}}" [class.roteanimation]="val.falg">
-        <p class="p-text color{{i}}">{{ val.title}}</p>
-        <span class="unline border{{i}}"></span>
-        <p class="p-desc">{{ val.text }}</p>
-      </li>
-    </ul>
+    <div class="container maxwidth">
+      <div class="row align-items-center">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 justify-content-center"*ngFor="let val of showlist; let i = index;" (mouseenter)="esein(i)" (mouseleave)="eseout(i)" >
+          <div class="li">
+            <img class="icon-img" src="{{ val.src}}" [class.roteanimation]="val.falg">
+            <p class="p-text color{{i}}">{{ val.title}}</p>
+            <span class="unline border{{i}}"></span>
+            <p class="p-desc">{{ val.text }}</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--<ul class="tager-box">-->
+      <!--<li *ngFor="let val of showlist; let i = index;" (mouseenter)="esein(i)" (mouseleave)="eseout(i)" >-->
+        <!--<img class="icon-img" src="{{ val.src}}" [class.roteanimation]="val.falg">-->
+        <!--<p class="p-text color{{i}}">{{ val.title}}</p>-->
+        <!--<span class="unline border{{i}}"></span>-->
+        <!--<p class="p-desc">{{ val.text }}</p>-->
+      <!--</li>-->
+    <!--</ul>-->
   </div>
 </div>

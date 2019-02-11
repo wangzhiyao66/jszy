@@ -2,14 +2,29 @@
 <div class="plan-view">
   <div class="plan-content"  #planview [@pulse]="planviewfalg ? 'closed' : 'enter'">
     <p class="title">运营方案</p>
-    <ul class="tager-box">
-      <li *ngFor="let val of showlist; let i = index;">
-        <p class="p-header">
-          <img  class="roteanimation" src="{{ val.src}}" >
-          <span class="color{{i}}">{{ val.label}}</span>
-        </p>
-        <p class="p-text">{{ val.text }}</p>
-      </li>
-    </ul>
+    <div class="container maxwidth">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 justify-content-center"*ngFor="let val of showlist; let i = index;">
+          <div class="li">
+            <p class="p-header">
+              <img  class="roteanimation" src="{{ val.src}}" >
+              <span class="color{{i}}">{{ val.label}}</span>
+            </p>
+            <p class="p-text">{{ val.text }}</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--<ul class="tager-box">-->
+      <!--<li *ngFor="let val of showlist; let i = index;">-->
+        <!--<p class="p-header">-->
+          <!--<img  class="roteanimation" src="{{ val.src}}" >-->
+          <!--<span class="color{{i}}">{{ val.label}}</span>-->
+        <!--</p>-->
+        <!--<p class="p-text">{{ val.text }}</p>-->
+      <!--</li>-->
+    <!--</ul>-->
   </div>
 </div>

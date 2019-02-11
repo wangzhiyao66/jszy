@@ -1,17 +1,20 @@
 @import "~src/app/scss/global";
 @import "~src/app/scss/index";
 @import "~src/app/scss/animations";
+
 .apply-view {
   width: 100%;
   border: 1px solid transparent;
   background: #f8fafb url("../../../../assets/images/market/range/rangebg.png") no-repeat bottom;
 }
+
 p {
   padding: 0;
   margin: 0;
 }
+
 .apply-content {
-  width: 1200px;
+  max-width: 1200px;
   margin: 80px auto;
 
   .title {
@@ -23,76 +26,75 @@ p {
 
   }
 }
-.roteanimation{
-  animation: rote 0.3s 0s ;
+
+.roteanimation {
+  animation: rote 0.3s 0s;
 }
 
-.tager-box {
-  list-style: none;
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  //justify-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-
-  li {
-    width: 280px;
+  .li {
+    max-width: 280px;
     height: 394px;
     background: #fff;
-    margin: 13px 0;
-    display: flex;
-    flex-direction: column;
-    //justify-content: center;
-    align-items: center;
+    margin: 13px auto;
     transition: transform 0.5s;
-    &:hover{
+
+    &:hover {
       @include shadow();
       transform: translateY(-10px);
     }
-    .icon-img{
+
+    .icon-img {
       margin: 3em 0 1em;
       transition: transform 0.5s;
     }
-    .p-text{
+
+    .p-text {
       font-size: 22px;
     }
-    .p-desc{
+
+    .p-desc {
       font-size: 15px;
       color: #666;
       margin: 0 25px;
       letter-spacing: 2px;
+      text-align: left !important;
     }
+
     .color0 {
       color: #f46889;
     }
+
     .color1 {
       color: #43c3c2;
     }
+
     .color2 {
       color: #ff9667;
     }
+
     .color3 {
       color: #48abf6;
     }
+
     .border0 {
       border-color: #f46889;
     }
+
     .border1 {
       border-color: #43c3c2;
     }
+
     .border2 {
       border-color: #ff9667;
     }
+
     .border3 {
       border-color: #48abf6;
     }
 
   }
 
-  .unline{
+  .unline {
     display: inline-block;
     width: 30px;
     height: 2px;
@@ -101,5 +103,3 @@ p {
     margin: 1em 0;
     border-bottom: 2px solid rgb(64, 188, 187);
   }
-
-}

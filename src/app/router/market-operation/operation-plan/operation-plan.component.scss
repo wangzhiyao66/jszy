@@ -13,7 +13,7 @@ p {
 }
 
 .plan-content {
-  width: 1200px;
+  max-width: 1200px;
   margin: 80px auto;
 
   .title {
@@ -26,76 +26,81 @@ p {
   }
 }
 
-.tager-box {
-  list-style: none;
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  //justify-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
+.li {
+  max-width: 590px;
+  min-width: 350px;
+  height: 240px;
+  background: #fff;
+  margin: 13px auto;
+  padding-top: 15px;
+  transition: transform 0.5s;
 
-  li {
-    width: 590px;
-    height: 240px;
-    background: #fff;
-    margin: 13px 0;
-    display: flex;
-    flex-direction: column;
-    //justify-content: center;
-    //align-items: center;
-    transition: transform 0.5s;
+  &:hover {
+    @include shadow();
+    transform: translateY(-10px);
 
-    &:hover {
-      @include shadow();
-      transform: translateY(-10px);
-
-      .roteanimation {
-        animation: rote 0.3s 0s ;
-      }
-    }
-
-    .p-header {
-      margin-top: 30px;
-      margin-bottom: 20px;
-      letter-spacing: 2px;
-    }
-
-    .p-text {
-      font-size: 15px;
-      color: #333;
-      line-height: 25px;
-    }
-
-    .color0 {
-      color: #48abf6;
-    }
-
-    .color1 {
-      color: #ff9667;
-    }
-
-    .color2 {
-      color: #f46889;
-    }
-
-    .color3 {
-      color: #43c3c2;
+    .roteanimation {
+      animation: rote 0.3s 0s;
+      -webkit-animation: rote 0.3s 0s;
+      -o-animation: rote 0.3s 0s;
+      -moz-animation: rote 0.3s 0s;
     }
   }
 
-  span {
-    font-size: 25px;
-    color: rgb(64, 188, 187);
-    display: inline-block;
-    margin-left: 20px;
-    vertical-align: middle;
-  }
-
-  p {
-    margin: 0 28px;
+  .p-header {
+    margin-top: 30px;
+    margin-bottom: 20px;
     letter-spacing: 2px;
+    @include truncate();
   }
+
+  .p-text {
+    font-size: 15px;
+    color: #333;
+    line-height: 25px;
+    text-align: left;
+  }
+
+  .color0 {
+    color: #48abf6;
+  }
+
+  .color1 {
+    color: #ff9667;
+  }
+
+  .color2 {
+    color: #f46889;
+  }
+
+  .color3 {
+    color: #43c3c2;
+  }
+}
+
+/* 如果屏幕小于600px */
+@media screen and (max-width: 600px) {
+  .li {
+    height: 280px;
+  }
+}
+
+/* 如果屏幕小于500px */
+@media screen and (max-width: 500px) {
+  .li {
+    height: 300px;
+  }
+}
+
+span {
+  font-size: 25px;
+  color: rgb(64, 188, 187);
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+p {
+  margin: 0 28px;
+  letter-spacing: 2px;
 }

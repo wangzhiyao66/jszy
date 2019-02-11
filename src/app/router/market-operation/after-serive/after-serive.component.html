@@ -1,12 +1,25 @@
 <div class="apply-view">
   <div class="apply-content"  #afterview [@pulse]="afterviewfalg ? 'closed' : 'enter'">
     <p class="title">售后支持</p>
-    <ul class="tager-box">
-      <li *ngFor="let val of showlist; let i = index;">
-        <img class="icon-img" src="{{ val.src}}" [class.roteanimation]="val.falg">
-        <p class="p-text color{{i}}">{{ val.title}}</p>
-        <p class="p-desc">{{ val.text }}</p>
-      </li>
-    </ul>
+    <div class="container maxwidth">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 justify-content-center"*ngFor="let val of showlist; let i = index;">
+          <div class="li">
+            <img class="icon-img" src="{{ val.src}}" [class.roteanimation]="val.falg">
+            <p class="p-text color{{i}}">{{ val.title}}</p>
+            <p class="p-desc">{{ val.text }}</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--<ul class="tager-box">-->
+      <!--<li *ngFor="let val of showlist; let i = index;">-->
+        <!--<img class="icon-img" src="{{ val.src}}" [class.roteanimation]="val.falg">-->
+        <!--<p class="p-text color{{i}}">{{ val.title}}</p>-->
+        <!--<p class="p-desc">{{ val.text }}</p>-->
+      <!--</li>-->
+    <!--</ul>-->
   </div>
 </div>

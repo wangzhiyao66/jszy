@@ -14,7 +14,7 @@ p {
 }
 
 .apply-content {
-  width: 1200px;
+  max-width: 1200px;
   margin: 80px auto;
 
   .title {
@@ -31,26 +31,12 @@ p {
   animation: rote 0.3s 0s;
 }
 
-.tager-box {
-  list-style: none;
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  //justify-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-
-  li {
-    width: 390px;
+  .li {
+    max-width: 390px;
+    min-width: 300px;
     height: 294px;
     background: #fff;
-    margin: 13px 0;
-    display: flex;
-    flex-direction: column;
-    //justify-content: center;
-    align-items: center;
+    margin: 13px auto;
     transition: transform 0.5s;
 
     &:hover {
@@ -89,6 +75,3 @@ p {
 
 
   }
-
-
-}

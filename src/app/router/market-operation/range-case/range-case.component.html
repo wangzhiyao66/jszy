@@ -1,12 +1,18 @@
 <div class="range-view">
   <div class="range-content" #range [@pulse]="rangefalg ? 'closed' : 'enter'">
     <p class="title">应用案例</p>
-    <ul>
-      <li *ngFor="let item of storylist">
-        <img class="case" src="{{ item.url }}">
-        <p class="name">{{ item.title}}</p>
-      </li>
-    </ul>
+
+    <div class="container maxwidth">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 justify-content-center"*ngFor="let val of storylist; let i = index;">
+          <div class="li">
+            <img class="case img-fluid" src="{{ val.url }}">
+            <p class="name">{{ val.title}}</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 
 </div>
