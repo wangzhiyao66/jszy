@@ -19,7 +19,7 @@ export class OperationPlanComponent implements OnInit , OnChanges{
       text: '根据中医诊所的特点与面临的实际问题，应用中医可视化智能健康服务系统从技术与市场运营层面的应用环节、模式、操作流程等方面提出相应的解决办法'
     },
     {
-      label: '2、社区健康服务站运营方案' ,
+      label: '2、健康服务站运营方案' ,
       src: '../../../../assets/images/market/plan/2.png',
       text: '以社区为核心，建立基于中医可视化技术的社区居民健康大数据及数字化的个人健康档案，开展科学健康养生保健普查，集预防、调理、保健、康复以及指导健康生活方式为服务内容的解决方案。'
     },

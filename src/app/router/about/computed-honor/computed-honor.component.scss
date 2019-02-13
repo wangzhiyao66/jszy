@@ -23,7 +23,7 @@
   }
   ul {
     padding: 0;
-    margin: 25px 0 ;
+    margin: 25px 0;
     display: flex;
     flex: 1;
     flex-wrap: wrap;
@@ -31,6 +31,12 @@
     flex-shrink: 0.8;
     justify-content: center;
 
+  }
+  @media screen and (max-width:1000px) {
+    ul {
+      margin: 25px 15px;
+      overflow: hidden;
+    }
   }
 
   li {

@@ -83,6 +83,13 @@ p {
   .li {
     height: 280px;
   }
+  .roteanimation{
+    display: none;
+  }
+  .p-header span {
+    margin: 0 !important;
+    text-align: center;
+  }
 }
 
 /* 如果屏幕小于500px */

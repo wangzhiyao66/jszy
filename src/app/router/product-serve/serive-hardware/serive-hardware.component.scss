@@ -45,61 +45,7 @@
 }
 
 .contents {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
-
-  .btn-box {
-    margin: 40px auto;
-    padding: 0;
-    text-align: center;
-
-    button {
-      color: #fff;
-      margin: 0 20px;
-      font-size: 15px;
-      font-weight: 501;
-      width: 108px;
-      height: 42px;
-      -webkit-border-radius: 20px;
-      -moz-border-radius: 20px;
-      border-radius: 20px;
-      border: 3px solid #fff;
-
-      &:hover{
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        border-radius: 10px;
-      }
-    }
-
-    .quca {
-      outline: none;
-      background: #ed426a;
-
-      &:hover{
-        border: 3px solid  #f5c6d1;
-      }
-
-    }
-
-    .lizh{
-      background: #f49e45;
-
-      &:hover{
-        border: 3px solid #ffd7ce;
-      }
-
-    }
-
-    .bixi {
-      background: #14c2c0;
-
-      &:hover{
-        border: 3px solid #95d9d8;
-      }
-    }
-
-  }
-
 
 }

@@ -2,10 +2,12 @@
     <div class="special-content" #special [@pulse]="specialfalg ? 'closed' : 'enter'">
         <p class="title">产品特点</p>
         <div class="content-box">
-            <div class="list{{i+1}} special" *ngFor="let val of speciallist, let i = index;">
-                <div class="list-box">
-                    <span class="code">0{{ val.code }}</span>
-                    <span class="text">{{ val.title }}</span>
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 justify-content-center" *ngFor="let val of speciallist, let i = index;">
+                    <div class="list-box list{{i+1}} special">
+                        <span class="code">0{{ val.code }}</span>
+                        <span class="text">{{ val.title }}</span>
+                    </div>
                 </div>
             </div>
         </div>

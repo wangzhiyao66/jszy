@@ -14,11 +14,6 @@ import {Pulse} from '../../../animations/pulse.animation';
 })
 export class SeriveHardwareComponent implements OnInit , OnChanges{
 
-    hardwarelist = [
-        {falg: true},
-        {falg: false},
-        {falg: false},
-    ];
     // 获取本地变量
     @ViewChild('hardware') hardware: ElementRef;
     @Input() docuheight: number;
@@ -29,11 +24,6 @@ export class SeriveHardwareComponent implements OnInit , OnChanges{
     }
 
     ngOnInit() {
-    }
-
-    showimg(num: number) {
-        this.hardwarelist.forEach(el => el.falg = false);
-        this.hardwarelist[num].falg = true;
     }
 
     // 变更检测

@@ -8,7 +8,7 @@
 }
 
 .service-introduction-content {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 
     .title {
@@ -33,10 +33,21 @@
         color: #000;
       }
     }
+  @media screen  and (max-width: 500px){
+    .dec {
+      text-indent: 25px;
+    }
+  }
   
 
     .select-color {
       color: $primary-color;
       font-size: 20px;
+  }
+}
+
+@media screen  and (max-width: 1000px){
+  .service-introduction-content {
+    margin: 0 20px;
   }
 }
