@@ -56,6 +56,38 @@
 
 // banner
 
+// banner
+@media screen  and (max-width: 900px){
+  .overview {
+    margin-top: 55px !important;
+  }
+  .banner-box {
+    height: 350px !important;
+  }
+}
+@media screen  and (max-width: 500px){
+
+
+  .description {
+    max-width: 350px !important;
+
+    p {
+      font-size: 1.5em !important;
+      letter-spacing: 3px !important;
+    }
+
+    span {
+      font-size: 13px !important;
+    }
+  }
+}
+
+/* 如果屏幕小于900px */
+@media screen and (max-width: 900px) {
+  .contetn-text {
+    text-indent: 30px !important;
+  }
+}
 .banner-box {
   width: 80%;
   max-width: 1200px;
@@ -63,13 +95,16 @@
   margin: 0 auto;
   border: 1px solid transparent;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .description {
-    // width: 45%;
-    min-width: 470px;
+    display: inline-block;
+    max-width: 470px;
     height: 160px;
     text-align: center;
-    margin: 19% auto;
     p {
       margin: 20px 0 40px;
       font-size: 3em;
@@ -82,12 +117,6 @@
       letter-spacing: 6px;
 
     }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .banner-box {
-    height: 550px;
   }
 }
 .nav-box{
