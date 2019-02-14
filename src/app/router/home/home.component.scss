@@ -4,6 +4,12 @@
 .swiper-container {
     margin-top: -80px;
 }
+/* 如果屏幕小于900px */
+@media screen and (max-width: 900px) {
+    .swiper-container {
+        margin-top: 55px  !important;
+    }
+}
 
 ::ng-deep .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
     background: rgba(255, 255, 255, 0.6);
@@ -40,9 +46,21 @@
 
 //内容区域
 .content {
-    width: 1200px;
-    height: 860px;
+    max-width: 1200px;
+    min-height: 860px;
     margin: 0 auto;
+}
+/* 如果屏幕小于900px */
+@media screen and (max-width: 900px) {
+    //内容区域
+    .content {
+        margin: 0 20px;
+        width: calc(100% - 40px);
+    }
+    .content-two {
+        margin: 0 20px;
+        width: calc(100% - 40px);
+    }
 }
 
 .header {
@@ -83,16 +101,28 @@
     padding: 0;
     margin: 60px 0 0 0;
     list-style: none !important;
-    width: 1200px;
-    height: 666px;
+    max-width: 1200px;
+    min-height: 666px;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: center;
 
     li {
-        float: left;
+        //float: left;
         list-style: none;
         width: 290px;
         margin: 0 5px;
     }
-
+    /* 如果屏幕小于900px */
+    @media screen and (max-width: 900px) {
+        li {
+            margin: 10px;
+        }
+        .text-box {
+            height: 300px;
+        }
+    }
     li:hover {
         .text-box {
             background: #3975ed;
@@ -248,12 +278,11 @@
 
 // 产品列表
 .content-two {
-    width: 1200px;
-    //height: 494px;
+    max-width: 1200px;
     margin: 0 auto 30px;
 
     .prode-show {
-        margin: 85px auto 0;
+        margin: 0 auto;
         outline: none;
 
         .onshow {
@@ -263,7 +292,6 @@
         .more-link {
             width: 100%;
             text-align: center;
-            margin: 60px 0;
 
             span {
                 display: inline-block;
@@ -289,33 +317,36 @@
 // 专利
 .patent {
     width: 100%;
-    min-width: 1280px;
     height: 100px;
-    background: url("../../../assets/images/product/own.png") no-repeat center;
-    -o-background: url("../../../assets/images/product/own.png") no-repeat center;
-    -moz-background: url("../../../assets/images/product/own.png") no-repeat center;
-    -webkit-background: url("../../../assets/images/product/own.png") no-repeat center;
 }
 
 // 行业动态
 .doing-box {
     width: 100%;
-    min-width: 1280px;
     //background: url("../../../assets/images/news/bg.png") no-repeat left bottom;
     //background-size: 100% 100%;
 }
 
 .content-doing {
-    width: 1200px;
-    height: 730px;
+    max-width: 1200px;
+    min-height: 730px;
     margin: 0 auto;
 
     .industry-dynamics {
-        width: 1200px;
         list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        @media screen and (max-width: 900px) {
+            //内容区域
+            li {
+                width: 350px;
+            }
+        }
 
         li {
-            float: left;
             width: 370px;
             height: 235px;
             background: rgba(242, 245, 248, 1);
@@ -400,9 +431,8 @@
 }
 
 // 下载区域
+
 .download-box {
-    width: 100%;
-    min-width: 1280px;
     background: url("../../../assets/images/download/beijing.png") no-repeat center;
     -webkit-background: url("../../../assets/images/download/beijing.png") no-repeat center;
     -o-background: url("../../../assets/images/download/beijing.png") no-repeat center;
@@ -417,5 +447,13 @@
 
     .download-img {
         margin: 30px 0 80px;
+    }
+}
+/* 如果屏幕小于900px */
+@media screen and (max-width: 900px) {
+    //内容区域
+    .download {
+        margin: 0 20px;
+        width: calc(100% - 40px);
     }
 }

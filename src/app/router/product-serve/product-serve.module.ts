@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { ServiceProjectComponent } from './service-project/service-project.component';
 import { ServiceSolutionComponent } from './service-solution/service-solution.component';
 import { SeriveCharacteristicComponent } from './serive-characteristic/serive-characteristic.component';
+import {SwiperModule} from 'ngx-swiper-wrapper';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { SeriveCharacteristicComponent } from './serive-characteristic/serive-ch
     RouterModule,
     NgZorroAntdModule,
     RouterModule,
+    SwiperModule,
     ProductServeRouting
   ],
   providers: [ServicesService]

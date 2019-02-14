@@ -105,3 +105,9 @@
     margin-bottom: 30px;
   }
 }
+/* 如果屏幕小于900px */
+@media screen and (max-width: 900px) {
+  .mobble-view {
+    font-size: 13px;
+  }
+}

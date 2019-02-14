@@ -8,8 +8,7 @@
 }
 
 .advissor-content {
-  width: 1200px;
-  //height: 700px;
+  max-width: 1200px;
   margin: 0 auto;
   border: 1px solid transparent;
 
@@ -42,7 +41,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     flex-shrink: 0.8;
-    justify-content: left;
+    justify-content: center;
   }
 
   li {
@@ -90,17 +89,19 @@
 
 }
 .advosor-data {
-  height: 400px;
+  height: 320px;
   background: #fff;
   clear: both;
 
   .advisor-left, .advisor-right{
     float: left;
+    width: 50%;
   }
 
   .advisor-left{
     position: relative;
-    width: 282px;
+    max-width: 282px;
+
     .name {
       text-align: center;
       font-size: 17px;
@@ -115,8 +116,8 @@
       right: 0;
     }
   }
+
   .advisor-right{
-    width: calc(100% - 282px);
     padding-left: 20px;
     font-size: 16px;
     color: #333;
@@ -124,4 +125,23 @@
     line-height: 28px;
   }
 
+
+  /* 如果屏幕小于900px */
+  @media screen and (max-width: 900px) {
+    //内容区域
+    .advisor-left {
+      display: none;
+    }
+
+    .advisor-right{
+      width: 100%;
+    }
+  }
+  /* 如果屏幕小于900px */
+  @media screen and (min-width: 1200px) {
+    //内容区域
+    img {
+      width: 230px;
+    }
+  }
 }
