@@ -54,5 +54,21 @@
     width: calc(100% - 40px);
     padding-bottom: 65px;
   }
+  img {
+    margin:10px 0 !important;
+  }
 
 }
+/* 如果屏幕小于900px */
+//@media screen and (max-width: 1200px) {
+//  img {
+//    margin: 0;
+//  }
+//  //内容区域
+//  .team-content {
+//    margin: 0 20px;
+//    width: calc(100% - 40px);
+//    padding-bottom: 65px;
+//  }
+//
+//}

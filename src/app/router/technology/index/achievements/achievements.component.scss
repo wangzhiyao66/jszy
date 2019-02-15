@@ -7,7 +7,7 @@
 }
 
 .achievments-content {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   //border: 1px solid red;
 
@@ -77,4 +77,19 @@
 }
 .img-box{
   margin: 40px auto 88px;
+}
+/* 如果屏幕小于900px */
+@media screen and (max-width: 1200px) {
+  //内容区域
+  .achievments-content {
+    margin: 0 20px;
+    width: calc(100% - 40px);
+  }
+  ul {
+    justify-content: center !important;
+
+    li {
+      margin: 30px auto 0;
+    }
+  }
 }

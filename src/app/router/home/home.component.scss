@@ -112,12 +112,12 @@
         //float: left;
         list-style: none;
         width: 290px;
-        margin: 0 5px;
+        margin: 0 auto;
     }
     /* 如果屏幕小于900px */
     @media screen and (max-width: 900px) {
         li {
-            margin: 10px;
+            margin: 10px auto;
         }
         .text-box {
             height: 300px;
@@ -350,7 +350,7 @@
             width: 370px;
             height: 235px;
             background: rgba(242, 245, 248, 1);
-            margin: 6px;
+            margin: 15px auto;
             position: relative;
             cursor: pointer;
             overflow: hidden;

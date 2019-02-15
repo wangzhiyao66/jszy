@@ -1,203 +1,209 @@
 @import "../../scss/_global";
 
 .scroll {
-    background: #3975ed !important;
-    opacity: 0.97;
-    position: fixed;
-    top: 0;
+  background: #3975ed !important;
+  opacity: 0.97;
+  position: fixed;
+  top: 0;
 }
 
 .flexs {
-    position: absolute;
-    z-index: 1000;
+  position: absolute;
+  z-index: 1000;
 }
 
 .abs {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
+
+.fontsize {
+  font-size: 18px !important;
+}
+
 .header {
+  width: 100%;
+  min-width: 1280px;
+  height: 80px;
+  z-index: 100;
+  background: #3975ed;
+  transition: background 1s;
+
+
+  .two-chor {
     width: 100%;
-    min-width: 1280px;
-    height: 80px;
-    z-index: 100;
-    background: #3975ed;
-    transition: background 1s;
+    height: 268px;
+    background: #fff;
+    // position: relative;
+    // top: -80px;
+  }
 
+  .title-color {
+    color: $menus-color !important;
+  }
 
-    .two-chor {
-        width: 100%;
-        height: 268px;
-        background: #fff;
-        // position: relative;
-        // top: -80px;
-    }
+  .anchor-box {
+    list-style: none;
+    padding: 0;
+    margin: 34px auto;
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
 
-    .title-color {
-        color: $menus-color !important;
-    }
+    li {
+      text-align: center;
+      font-size: 15px;
+      color: #333;
 
-    .anchor-box {
-        list-style: none;
+      p {
+        margin: 10px 0 0 0;
         padding: 0;
-        margin: 34px auto;
-        width: 1200px;
-        height: 200px; 
-        display: flex;
-        flex: 1;
-        flex-direction: row;
-        justify-content: space-between;
+      }
 
-        li {
-            text-align: center;
-            font-size: 15px;
-            color: #333;
-
-            p {
-                margin: 10px 0 0 0 ;
-                padding: 0;
-            }
-
-            &:hover{
-                cursor: pointer;
-                color: #327ce2;
-            }
-        }
-
-    }
-
-    .nav {
-        width: 1200px;
-        height: 80px;
-        margin: 0 auto;
-        overflow-x: auto;
-    }
-
-    .nav-left,
-    .nav-right {
-        float: left;
+      &:hover {
         cursor: pointer;
-        z-index: 80;
+        color: #327ce2;
+      }
     }
 
-    .nav-left {
-        width: 240px;
-        height: 80px;
+  }
 
-        img {
-            position: relative;
-            z-index: 90;
-            outline: none;
-            border: none;
-        }
+  .nav {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    overflow-x: auto;
+  }
+
+  .nav-left,
+  .nav-right {
+    float: left;
+    cursor: pointer;
+    z-index: 80;
+  }
+
+  .nav-left {
+    width: 240px;
+    height: 80px;
+
+    img {
+      position: relative;
+      z-index: 90;
+      outline: none;
+      border: none;
+    }
+  }
+
+  .nav-right {
+    width: 920px;
+    height: 80px;
+    margin-left: 2%;
+
+
+    ul {
+      float: left;
+      height: 80px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      // 隐藏 其他按钮
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
     }
 
-    .nav-right {
-        width: 920px;
-        height: 80px;
-        margin-left: 2%;
-
-
-        ul {
-            float: left;
-            height: 80px;
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            // 隐藏 其他按钮
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        li {
-            float: left;
-            height: 80px;
-            width: 106px;
-            margin-right: 10px;
-            list-style: none;
-        }
-
-        .line {
-            position: relative;
-            text-align: center;
-            font-size: 18px;
-            color: #fff;
-            z-index: 80;
-            outline: none;
-            font-family: $font-family;
-        }
-
-        .title {
-            position: relative;
-            z-index: 100;
-            line-height: 80px;
-            letter-spacing: 2px;
-        }
-
-        .active {
-            display: inline-block;
-            width: 106px;
-            height: 80px;
-            background: #fff;
-            color: $menus-color;
-        }
-
-        .line:hover {
-            .title {
-                color: $menus-color;
-            }
-        }
-
-        .animation-bg {
-            display: inline-block;
-            width: 106px;
-            height: 80px;
-            background: #fff;
-            position: absolute;
-            top: -80px;
-            left: 0;
-        }
-
-        //login
-        .login {
-            position: relative;
-            float: left;
-            width: 100px;
-            height: 80px;
-            text-align: center;
-            margin-left: 8px;
-
-            .btn {
-                position: relative;
-                margin-top: 25px;
-                height: 30px;
-                line-height: 15px;
-                width: 106px;
-                font-size: 16px;
-                border-radius: 15px;
-                border: 1px solid #fff;
-                color: #fff;
-                background: transparent;
-                outline: none;
-                z-index: 90;
-            }
-
-            .btn:hover {
-                color: $menus-color;
-                background: #fff;
-                border-color: $menus-color;
-            }
-        }
-
+    li {
+      float: left;
+      height: 80px;
+      width: 106px;
+      margin-right: 10px;
+      list-style: none;
     }
 
-    .animation-bg:hover {
-        .btn {
-            color: $menus-color;
-            border-color: $menus-color;
-        }
+    .line {
+      position: relative;
+      text-align: center;
+      font-size: 18px;
+      color: #fff;
+      z-index: 80;
+      outline: none;
+      font-family: $font-family;
     }
+
+    .title {
+      position: relative;
+      z-index: 100;
+      line-height: 80px;
+      letter-spacing: 2px;
+    }
+
+    .active {
+      display: inline-block;
+      width: 106px;
+      height: 80px;
+      background: #fff;
+      color: $menus-color;
+    }
+
+    .line:hover {
+      .title {
+        color: $menus-color;
+      }
+    }
+
+    .animation-bg {
+      display: inline-block;
+      width: 106px;
+      height: 80px;
+      background: #fff;
+      position: absolute;
+      top: -80px;
+      left: 0;
+    }
+
+    //login
+    .login {
+      position: relative;
+      float: left;
+      width: 100px;
+      height: 80px;
+      text-align: center;
+      margin-left: 8px;
+
+      .btn {
+        position: relative;
+        margin-top: 25px;
+        height: 30px;
+        line-height: 15px;
+        width: 106px;
+        font-size: 16px;
+        border-radius: 15px;
+        border: 1px solid #fff;
+        color: #fff;
+        background: transparent;
+        outline: none;
+        z-index: 90;
+      }
+
+      .btn:hover {
+        color: $menus-color;
+        background: #fff;
+        border-color: $menus-color;
+      }
+    }
+
+  }
+
+  .animation-bg:hover {
+    .btn {
+      color: $menus-color;
+      border-color: $menus-color;
+    }
+  }
+
 }

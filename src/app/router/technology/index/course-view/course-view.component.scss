@@ -1,11 +1,11 @@
 @import "../../../../scss/_global";
 .course-view {
-  background: url("../../../../../assets/images/overview/course/coursebg.png") no-repeat left top;
+  background: rgb(238,241,251) url("../../../../../assets/images/overview/course/coursebg.png") no-repeat left bottom;
   border: 1px solid transparent;
 }
 
 .course-content {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0px auto;
   //border: 1px solid red;
 
@@ -39,8 +39,8 @@
   }
 
   .history-left {
-    padding-bottom: 180px;
-    border-right: 1px dashed dodgerblue;
+    //padding-bottom: 180px;
+    //border-right: 1px dashed dodgerblue;
 
     .title-year {
       width: 100%;
@@ -74,15 +74,22 @@
       flex-wrap: wrap;
       flex-direction: row;
       flex-shrink: 0.8;
-      justify-content: space-between;
+      justify-content: center;
+      margin: 10px auto;
       padding-right: 30px;
 
     }
+    img{
+      margin: 10px auto 0;
+    }
+
   }
 
   .history-right {
 
     padding-top: 160px;
+    border-left: 1px dashed dodgerblue;
+
     .title-name {
       display: inline-block;
       font-size: 18px;
@@ -124,10 +131,13 @@
       flex-wrap: wrap;
       flex-direction: row;
       flex-shrink: 0.8;
-      justify-content: space-between;
+      justify-content: center;
       padding-left: 30px;
       //margin-bottom: 20px;
 
+    }
+    img{
+      margin: 10px auto 0;
     }
   }
 
@@ -142,6 +152,26 @@
     margin: 30px auto 0;
     font-size: 14px;
     color: $select-color;
+  }
+
+}
+
+/* 如果屏幕小于900px */
+@media screen and (max-width: 1200px) {
+  //内容区域
+  .course-content {
+    margin: 0 20px !important;
+    width: calc(100% - 40px) !important;
+  }
+
+}/* 如果屏幕小于900px */
+@media screen and (max-width: 500px) {
+  //内容区域
+  img{
+    height: 110px !important;
+  }
+  .unfinished img{
+    height: 35px !important;
   }
 
 }

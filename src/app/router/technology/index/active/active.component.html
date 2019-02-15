@@ -3,7 +3,7 @@
         <p class="title">科研活动</p>
         <ul>
             <li *ngFor="let item of list" [routerLink]="'/technology/active-detaills'" [queryParams]="{ id : item.id}">
-                <img src="{{ item.url }}">
+                <img class="img-fluid" src="{{ item.url }}">
                 <p class="name">{{ item.title }}</p>
             </li>
         </ul>

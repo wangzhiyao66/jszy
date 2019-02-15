@@ -1,13 +1,13 @@
 @import "../../../../scss/index";
 
 .active-view {
-  height: 850px;
-  background: url("../../../../../assets/images/overview/active/activebg.png") no-repeat center;
+  min-height: 850px;
+  background: rgb(242,242,242) url("../../../../../assets/images/overview/active/activebg.png") no-repeat bottom;
   border: 1px solid transparent;
 }
 
 .active-content {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   .title {
     font-size: 38px;
@@ -25,12 +25,24 @@
     flex-wrap: wrap;
     flex-direction: row;
     flex-shrink: 0.8;
-    justify-content: space-between;
+    justify-content: center;
+  }
+
+  /* 如果屏幕小于900px */
+  @media screen and (max-width: 1200px) {
+    .active-view {
+      //background-image: none;
+      padding-bottom: 65px;
+    }
+    ul {
+      margin: 25px 20px 0
+    }
+
   }
 
   li {
     list-style: none;
-    margin-top: 25px;
+    margin: 10px auto;
     position: relative;
     cursor: pointer;
     text-align: center;
