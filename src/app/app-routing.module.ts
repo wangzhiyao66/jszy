@@ -42,11 +42,11 @@ const routes: Routes = [
                 path: 'about',
                 loadChildren: './router/about/about.module#AboutModule'
             },
+            {
+                path: 'login',
+                component: LoginComponent
+            },
         ]
-    },
-    {
-        path: 'login',
-        component: LoginComponent
     },
     {
         path: '**',

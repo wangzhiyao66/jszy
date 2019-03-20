@@ -12,24 +12,6 @@ import {Pulse} from '../../../../animations/pulse.animation';
 })
 export class AchievementsComponent implements OnInit, OnChanges {
 
-    storylist: ({ id: number; url: string; title: string })[] = [
-        {
-            id: 1, url: '../../../../assets/images/overview/parget/exclusive1.png',
-            title: '实用新型专利证书'
-        },
-        {
-            id: 2, url: '../../../../assets/images/overview/parget/exclusive2.png',
-            title: '外观设计专利证书1'
-        },
-        {
-            id: 3, url: '../../../../assets/images/overview/parget/exclusive3.png',
-            title: '外观设计专利证书2'
-        },
-        {
-            id: 4, url: '../../../../assets/images/overview/parget/exclusive4.png',
-            title: '外观设计专利证书3'
-        },
-    ];
     // 获取本地变量
     @ViewChild('achievements') achievements: ElementRef;
     @Input() docuheight: number;
