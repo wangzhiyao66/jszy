@@ -4,7 +4,7 @@ import {Code404Component} from './common/code404/code404.component';
 import {RouterComponent} from './router/router.component';
 import {LoginComponent} from './router/login/login.component';
 
-
+// 我是在test上改变的
 const routes: Routes = [
     {
         path: '',
@@ -42,11 +42,11 @@ const routes: Routes = [
                 path: 'about',
                 loadChildren: './router/about/about.module#AboutModule'
             },
+            {
+                path: 'login',
+                component: LoginComponent
+            },
         ]
-    },
-    {
-        path: 'login',
-        component: LoginComponent
     },
     {
         path: '**',
