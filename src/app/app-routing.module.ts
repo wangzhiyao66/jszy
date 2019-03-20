@@ -4,7 +4,7 @@ import {Code404Component} from './common/code404/code404.component';
 import {RouterComponent} from './router/router.component';
 import {LoginComponent} from './router/login/login.component';
 
-
+// 我是在dev分支修改的
 const routes: Routes = [
     {
         path: '',
