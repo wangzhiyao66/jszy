@@ -76,5 +76,6 @@ export class HomeComponent implements OnInit {
             // navigation: navigationConfig
 
         };
+        // tower 测试成功了
     }
 }
